@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!res.ok) throw new Error('字幕文件未找到');
         const text = await res.text();
         contentEl.innerHTML = marked.parse(text);
+        // 切换文档时重置当前高亮
+        clearAllHighlights();
       } catch (err) {
         contentEl.innerHTML = `<p style="color:red">加载失败: ${err.message}</p>`;
       }
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. 选词精准定位与半透明菜单
+  // 3. 选词精准定位与菜单显示
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    currentRange = selection.getRangeAt(0);
+    currentRange = selection.getRangeAt(0).cloneRange();
     const rect = currentRange.getBoundingClientRect();
 
     if (rect.width === 0 || rect.height === 0) {
@@ -100,101 +102,138 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. 高亮功能实现
+  // -------------------------------------------------------------
+  // 4. 高亮引擎（使用 Web 标准 Highlight API，不碰 DOM 节点）
+  // -------------------------------------------------------------
+  const isHighlightAPISupported = typeof CSS !== 'undefined' && CSS.highlights;
+  let activeRanges = []; // 保存所有高亮的 Range 对象
+
+  function updateHighlightRegistry() {
+    if (isHighlightAPISupported) {
+      const userHighlight = new Highlight(...activeRanges);
+      CSS.highlights.set('user-highlight', userHighlight);
+    }
+  }
+
+  function clearAllHighlights() {
+    activeRanges = [];
+    if (isHighlightAPISupported) {
+      CSS.highlights.delete('user-highlight');
+    } else {
+      contentEl.querySelectorAll('mark.user-highlight').forEach(mark => {
+        const parent = mark.parentNode;
+        while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+        parent.removeChild(mark);
+      });
+    }
+  }
+
+  // 点击【高亮】按钮
   document.getElementById('btn-highlight').addEventListener('click', () => {
     if (!currentRange) return;
 
-    const mark = document.createElement('mark');
-    mark.className = 'user-highlight';
-
-    try {
-      currentRange.surroundContents(mark);
-    } catch (e) {
-      // 跨段落/跨多行时的安全包裹
-      const fragment = currentRange.extractContents();
-      mark.appendChild(fragment);
-      currentRange.insertNode(mark);
+    if (isHighlightAPISupported) {
+      // 绝对不侵入/改变 DOM，直接将选区加入注册表
+      activeRanges.push(currentRange.cloneRange());
+      updateHighlightRegistry();
+    } else {
+      // 降级方案：跨节点安全包裹
+      safeDomHighlight(currentRange);
     }
 
     window.getSelection().removeAllRanges();
     menu.classList.add('hidden');
   });
 
-  // 5. 跨行/多行安全清除高亮（100% 绝不吞字）
+  // 点击【清除高亮】按钮
   document.getElementById('btn-clear').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
-    const range = selection.getRangeAt(0);
-    let ancestor = range.commonAncestorContainer;
-    if (ancestor.nodeType === 3) ancestor = ancestor.parentElement;
+    const clearRange = selection.getRangeAt(0);
 
-    // 查找选区覆盖到的所有 mark 节点
-    let marks = Array.from(ancestor.querySelectorAll('mark.user-highlight'));
-    const closestMark = ancestor.closest('mark.user-highlight');
-    if (closestMark && !marks.includes(closestMark)) {
-      marks.push(closestMark);
-    }
+    if (isHighlightAPISupported) {
+      // 使用选区数学计算，将当前选区从已有的高亮 Range 中“切除”
+      let newRanges = [];
 
-    marks.forEach(mark => {
-      if (selection.containsNode(mark, true)) {
-        const markRange = document.createRange();
-        markRange.selectNodeContents(mark);
-
-        const isStartBefore = range.compareBoundaryPoints(Range.START_TO_START, markRange) <= 0;
-        const isEndAfter = range.compareBoundaryPoints(Range.END_TO_END, markRange) >= 0;
-
-        if (isStartBefore && isEndAfter) {
-          // 情况 A: 选区彻底覆盖了这个 mark -> 移除 mark 标签，保留内容
-          const parent = mark.parentNode;
-          while (mark.firstChild) {
-            parent.insertBefore(mark.firstChild, mark);
-          }
-          parent.removeChild(mark);
+      activeRanges.forEach(existingRange => {
+        // 如果两个 Range 没有交集，保留原高亮
+        if (
+          clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
+          clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
+        ) {
+          newRanges.push(existingRange);
         } else {
-          // 情况 B: 部分选中 mark（单行或多行）-> 使用 CSS 范围提取技术安全剥离，绝不丢字
-          try {
-            const subRange = range.cloneRange();
-            
-            // 限制裁剪范围严格在当前 mark 内部
-            if (subRange.compareBoundaryPoints(Range.START_TO_START, markRange) < 0) {
-              subRange.setStart(markRange.startContainer, markRange.startOffset);
-            }
-            if (subRange.compareBoundaryPoints(Range.END_TO_END, markRange) > 0) {
-              subRange.setEnd(markRange.endContainer, markRange.endOffset);
-            }
-
-            // 提取被选中的部分
-            const extracted = subRange.extractContents();
-            
-            // 将提取出来的片段中的 mark 标签全解包
-            const innerMarks = extracted.querySelectorAll ? Array.from(extracted.querySelectorAll('mark.user-highlight')) : [];
-            innerMarks.forEach(m => {
-              const p = m.parentNode;
-              while (m.firstChild) p.insertBefore(m.firstChild, m);
-              p.removeChild(m);
-            });
-
-            // 重新插回提取位置
-            subRange.insertNode(extracted);
-
-            // 清理可能产生的空 mark 标签
-            if (mark.textContent.trim() === '') {
-              mark.parentNode.removeChild(mark);
-            }
-          } catch (err) {
-            // 兜底方案：如果跨行 DOM 极为复杂，直接安全解包 mark，确保文本不丢失
-            const parent = mark.parentNode;
-            if (parent) {
-              while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
-              parent.removeChild(mark);
-            }
+          // 有交集，需要切分 existingRange
+          // 1. 保留清除选区左边的部分
+          if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
+            const leftRange = existingRange.cloneRange();
+            leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
+            if (!leftRange.collapsed) newRanges.push(leftRange);
+          }
+          // 2. 保留清除选区右边的部分
+          if (clearRange.compareBoundaryPoints(Range.END_TO_END, existingRange) < 0) {
+            const rightRange = existingRange.cloneRange();
+            rightRange.setStart(clearRange.endContainer, clearRange.endOffset);
+            if (!rightRange.collapsed) newRanges.push(rightRange);
           }
         }
-      }
-    });
+      });
+
+      activeRanges = newRanges;
+      updateHighlightRegistry();
+    } else {
+      // 降级清除方案
+      contentEl.querySelectorAll('mark.user-highlight').forEach(mark => {
+        if (selection.containsNode(mark, true)) {
+          const parent = mark.parentNode;
+          while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+          parent.removeChild(mark);
+        }
+      });
+    }
 
     window.getSelection().removeAllRanges();
     menu.classList.add('hidden');
   });
+
+  // 旧版浏览器降级高亮函数
+  function safeDomHighlight(range) {
+    const treeWalker = document.createTreeWalker(
+      range.commonAncestorContainer,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: (node) => {
+          return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+      }
+    );
+
+    const nodesToProcess = [];
+    while (treeWalker.nextNode()) {
+      nodesToProcess.push(treeWalker.currentNode);
+    }
+
+    nodesToProcess.forEach(node => {
+      const nodeRange = document.createRange();
+      nodeRange.selectNodeContents(node);
+
+      if (range.compareBoundaryPoints(Range.START_TO_START, nodeRange) > 0) {
+        nodeRange.setStart(range.startContainer, range.startOffset);
+      }
+      if (range.compareBoundaryPoints(Range.END_TO_END, nodeRange) < 0) {
+        nodeRange.setEnd(range.endContainer, range.endOffset);
+      }
+
+      if (!nodeRange.collapsed && nodeRange.toString().trim()) {
+        const mark = document.createElement('mark');
+        mark.className = 'user-highlight';
+        try {
+          nodeRange.surroundContents(mark);
+        } catch (e) {
+          // 忽略单个非法交界的文本节点包裹
+        }
+      }
+    });
+  }
 });
