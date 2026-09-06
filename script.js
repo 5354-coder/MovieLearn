@@ -117,11 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const userHighlight = new Highlight(...activeRanges);
       CSS.highlights.set('user-highlight', userHighlight);
     }
-    // 每次更新高亮后自动保存到 localStorage
+    // 每次高亮或清除变更时自动持久化保存
     saveHighlights();
   }
 
-  // 获取节点在 contentEl 中的 DOM 路径
+  // 获取节点在 contentEl 中的相对 DOM 路径
   function getNodePath(node) {
     const path = [];
     while (node && node !== contentEl) {
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(`highlights_${currentFilePath}`, JSON.stringify(serialized));
   }
 
-  // 从 localStorage 恢复高亮
+  // 从 localStorage 读取并恢复高亮
   function restoreHighlights() {
     activeRanges = [];
     if (!currentFilePath) return;
@@ -214,12 +214,14 @@ document.addEventListener('DOMContentLoaded', () => {
       let newRanges = [];
 
       activeRanges.forEach(existingRange => {
+        // 判断清除选区与现有高亮是否有重叠
         if (
           clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
           clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
         ) {
           newRanges.push(existingRange);
         } else {
+          // 有交集，切除选区部分
           if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
             const leftRange = existingRange.cloneRange();
             leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
