@@ -2,59 +2,131 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Lie to Me 字幕学习</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字幕学习与阅读器</title>
   <link rel="stylesheet" href="style.css">
+  <!-- marked 库用于解析 Markdown -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <!-- 左侧目录栏 -->
-    <aside class="sidebar">
-      <h2>目录</h2>
-      <ul class="tree">
-        <!-- 一级菜单 -->
-        <li class="has-children">
-          <span class="toggle-btn">Lie to Me</span>
-          <ul>
-            <!-- 二级菜单：第一季 -->
-            <li class="has-children">
-              <span class="toggle-btn">第一季</span>
-              <ul>
-                <!-- 三级菜单：具体集数 -->
-                <li><a href="#" class="file-link" data-src="s01/e01.md">第1集</a></li>
-                <li><a href="#" class="file-link" data-src="s01/e02.md">第2集</a></li>
-              </ul>
-            </li>
-            <!-- 二级菜单：第二季 -->
-            <li class="has-children">
-              <span class="toggle-btn">第二季</span>
-              <ul>
-                <li><a href="#" class="file-link" data-src="s02/e01.md">第1集</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </aside>
 
-    <!-- 右侧内容区 -->
-    <main class="main-content">
-      <div class="font-controls">
-        <span>字体大小：</span>
-        <button id="btn-dec">-</button>
-        <span id="font-size-val">16px</span>
-        <button id="btn-inc">+</button>
-      </div>
-      <div id="content" class="content-body">
-        <p class="placeholder">请在左侧选择剧集阅读字幕...</p>
-      </div>
-    </main>
-  </div>
+  <!-- 左侧三级折叠目录 -->
+  <aside class="sidebar">
+    <h2 class="sidebar-title">剧集目录</h2>
+    <ul class="nav-tree">
+      
+      <!-- 第一季 -->
+      <li class="tree-node level-1">
+        <div class="node-title toggle-btn">第一季</div>
+        <ul class="tree-sub">
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S01E01-E05</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e01.md">第 01 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e02.md">第 02 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e03.md">第 03 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e04.md">第 04 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e05.md">第 05 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S01E06-E10</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e06.md">第 06 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e07.md">第 07 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e08.md">第 08 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e09.md">第 09 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e10.md">第 10 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S01E11-E13</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e11.md">第 11 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e12.md">第 12 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s01/e13.md">第 13 集</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-  <!-- 划词高亮浮动菜单 -->
+      <!-- 第二季 -->
+      <li class="tree-node level-1">
+        <div class="node-title toggle-btn">第二季</div>
+        <ul class="tree-sub">
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S02E01-E05</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e01.md">第 01 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e02.md">第 02 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e03.md">第 03 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e04.md">第 04 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e05.md">第 05 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S02E06-E10</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e06.md">第 06 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e07.md">第 07 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e08.md">第 08 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e09.md">第 09 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e10.md">第 10 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S02E11-E15</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e11.md">第 11 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e12.md">第 12 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e13.md">第 13 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e14.md">第 14 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e15.md">第 15 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S02E16-E20</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e16.md">第 16 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e17.md">第 17 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e18.md">第 18 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e19.md">第 19 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e20.md">第 20 集</a></li>
+            </ul>
+          </li>
+          <li class="tree-node level-2">
+            <div class="node-title toggle-btn">S02E21-E22</div>
+            <ul class="tree-sub">
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e21.md">第 21 集</a></li>
+              <li><a href="#" class="file-link" data-src="subtitles/s02/e22.md">第 22 集</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </aside>
+
+  <!-- 右侧内容区域 -->
+  <main class="main-content">
+    <!-- 顶部工具栏：调整字号 -->
+    <header class="toolbar">
+      <span class="tool-label">字号调整：</span>
+      <button id="btn-dec" class="tool-btn">-</button>
+      <span id="font-size-val">16px</span>
+      <button id="btn-inc" class="tool-btn">+</button>
+    </header>
+
+    <!-- Markdown 字幕渲染区 -->
+    <article id="content" class="markdown-body">
+      <p class="placeholder-text">👈 请在左侧选择要读取的剧集字幕 Markdown 文件。</p>
+    </article>
+  </main>
+
+  <!-- 划词高亮悬浮菜单 -->
   <div id="highlight-menu" class="highlight-menu hidden">
-    <button id="btn-highlight">高亮</button>
-    <button id="btn-clear">清除高亮</button>
+    <button id="btn-highlight" class="menu-btn highlight-btn">高亮</button>
+    <button id="btn-clear" class="menu-btn clear-btn">取消</button>
   </div>
 
   <script src="script.js"></script>
