@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentFileSrc = '';
 
   // 核心业务：加载指定的字幕文件
-  async function loadSubtitleFile(fileSrc, isInitialLoad = false) {
+  async function loadSubtitleFile(fileSrc) {
     const link = document.querySelector(`.file-link[data-src="${fileSrc}"]`);
     if (!link) return;
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
     link.classList.add('active');
 
-    // 确保所在季度的父级菜单被展开
+    // 递归展开所有父级 tree-node（支持多层级目录自动展开）
     let parentNode = link.closest('.tree-node');
     while (parentNode) {
       parentNode.classList.add('open');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     currentFileSrc = fileSrc;
-    localStorage.setItem('last_opened_file', fileSrc); // 记住当前文件
+    localStorage.setItem('last_opened_file', fileSrc); // 记住当前打开的文件
 
     try {
       const response = await fetch(fileSrc);
@@ -44,13 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
       contentEl.innerHTML = marked.parse(markdownText);
       applyFontSize(currentFontSize);
 
-      // 还原高亮记录
+      // 还原当前文件的亮黄高亮
       loadHighlightsForCurrentFile();
 
-      // 记忆跳转：恢复上次滚动阅读高度
+      // 记忆跳转：恢复上次在该文件中阅读的高度
       const savedScrollTop = localStorage.getItem(`scroll_pos_${fileSrc}`);
       if (savedScrollTop) {
-        // 稍作延迟确保 DOM 渲染计算完毕后精准滚动
         setTimeout(() => {
           contentEl.scrollTop = parseInt(savedScrollTop, 10);
         }, 50);
@@ -59,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
     } catch (err) {
-      contentEl.innerHTML = `<p style="color: #e53e3e; text-align: center;">⚠️ 加载字幕失败：${err.message}<br>请确保本地已有对应路径的文件。</p>`;
+      contentEl.innerHTML = `<p style="color: #e53e3e; text-align: center;">⚠️ 加载字幕失败：${err.message}<br>请确保项目根目录下存在该路径文件：<code>${fileSrc}</code></p>`;
     }
   }
 
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 监听右侧区域滚动，并防抖记忆当前的滚动位置
+  // 监听右侧区域滚动，防抖记忆滚动位置
   let scrollTimer = null;
   contentEl.addEventListener('scroll', () => {
     if (!currentFileSrc) return;
@@ -82,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200);
   });
 
-  // 自动还原：打开页面时加载上次关闭前看到的文件
+  // 打开页面时自动载入上次看的文件
   const lastOpenedFile = localStorage.getItem('last_opened_file');
   if (lastOpenedFile) {
-    loadSubtitleFile(lastOpenedFile, true);
+    loadSubtitleFile(lastOpenedFile);
   }
 
   // ==========================================
@@ -174,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 5. 高亮与持久化（CSS Custom Highlight + localStorage）
+  // 5. 高亮与持久化（CSS Custom Highlight API，零 DOM 破损）
   // ==========================================
   let activeRanges = [];
 
