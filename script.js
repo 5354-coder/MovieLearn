@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. 目录展开与折叠
+  // 1. 三级目录折叠与展开
   document.querySelectorAll('.toggle-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.target.parentElement.classList.toggle('open');
@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 加载 MD 文件
   const contentEl = document.getElementById('content');
+  const mainContent = document.querySelector('.main-content'); // 获取右侧滚动容器
+
   document.querySelectorAll('.file-link').forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. 选词定位与半透明菜单
+  // 3. 选词定位与半透明菜单（精准居中修正版）
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
@@ -49,25 +51,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleSelection() {
     const selection = window.getSelection();
+    
+    // 如果没有选中文字，隐藏菜单
     if (selection.isCollapsed || !selection.toString().trim()) {
       menu.classList.add('hidden');
       return;
     }
 
     const anchorNode = selection.anchorNode;
+    // 限制只能在右侧字幕内容区触发选词
     if (!contentEl.contains(anchorNode)) return;
 
     currentRange = selection.getRangeAt(0);
-    const rects = currentRange.getClientRects();
-    if (rects.length === 0) return;
+    const rangeRect = currentRange.getBoundingClientRect();
+    const containerRect = mainContent.getBoundingClientRect();
 
-    const lastRect = rects[rects.length - 1];
-    const firstRect = rects[0];
-    const boundingTop = firstRect.top;
-    const centerLeft = (firstRect.left + lastRect.right) / 2;
+    // 如果选中文本完全不在视口内，隐藏菜单
+    if (rangeRect.width === 0 && rangeRect.height === 0) return;
 
-    menu.style.top = `${boundingTop + window.scrollY - 40}px`;
-    menu.style.left = `${centerLeft + window.scrollX - (menu.offsetWidth / 2)}px`;
+    // 计算相对于右侧主容器（.main-content）的居中位置
+    // 水平居中：选中文本的中心点 - 容器左边距 - 菜单本身一半宽度
+    const menuWidth = menu.offsetWidth || 120; // 初始宽度容错
+    const menuHeight = menu.offsetHeight || 35;
+    
+    const textCenterX = rangeRect.left + (rangeRect.width / 2);
+    const leftPos = textCenterX - containerRect.left - (menuWidth / 2) + mainContent.scrollLeft;
+
+    // 垂直位置：放在选中文本上方 8px 处
+    const topPos = rangeRect.top - containerRect.top - menuHeight - 8 + mainContent.scrollTop;
+
+    menu.style.left = `${leftPos}px`;
+    menu.style.top = `${topPos}px`;
     menu.classList.remove('hidden');
   }
 
