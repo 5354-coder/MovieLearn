@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. 选词精准定位与弹出菜单
+  // 3. 选词精准定位与半透明菜单
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keyup', handleSelection);
 
   function handleSelection(e) {
-    // 如果点击在菜单本身的按钮上，不触发隐藏逻辑
+    // 如果点击在菜单本身的按钮上，不触发重新计算或隐藏逻辑
     if (menu.contains(e.target)) return;
 
     const selection = window.getSelection();
-    
+
     // 如果没有选中文本或选区为空，隐藏菜单
     if (!selection || selection.isCollapsed || !selection.toString().trim()) {
       menu.classList.add('hidden');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const centerX = rect.left + (rect.width / 2);
     const topY = rect.top;
 
-    // 先移除 hidden 以获取真实渲染宽高
+    // 先显示以获取真实宽高
     menu.classList.remove('hidden');
     const menuWidth = menu.offsetWidth;
     const menuHeight = menu.offsetHeight;
@@ -104,80 +104,87 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.style.top = `${topPos}px`;
   }
 
-  // 点击页面其他无文字区域时隐藏菜单
+  // 点击页面其他无文字空白区域时隐藏菜单
   document.addEventListener('mousedown', (e) => {
     if (!menu.contains(e.target) && !contentEl.contains(e.target)) {
       menu.classList.add('hidden');
     }
   });
 
- // 4. 增强版清除高亮功能（支持清除部分高亮、跨节点高亮及历史高亮）
+  // 解包辅助函数：清除 mark 标签但保留文本内容
+  function unwrapMark(mark) {
+    const parent = mark.parentNode;
+    if (!parent) return;
+    while (mark.firstChild) {
+      parent.insertBefore(mark.firstChild, mark);
+    }
+    parent.removeChild(mark);
+  }
+
+  // 4. 高亮功能实现
+  document.getElementById('btn-highlight').addEventListener('click', () => {
+    if (!currentRange) return;
+
+    const mark = document.createElement('mark');
+    mark.className = 'user-highlight';
+
+    try {
+      currentRange.surroundContents(mark);
+    } catch (e) {
+      // 应对跨节点选中的情况
+      const fragment = currentRange.extractContents();
+      mark.appendChild(fragment);
+      currentRange.insertNode(mark);
+    }
+
+    window.getSelection().removeAllRanges();
+    menu.classList.add('hidden');
+  });
+
+  // 5. 增强版清除高亮功能（支持多选、局部清除与历史高亮）
   document.getElementById('btn-clear').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
     const range = selection.getRangeAt(0);
 
-    // 辅助函数：将指定的 mark 元素解包（清除高亮样式，保留内部文本）
-    function unwrapMark(mark) {
-      const parent = mark.parentNode;
-      while (mark.firstChild) {
-        parent.insertBefore(mark.firstChild, mark);
-      }
-      parent.removeChild(mark);
-    }
-
-    // A. 先检查选区内包含的所有 <mark.user-highlight> 节点（应对一次选中多个高亮的情况）
+    // 查找选区范围内的所有高亮节点
     const container = range.commonAncestorContainer;
     const parentEl = container.nodeType === 3 ? container.parentElement : container;
     const allMarks = Array.from(parentEl.querySelectorAll('mark.user-highlight'));
 
-    let clearedCount = 0;
+    let cleared = false;
+
+    // A. 清除完全包含或相交的高亮块
     allMarks.forEach(mark => {
-      // 判断该 mark 是否与当前选区有重叠/被包含
       if (selection.containsNode(mark, true)) {
         unwrapMark(mark);
-        clearedCount++;
+        cleared = true;
       }
     });
 
-    // B. 如果没有包含完整的 mark 节点，说明可能是光标停留在高亮内部，或者只选中了高亮的一部分
-    if (clearedCount === 0) {
+    // B. 若未匹配到完整/跨节点 mark（说明是光标在单块高亮内，或只选了高亮的一小部分）
+    if (!cleared) {
       let node = selection.anchorNode;
       if (node && node.nodeType === 3) node = node.parentNode;
       const markEl = node ? node.closest('mark.user-highlight') : null;
 
       if (markEl) {
-        // 使用 CSS 提取与重新包裹策略，仅将选中的文字移除 mark 标签
-        const markRange = document.createRange();
-        markRange.selectNodeContents(markEl);
+        // 提取选中的部分，剥离高亮后重新插回
+        const extracted = range.extractContents();
+        const innerMarks = extracted.querySelectorAll ? extracted.querySelectorAll('mark.user-highlight') : [];
+        innerMarks.forEach(m => unwrapMark(m));
 
-        const startComp = range.compareBoundaryPoints(Range.START_TO_START, markRange);
-        const endComp = range.compareBoundaryPoints(Range.END_TO_END, markRange);
+        range.insertNode(extracted);
 
-        // 情况 1: 选中了这块高亮文件的全部
-        if (startComp <= 0 && endComp >= 0) {
+        // 如果原来的 mark 已经空了，将其删除
+        if (markEl.textContent.trim() === '') {
           unwrapMark(markEl);
-        } else {
-          // 情况 2: 只选中了这块高亮的一部分 -> 提取选中的文本，把选中的部分设为非高亮
-          const extracted = range.extractContents(); // 提取被选中的部分
-          
-          // 清除提取出来的文档片段里的 mark 标签
-          const innerMarks = extracted.querySelectorAll ? extracted.querySelectorAll('mark.user-highlight') : [];
-          innerMarks.forEach(m => unwrapMark(m));
-
-          // 将提取部分重新插入
-          range.insertNode(extracted);
-
-          // 清理可能产生的空 mark 标签
-          if (markEl.textContent === '') {
-            unwrapMark(markEl);
-          }
         }
       }
     }
 
-    // 清除选区状态与浮动菜单
     window.getSelection().removeAllRanges();
     menu.classList.add('hidden');
   });
+});
