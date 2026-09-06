@@ -178,7 +178,7 @@ body {
   overflow-y: auto;
   line-height: 1.8;
   color: #2d3748;
-  font-size: 16px; /* 默认 16px，仅通过 JS 修改此数值 */
+  font-size: 16px;
 }
 
 .content-body p {
@@ -250,11 +250,8 @@ body {
   margin: 0 4px;
 }
 
-/* 文本高亮标记（绝对不吞字） */
-mark.highlight {
+/* 原生 CSS Custom Highlight 样式定义（零修改 DOM，绝对安全） */
+::highlight(user-highlight) {
   background-color: #fefcbf;
   color: #744210;
-  padding: 1px 2px;
-  border-radius: 3px;
-  border-bottom: 2px solid #ecc94b;
 }
