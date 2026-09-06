@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Lie to Me 字幕学习</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 左侧目录 -->
+    <aside class="sidebar">
+      <h2>目录</h2>
+      <ul class="tree">
+        <li class="has-children">
+          <span class="toggle-btn">Lie to Me</span>
+          <ul>
+            <!-- 第一季 -->
+            <li class="has-children">
+              <span class="toggle-btn">第一季</span>
+              <ul>
+                <li><a href="#" class="file-link" data-src="s01/e01.md">第1集</a></li>
+                <li><a href="#" class="file-link" data-src="s01/e02.md">第2集</a></li>
+              </ul>
+            </li>
+            <!-- 第二季 -->
+            <li class="has-children">
+              <span class="toggle-btn">第二季</span>
+              <ul>
+                <li><a href="#" class="file-link" data-src="s02/e01.md">第1集</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- 右侧内容 -->
+    <main class="main-content">
+      <div class="font-controls">
+        <span>字体大小：</span>
+        <button id="btn-dec">-</button>
+        <span id="font-size-val">16px</span>
+        <button id="btn-inc">+</button>
+      </div>
+      <div id="content" class="content-body">
+        <p class="placeholder">请在左侧选择剧集阅读字幕...</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- 划词高亮浮动菜单 -->
+  <div id="highlight-menu" class="highlight-menu hidden">
+    <button id="btn-highlight">高亮</button>
+    <button id="btn-clear">清除高亮</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
