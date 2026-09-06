@@ -1,27 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. 三级目录折叠与展开
+  // 1. 目录展开/收起
   document.querySelectorAll('.toggle-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.target.parentElement.classList.toggle('open');
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
     });
   });
 
   const contentEl = document.getElementById('content');
-  let currentFilePath = ''; // 记录当前打开的文件路径
+  let currentFilePath = '';
 
-  // 加载 MD 文件
+  // 2. 字幕文件读取与切换（确保精准绑定和触发）
   document.querySelectorAll('.file-link').forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
+      
+      // 样式高亮当前选中的集数
+      document.querySelectorAll('.file-link').forEach(item => item.classList.remove('active'));
+      link.classList.add('active');
+
       const filePath = link.getAttribute('data-src');
       currentFilePath = filePath;
+
       try {
         const res = await fetch(filePath);
         if (!res.ok) throw new Error('字幕文件未找到');
         const text = await res.text();
         contentEl.innerHTML = marked.parse(text);
         
-        // 文件加载完成后，自动恢复该文件之前保存的高亮
+        // 确保新渲染出的文字应用当前的字号设置
+        applyFontSize(currentFontSize);
+        
+        // 恢复高亮
         restoreHighlights();
       } catch (err) {
         contentEl.innerHTML = `<p style="color:red">加载失败: ${err.message}</p>`;
@@ -29,25 +38,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 2. 调整右侧字体大小
+  // 3. 字号精确控制逻辑
   let currentFontSize = 16;
   const fontValEl = document.getElementById('font-size-val');
+
+  function applyFontSize(size) {
+    contentEl.style.fontSize = `${size}px`;
+    // 强制把内部段落与列表等元素统一应用该字号
+    contentEl.querySelectorAll('p, span, li, h1, h2, h3, h4').forEach(el => {
+      el.style.fontSize = `${size}px`;
+    });
+    fontValEl.textContent = `${size}px`;
+  }
+
   document.getElementById('btn-inc').addEventListener('click', () => {
-    if (currentFontSize < 32) {
+    if (currentFontSize < 36) {
       currentFontSize += 2;
-      contentEl.style.fontSize = currentFontSize + 'px';
-      fontValEl.textContent = currentFontSize + 'px';
-    }
-  });
-  document.getElementById('btn-dec').addEventListener('click', () => {
-    if (currentFontSize > 12) {
-      currentFontSize -= 2;
-      contentEl.style.fontSize = currentFontSize + 'px';
-      fontValEl.textContent = currentFontSize + 'px';
+      applyFontSize(currentFontSize);
     }
   });
 
-  // 3. 选词精准定位与菜单显示
+  document.getElementById('btn-dec').addEventListener('click', () => {
+    if (currentFontSize > 12) {
+      currentFontSize -= 2;
+      applyFontSize(currentFontSize);
+    }
+  });
+
+  // 4. 划词菜单显示
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
@@ -106,9 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // -------------------------------------------------------------
-  // 4. 高亮引擎 + 本地持久化 (localStorage)
-  // -------------------------------------------------------------
+  // 5. 高亮与持久化
   const isHighlightAPISupported = typeof CSS !== 'undefined' && CSS.highlights;
   let activeRanges = [];
 
@@ -117,11 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const userHighlight = new Highlight(...activeRanges);
       CSS.highlights.set('user-highlight', userHighlight);
     }
-    // 每次高亮或清除变更时自动持久化保存
     saveHighlights();
   }
 
-  // 获取节点在 contentEl 中的相对 DOM 路径
   function getNodePath(node) {
     const path = [];
     while (node && node !== contentEl) {
@@ -134,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return path;
   }
 
-  // 根据 DOM 路径还原节点
   function getNodeFromPath(path) {
     let node = contentEl;
     for (const index of path) {
@@ -147,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return node;
   }
 
-  // 保存当前文件的所有高亮选区到 localStorage
   function saveHighlights() {
     if (!currentFilePath) return;
     const serialized = activeRanges.map(range => ({
@@ -159,7 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(`highlights_${currentFilePath}`, JSON.stringify(serialized));
   }
 
-  // 从 localStorage 读取并恢复高亮
   function restoreHighlights() {
     activeRanges = [];
     if (!currentFilePath) return;
@@ -190,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateHighlightRegistry();
   }
 
-  // 点击【高亮】按钮
   document.getElementById('btn-highlight').addEventListener('click', () => {
     if (!currentRange) return;
 
@@ -203,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.add('hidden');
   });
 
-  // 点击【清除高亮】按钮
   document.getElementById('btn-clear').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
@@ -214,14 +223,12 @@ document.addEventListener('DOMContentLoaded', () => {
       let newRanges = [];
 
       activeRanges.forEach(existingRange => {
-        // 判断清除选区与现有高亮是否有重叠
         if (
           clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
           clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
         ) {
           newRanges.push(existingRange);
         } else {
-          // 有交集，切除选区部分
           if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
             const leftRange = existingRange.cloneRange();
             leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
