@@ -50,18 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keyup', handleSelection);
 
   function handleSelection(e) {
-    // 如果点击在菜单本身的按钮上，不触发重新计算或隐藏逻辑
     if (menu.contains(e.target)) return;
 
     const selection = window.getSelection();
 
-    // 如果没有选中文本或选区为空，隐藏菜单
     if (!selection || selection.isCollapsed || !selection.toString().trim()) {
       menu.classList.add('hidden');
       return;
     }
 
-    // 限制只能在右侧字幕内容区触发选词
     if (!contentEl.contains(selection.anchorNode)) {
       menu.classList.add('hidden');
       return;
@@ -70,32 +67,26 @@ document.addEventListener('DOMContentLoaded', () => {
     currentRange = selection.getRangeAt(0);
     const rect = currentRange.getBoundingClientRect();
 
-    // 如果未获取到有效尺寸，隐藏菜单
     if (rect.width === 0 || rect.height === 0) {
       menu.classList.add('hidden');
       return;
     }
 
-    // 计算选中文本顶部的水平中心位置 (Viewport 物理视口坐标)
     const centerX = rect.left + (rect.width / 2);
     const topY = rect.top;
 
-    // 先显示以获取真实宽高
     menu.classList.remove('hidden');
     const menuWidth = menu.offsetWidth;
     const menuHeight = menu.offsetHeight;
 
-    // 计算菜单最终坐标（顶部居中，向上偏离 8px）
     let leftPos = centerX - (menuWidth / 2);
     let topPos = topY - menuHeight - 8;
 
-    // 防止弹出菜单超出屏幕左侧或右侧边界
     if (leftPos < 10) leftPos = 10;
     if (leftPos + menuWidth > window.innerWidth - 10) {
       leftPos = window.innerWidth - menuWidth - 10;
     }
 
-    // 如果选中文本靠顶部太近，将菜单放在文本下方
     if (topPos < 10) {
       topPos = rect.bottom + 8;
     }
@@ -104,14 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.style.top = `${topPos}px`;
   }
 
-  // 点击页面其他无文字空白区域时隐藏菜单
   document.addEventListener('mousedown', (e) => {
     if (!menu.contains(e.target) && !contentEl.contains(e.target)) {
       menu.classList.add('hidden');
     }
   });
 
-  // 解包辅助函数：清除 mark 标签但保留文本内容
+  // 解包辅助函数：清除单个 mark 标签但保留内部文本
   function unwrapMark(mark) {
     const parent = mark.parentNode;
     if (!parent) return;
@@ -131,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       currentRange.surroundContents(mark);
     } catch (e) {
-      // 应对跨节点选中的情况
       const fragment = currentRange.extractContents();
       mark.appendChild(fragment);
       currentRange.insertNode(mark);
@@ -141,46 +130,125 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.add('hidden');
   });
 
-  // 5. 增强版清除高亮功能（支持多选、局部清除与历史高亮）
+  // 5. 精准部分清除高亮功能（完美支持切割高亮节点）
   document.getElementById('btn-clear').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
     const range = selection.getRangeAt(0);
-
-    // 查找选区范围内的所有高亮节点
     const container = range.commonAncestorContainer;
     const parentEl = container.nodeType === 3 ? container.parentElement : container;
+    
+    // 寻找选区内涉及的所有 <mark> 标签
     const allMarks = Array.from(parentEl.querySelectorAll('mark.user-highlight'));
 
-    let cleared = false;
-
-    // A. 清除完全包含或相交的高亮块
     allMarks.forEach(mark => {
+      // 如果 mark 与当前选区有交集
       if (selection.containsNode(mark, true)) {
-        unwrapMark(mark);
-        cleared = true;
+        const markRange = document.createRange();
+        markRange.selectNodeContents(mark);
+
+        const startOverlap = range.compareBoundaryPoints(Range.START_TO_START, markRange) <= 0;
+        const endOverlap = range.compareBoundaryPoints(Range.END_TO_END, markRange) >= 0;
+
+        // 情况 1：选中区域完全覆盖了该高亮块 -> 直接整个取消高亮
+        if (startOverlap && endOverlap) {
+          unwrapMark(mark);
+        } else {
+          // 情况 2：只选中了该高亮块的一部分 -> 进行 DOM 节点切分
+          const textNode = mark.firstChild;
+          if (textNode && textNode.nodeType === 3) {
+            const textContent = textNode.nodeValue;
+            
+            // 计算选区相对于当前 mark 内部文本的起止偏移量
+            let startOffset = 0;
+            let endOffset = textContent.length;
+
+            if (range.startContainer === textNode) {
+              startOffset = range.startOffset;
+            } else if (range.compareBoundaryPoints(Range.START_TO_START, markRange) > 0) {
+              startOffset = 0;
+            }
+
+            if (range.endContainer === textNode) {
+              endOffset = range.endOffset;
+            }
+
+            // 切分为三段：前保留高亮部分、中清除部分、后保留高亮部分
+            const beforeText = textContent.slice(0, startOffset);
+            const clearedText = textContent.slice(startOffset, endOffset);
+            const afterText = textContent.slice(endOffset);
+
+            const fragment = document.createDocumentFragment();
+
+            // 前半部分（保留高亮）
+            if (beforeText) {
+              const beforeMark = document.createElement('mark');
+              beforeMark.className = 'user-highlight';
+              beforeMark.textContent = beforeText;
+              fragment.appendChild(beforeMark);
+            }
+
+            // 中间选中的部分（取消高亮，直接作为普通文本节点）
+            if (clearedText) {
+              fragment.appendChild(document.createTextNode(clearedText));
+            }
+
+            // 后半部分（保留高亮，如 hello world 里的 rld）
+            if (afterText) {
+              const afterMark = document.createElement('mark');
+              afterMark.className = 'user-highlight';
+              afterMark.textContent = afterText;
+              fragment.appendChild(afterMark);
+            }
+
+            // 用新生成的节点替换旧的 mark 节点
+            mark.parentNode.replaceChild(fragment, mark);
+          } else {
+            // 兜底降级处理
+            unwrapMark(mark);
+          }
+        }
       }
     });
 
-    // B. 若未匹配到完整/跨节点 mark（说明是光标在单块高亮内，或只选了高亮的一小部分）
-    if (!cleared) {
-      let node = selection.anchorNode;
-      if (node && node.nodeType === 3) node = node.parentNode;
-      const markEl = node ? node.closest('mark.user-highlight') : null;
+    // 如果选区在单个 mark 内部，且没被上面的全集 selector 匹配到的情况
+    let singleNode = selection.anchorNode;
+    if (singleNode && singleNode.nodeType === 3) singleNode = singleNode.parentNode;
+    const singleMark = singleNode ? singleNode.closest('mark.user-highlight') : null;
+    
+    if (singleMark && !allMarks.includes(singleMark)) {
+      const textNode = singleMark.firstChild;
+      if (textNode && textNode.nodeType === 3) {
+        const textContent = textNode.nodeValue;
+        const startOffset = range.startOffset;
+        const endOffset = range.endOffset;
 
-      if (markEl) {
-        // 提取选中的部分，剥离高亮后重新插回
-        const extracted = range.extractContents();
-        const innerMarks = extracted.querySelectorAll ? extracted.querySelectorAll('mark.user-highlight') : [];
-        innerMarks.forEach(m => unwrapMark(m));
+        const beforeText = textContent.slice(0, startOffset);
+        const clearedText = textContent.slice(startOffset, endOffset);
+        const afterText = textContent.slice(endOffset);
 
-        range.insertNode(extracted);
+        const fragment = document.createDocumentFragment();
 
-        // 如果原来的 mark 已经空了，将其删除
-        if (markEl.textContent.trim() === '') {
-          unwrapMark(markEl);
+        if (beforeText) {
+          const beforeMark = document.createElement('mark');
+          beforeMark.className = 'user-highlight';
+          beforeMark.textContent = beforeText;
+          fragment.appendChild(beforeMark);
         }
+
+        if (clearedText) {
+          fragment.appendChild(document.createTextNode(clearedText));
+        }
+
+        if (afterText) {
+          const afterMark = document.createElement('mark');
+          afterMark.className = 'user-highlight';
+          afterMark.textContent = afterText;
+          fragment.appendChild(afterMark);
+        }
+
+        singleMark.parentNode.replaceChild(fragment, singleMark);
       }
     }
 
