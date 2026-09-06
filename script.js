@@ -6,19 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 加载 MD 文件
   const contentEl = document.getElementById('content');
+  let currentFilePath = ''; // 记录当前打开的文件路径
+
+  // 加载 MD 文件
   document.querySelectorAll('.file-link').forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
       const filePath = link.getAttribute('data-src');
+      currentFilePath = filePath;
       try {
         const res = await fetch(filePath);
         if (!res.ok) throw new Error('字幕文件未找到');
         const text = await res.text();
         contentEl.innerHTML = marked.parse(text);
-        // 切换文档时重置当前高亮
-        clearAllHighlights();
+        
+        // 文件加载完成后，自动恢复该文件之前保存的高亮
+        restoreHighlights();
       } catch (err) {
         contentEl.innerHTML = `<p style="color:red">加载失败: ${err.message}</p>`;
       }
@@ -103,29 +107,87 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // -------------------------------------------------------------
-  // 4. 高亮引擎（使用 Web 标准 Highlight API，不碰 DOM 节点）
+  // 4. 高亮引擎 + 本地持久化 (localStorage)
   // -------------------------------------------------------------
   const isHighlightAPISupported = typeof CSS !== 'undefined' && CSS.highlights;
-  let activeRanges = []; // 保存所有高亮的 Range 对象
+  let activeRanges = [];
 
   function updateHighlightRegistry() {
     if (isHighlightAPISupported) {
       const userHighlight = new Highlight(...activeRanges);
       CSS.highlights.set('user-highlight', userHighlight);
     }
+    // 每次更新高亮后自动保存到 localStorage
+    saveHighlights();
   }
 
-  function clearAllHighlights() {
-    activeRanges = [];
-    if (isHighlightAPISupported) {
-      CSS.highlights.delete('user-highlight');
-    } else {
-      contentEl.querySelectorAll('mark.user-highlight').forEach(mark => {
-        const parent = mark.parentNode;
-        while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
-        parent.removeChild(mark);
-      });
+  // 获取节点在 contentEl 中的 DOM 路径
+  function getNodePath(node) {
+    const path = [];
+    while (node && node !== contentEl) {
+      const parent = node.parentNode;
+      if (!parent) break;
+      const index = Array.prototype.indexOf.call(parent.childNodes, node);
+      path.unshift(index);
+      node = parent;
     }
+    return path;
+  }
+
+  // 根据 DOM 路径还原节点
+  function getNodeFromPath(path) {
+    let node = contentEl;
+    for (const index of path) {
+      if (node && node.childNodes[index]) {
+        node = node.childNodes[index];
+      } else {
+        return null;
+      }
+    }
+    return node;
+  }
+
+  // 保存当前文件的所有高亮选区到 localStorage
+  function saveHighlights() {
+    if (!currentFilePath) return;
+    const serialized = activeRanges.map(range => ({
+      startPath: getNodePath(range.startContainer),
+      startOffset: range.startOffset,
+      endPath: getNodePath(range.endContainer),
+      endOffset: range.endOffset
+    }));
+    localStorage.setItem(`highlights_${currentFilePath}`, JSON.stringify(serialized));
+  }
+
+  // 从 localStorage 恢复高亮
+  function restoreHighlights() {
+    activeRanges = [];
+    if (!currentFilePath) return;
+
+    const data = localStorage.getItem(`highlights_${currentFilePath}`);
+    if (!data) {
+      updateHighlightRegistry();
+      return;
+    }
+
+    try {
+      const serialized = JSON.parse(data);
+      serialized.forEach(item => {
+        const startNode = getNodeFromPath(item.startPath);
+        const endNode = getNodeFromPath(item.endPath);
+
+        if (startNode && endNode) {
+          const range = document.createRange();
+          range.setStart(startNode, item.startOffset);
+          range.setEnd(endNode, item.endOffset);
+          activeRanges.push(range);
+        }
+      });
+    } catch (e) {
+      console.error('恢复高亮失败:', e);
+    }
+
+    updateHighlightRegistry();
   }
 
   // 点击【高亮】按钮
@@ -133,12 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!currentRange) return;
 
     if (isHighlightAPISupported) {
-      // 绝对不侵入/改变 DOM，直接将选区加入注册表
       activeRanges.push(currentRange.cloneRange());
       updateHighlightRegistry();
-    } else {
-      // 降级方案：跨节点安全包裹
-      safeDomHighlight(currentRange);
     }
 
     window.getSelection().removeAllRanges();
@@ -153,25 +211,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearRange = selection.getRangeAt(0);
 
     if (isHighlightAPISupported) {
-      // 使用选区数学计算，将当前选区从已有的高亮 Range 中“切除”
       let newRanges = [];
 
       activeRanges.forEach(existingRange => {
-        // 如果两个 Range 没有交集，保留原高亮
         if (
           clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
           clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
         ) {
           newRanges.push(existingRange);
         } else {
-          // 有交集，需要切分 existingRange
-          // 1. 保留清除选区左边的部分
           if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
             const leftRange = existingRange.cloneRange();
             leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
             if (!leftRange.collapsed) newRanges.push(leftRange);
           }
-          // 2. 保留清除选区右边的部分
           if (clearRange.compareBoundaryPoints(Range.END_TO_END, existingRange) < 0) {
             const rightRange = existingRange.cloneRange();
             rightRange.setStart(clearRange.endContainer, clearRange.endOffset);
@@ -182,58 +235,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       activeRanges = newRanges;
       updateHighlightRegistry();
-    } else {
-      // 降级清除方案
-      contentEl.querySelectorAll('mark.user-highlight').forEach(mark => {
-        if (selection.containsNode(mark, true)) {
-          const parent = mark.parentNode;
-          while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
-          parent.removeChild(mark);
-        }
-      });
     }
 
     window.getSelection().removeAllRanges();
     menu.classList.add('hidden');
   });
-
-  // 旧版浏览器降级高亮函数
-  function safeDomHighlight(range) {
-    const treeWalker = document.createTreeWalker(
-      range.commonAncestorContainer,
-      NodeFilter.SHOW_TEXT,
-      {
-        acceptNode: (node) => {
-          return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-        }
-      }
-    );
-
-    const nodesToProcess = [];
-    while (treeWalker.nextNode()) {
-      nodesToProcess.push(treeWalker.currentNode);
-    }
-
-    nodesToProcess.forEach(node => {
-      const nodeRange = document.createRange();
-      nodeRange.selectNodeContents(node);
-
-      if (range.compareBoundaryPoints(Range.START_TO_START, nodeRange) > 0) {
-        nodeRange.setStart(range.startContainer, range.startOffset);
-      }
-      if (range.compareBoundaryPoints(Range.END_TO_END, nodeRange) < 0) {
-        nodeRange.setEnd(range.endContainer, range.endOffset);
-      }
-
-      if (!nodeRange.collapsed && nodeRange.toString().trim()) {
-        const mark = document.createElement('mark');
-        mark.className = 'user-highlight';
-        try {
-          nodeRange.surroundContents(mark);
-        } catch (e) {
-          // 忽略单个非法交界的文本节点包裹
-        }
-      }
-    });
-  }
 });
