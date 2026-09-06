@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
-  // 监听 mouseup 确保选词/双击动作完成后精准计算位置
   document.addEventListener('mouseup', handleSelection);
   document.addEventListener('keyup', handleSelection);
 
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 解包辅助函数：清除单个 mark 标签但保留内部文本
+  // 辅助函数：解包 mark 标签但保留文本内容
   function unwrapMark(mark) {
     const parent = mark.parentNode;
     if (!parent) return;
@@ -130,127 +129,100 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.add('hidden');
   });
 
-  // 5. 精准部分清除高亮功能（完美支持切割高亮节点）
+  // 5. 零丢字、无 Bug 的精准局部/全部清除高亮功能
   document.getElementById('btn-clear').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
     const range = selection.getRangeAt(0);
-    const container = range.commonAncestorContainer;
-    const parentEl = container.nodeType === 3 ? container.parentElement : container;
+
+    // 辅助函数：安全地移除某个 mark 节点对 range 选区的包含，仅去掉高亮样式
+    function safeClearMarkInRange(mark, range) {
+      const markRange = document.createRange();
+      markRange.selectNodeContents(mark);
+
+      const isStartBefore = range.compareBoundaryPoints(Range.START_TO_START, markRange) <= 0;
+      const isEndAfter = range.compareBoundaryPoints(Range.END_TO_END, markRange) >= 0;
+
+      // 1. 如果选区完全覆盖了这个高亮 -> 直接解除 mark 包裹
+      if (isStartBefore && isEndAfter) {
+        unwrapMark(mark);
+        return;
+      }
+
+      // 2. 如果只选中了高亮的一部分 -> 提取内部文本并重构，保证不掉字
+      const parent = mark.parentNode;
+      const text = mark.textContent;
+      
+      // 计算选区相对于当前 mark 文本的起始和结束字符索引
+      let startIdx = 0;
+      let endIdx = text.length;
+
+      if (range.startContainer === mark.firstChild) {
+        startIdx = range.startOffset;
+      } else if (!isStartBefore) {
+        startIdx = 0;
+      }
+
+      if (range.endContainer === mark.firstChild) {
+        endIdx = range.endOffset;
+      }
+
+      // 防止索引超界
+      startIdx = Math.max(0, Math.min(startIdx, text.length));
+      endIdx = Math.max(startIdx, Math.min(endIdx, text.length));
+
+      const before = text.substring(0, startIdx);
+      const selected = text.substring(startIdx, endIdx);
+      const after = text.substring(endIdx);
+
+      const frag = document.createDocumentFragment();
+
+      // 前半段：保留高亮
+      if (before) {
+        const m1 = document.createElement('mark');
+        m1.className = 'user-highlight';
+        m1.textContent = before;
+        frag.appendChild(m1);
+      }
+
+      // 被选中清除的中间段：作为纯文本（去高亮）
+      if (selected) {
+        frag.appendChild(document.createTextNode(selected));
+      }
+
+      // 后半段（如 hello world 里面的 rld）：保留高亮
+      if (after) {
+        const m2 = document.createElement('mark');
+        m2.className = 'user-highlight';
+        m2.textContent = after;
+        frag.appendChild(m2);
+      }
+
+      // 用全新的节点集安全的替换掉旧 mark，字符一个不少
+      parent.insertBefore(frag, mark);
+      parent.removeChild(mark);
+    }
+
+    // 获取选区涉及的容器元素
+    let ancestor = range.commonAncestorContainer;
+    if (ancestor.nodeType === 3) ancestor = ancestor.parentElement;
+
+    // 获取所有的 mark 节点
+    let marks = Array.from(ancestor.querySelectorAll('mark.user-highlight'));
     
-    // 寻找选区内涉及的所有 <mark> 标签
-    const allMarks = Array.from(parentEl.querySelectorAll('mark.user-highlight'));
+    // 如果选区本身就在一个 mark 内部
+    const closestMark = ancestor.closest('mark.user-highlight');
+    if (closestMark && !marks.includes(closestMark)) {
+      marks.push(closestMark);
+    }
 
-    allMarks.forEach(mark => {
-      // 如果 mark 与当前选区有交集
+    // 筛选出确实与当前鼠标选区重叠的 mark 节点进行处理
+    marks.forEach(mark => {
       if (selection.containsNode(mark, true)) {
-        const markRange = document.createRange();
-        markRange.selectNodeContents(mark);
-
-        const startOverlap = range.compareBoundaryPoints(Range.START_TO_START, markRange) <= 0;
-        const endOverlap = range.compareBoundaryPoints(Range.END_TO_END, markRange) >= 0;
-
-        // 情况 1：选中区域完全覆盖了该高亮块 -> 直接整个取消高亮
-        if (startOverlap && endOverlap) {
-          unwrapMark(mark);
-        } else {
-          // 情况 2：只选中了该高亮块的一部分 -> 进行 DOM 节点切分
-          const textNode = mark.firstChild;
-          if (textNode && textNode.nodeType === 3) {
-            const textContent = textNode.nodeValue;
-            
-            // 计算选区相对于当前 mark 内部文本的起止偏移量
-            let startOffset = 0;
-            let endOffset = textContent.length;
-
-            if (range.startContainer === textNode) {
-              startOffset = range.startOffset;
-            } else if (range.compareBoundaryPoints(Range.START_TO_START, markRange) > 0) {
-              startOffset = 0;
-            }
-
-            if (range.endContainer === textNode) {
-              endOffset = range.endOffset;
-            }
-
-            // 切分为三段：前保留高亮部分、中清除部分、后保留高亮部分
-            const beforeText = textContent.slice(0, startOffset);
-            const clearedText = textContent.slice(startOffset, endOffset);
-            const afterText = textContent.slice(endOffset);
-
-            const fragment = document.createDocumentFragment();
-
-            // 前半部分（保留高亮）
-            if (beforeText) {
-              const beforeMark = document.createElement('mark');
-              beforeMark.className = 'user-highlight';
-              beforeMark.textContent = beforeText;
-              fragment.appendChild(beforeMark);
-            }
-
-            // 中间选中的部分（取消高亮，直接作为普通文本节点）
-            if (clearedText) {
-              fragment.appendChild(document.createTextNode(clearedText));
-            }
-
-            // 后半部分（保留高亮，如 hello world 里的 rld）
-            if (afterText) {
-              const afterMark = document.createElement('mark');
-              afterMark.className = 'user-highlight';
-              afterMark.textContent = afterText;
-              fragment.appendChild(afterMark);
-            }
-
-            // 用新生成的节点替换旧的 mark 节点
-            mark.parentNode.replaceChild(fragment, mark);
-          } else {
-            // 兜底降级处理
-            unwrapMark(mark);
-          }
-        }
+        safeClearMarkInRange(mark, range);
       }
     });
-
-    // 如果选区在单个 mark 内部，且没被上面的全集 selector 匹配到的情况
-    let singleNode = selection.anchorNode;
-    if (singleNode && singleNode.nodeType === 3) singleNode = singleNode.parentNode;
-    const singleMark = singleNode ? singleNode.closest('mark.user-highlight') : null;
-    
-    if (singleMark && !allMarks.includes(singleMark)) {
-      const textNode = singleMark.firstChild;
-      if (textNode && textNode.nodeType === 3) {
-        const textContent = textNode.nodeValue;
-        const startOffset = range.startOffset;
-        const endOffset = range.endOffset;
-
-        const beforeText = textContent.slice(0, startOffset);
-        const clearedText = textContent.slice(startOffset, endOffset);
-        const afterText = textContent.slice(endOffset);
-
-        const fragment = document.createDocumentFragment();
-
-        if (beforeText) {
-          const beforeMark = document.createElement('mark');
-          beforeMark.className = 'user-highlight';
-          beforeMark.textContent = beforeText;
-          fragment.appendChild(beforeMark);
-        }
-
-        if (clearedText) {
-          fragment.appendChild(document.createTextNode(clearedText));
-        }
-
-        if (afterText) {
-          const afterMark = document.createElement('mark');
-          afterMark.className = 'user-highlight';
-          afterMark.textContent = afterText;
-          fragment.appendChild(afterMark);
-        }
-
-        singleMark.parentNode.replaceChild(fragment, singleMark);
-      }
-    }
 
     window.getSelection().removeAllRanges();
     menu.classList.add('hidden');
