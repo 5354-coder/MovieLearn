@@ -1,240 +1,196 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. 目录展开/收起
-  document.querySelectorAll('.toggle-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      btn.parentElement.classList.toggle('open');
+  
+  // ==========================================
+  // 1. 三级菜单展开/收起控制
+  // ==========================================
+  document.querySelectorAll('.tree-toggle').forEach(toggleBtn => {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const parentNode = toggleBtn.parentElement;
+      parentNode.classList.toggle('open');
     });
   });
 
+  // ==========================================
+  // 2. 第三级目录跳转并加载字幕文件 (.md)
+  // ==========================================
   const contentEl = document.getElementById('content');
-  let currentFilePath = '';
-
-  // 2. 字幕文件读取与切换
+  
   document.querySelectorAll('.file-link').forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
-      
-      document.querySelectorAll('.file-link').forEach(item => item.classList.remove('active'));
+
+      // 设置选中状态样式
+      document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
       link.classList.add('active');
 
-      const filePath = link.getAttribute('data-src');
-      currentFilePath = filePath;
+      const fileSrc = link.getAttribute('data-src');
 
       try {
-        const res = await fetch(filePath);
-        if (!res.ok) throw new Error('字幕文件未找到');
-        const text = await res.text();
-        contentEl.innerHTML = marked.parse(text);
+        const response = await fetch(fileSrc);
+        if (!response.ok) {
+          throw new Error(`无法加载文件: ${response.status}`);
+        }
+        const markdownText = await response.text();
         
-        // 渲染文本后恢复高亮
-        restoreHighlights();
+        // 渲染 Markdown
+        contentEl.innerHTML = marked.parse(markdownText);
+        // 强制重新应用当前的字号
+        applyFontSize(currentFontSize);
       } catch (err) {
-        contentEl.innerHTML = `<p style="color:red">加载失败: ${err.message}</p>`;
+        contentEl.innerHTML = `<p style="color: #e53e3e; text-align: center;">⚠️ 加载字幕失败：${err.message}<br>请确保本地已有对应路径的文件。</p>`;
       }
     });
   });
 
-  // 3. 字号调整功能（恢复%控制逻辑）
-  let currentZoom = 100;
-  const fontValEl = document.getElementById('font-size-val');
+  // ==========================================
+  // 3. 右上角文章字号独立调整功能
+  // ==========================================
+  let currentFontSize = 16; // 默认 16px
+  const fontIndicator = document.getElementById('font-size-indicator');
 
-  document.getElementById('btn-inc').addEventListener('click', () => {
-    if (currentZoom < 200) {
-      currentZoom += 10;
-      contentEl.style.fontSize = `${currentZoom}%`;
-      fontValEl.textContent = `${currentZoom}%`;
+  function applyFontSize(size) {
+    // 仅作用于右侧文章内容区
+    contentEl.style.fontSize = `${size}px`;
+    fontIndicator.textContent = `${size}px`;
+  }
+
+  document.getElementById('btn-zoom-in').addEventListener('click', () => {
+    if (currentFontSize < 32) {
+      currentFontSize += 2;
+      applyFontSize(currentFontSize);
     }
   });
 
-  document.getElementById('btn-dec').addEventListener('click', () => {
-    if (currentZoom > 70) {
-      currentZoom -= 10;
-      contentEl.style.fontSize = `${currentZoom}%`;
-      fontValEl.textContent = `${currentZoom}%`;
+  document.getElementById('btn-zoom-out').addEventListener('click', () => {
+    if (currentFontSize > 12) {
+      currentFontSize -= 2;
+      applyFontSize(currentFontSize);
     }
   });
 
-  // 4. 高亮与取消高亮逻辑
-  const menu = document.getElementById('highlight-menu');
-  let currentRange = null;
-  let activeRanges = [];
-  const isHighlightAPISupported = typeof CSS !== 'undefined' && CSS.highlights;
+  // ==========================================
+  // 4. 双击选词 / 拖拽选区 + 选区上方居中浮动菜单
+  // ==========================================
+  const menuEl = document.getElementById('selection-menu');
+  let savedRange = null;
 
-  document.addEventListener('mouseup', handleSelection);
-  document.addEventListener('keyup', handleSelection);
+  // 监听选区变化与鼠标抬起
+  document.addEventListener('mouseup', handleSelectionUpdate);
+  document.addEventListener('keyup', handleSelectionUpdate);
 
-  function handleSelection(e) {
-    if (menu.contains(e.target)) return;
+  function handleSelectionUpdate(e) {
+    // 如果点击的是菜单本身，不关闭菜单
+    if (menuEl.contains(e.target)) return;
 
     const selection = window.getSelection();
 
+    // 如果未选中内容，或选中的文本为空，隐藏菜单
     if (!selection || selection.isCollapsed || !selection.toString().trim()) {
-      menu.classList.add('hidden');
+      menuEl.classList.add('hidden');
       return;
     }
 
+    // 确保选区在右侧文章内容区域内部
     if (!contentEl.contains(selection.anchorNode)) {
-      menu.classList.add('hidden');
+      menuEl.classList.add('hidden');
       return;
     }
 
-    currentRange = selection.getRangeAt(0).cloneRange();
-    const rect = currentRange.getBoundingClientRect();
+    // 保存当前的选区 Range
+    savedRange = selection.getRangeAt(0).cloneRange();
+    const rect = savedRange.getBoundingClientRect();
 
     if (rect.width === 0 || rect.height === 0) {
-      menu.classList.add('hidden');
+      menuEl.classList.add('hidden');
       return;
     }
 
-    const centerX = rect.left + (rect.width / 2);
-    const topY = rect.top;
+    // 计算菜单位置：选区顶部水平居中
+    menuEl.classList.remove('hidden');
+    const menuWidth = menuEl.offsetWidth;
+    const menuHeight = menuEl.offsetHeight;
 
-    menu.classList.remove('hidden');
-    const menuWidth = menu.offsetWidth;
-    const menuHeight = menu.offsetHeight;
+    let left = rect.left + (rect.width / 2) - (menuWidth / 2);
+    let top = rect.top - menuHeight - 10; // 选区上方留出 10px 间距
 
-    let leftPos = centerX - (menuWidth / 2);
-    let topPos = topY - menuHeight - 8;
-
-    if (leftPos < 10) leftPos = 10;
-    if (leftPos + menuWidth > window.innerWidth - 10) {
-      leftPos = window.innerWidth - menuWidth - 10;
+    // 边缘安全检查（防止菜单超出屏幕四周）
+    if (left < 10) left = 10;
+    if (left + menuWidth > window.innerWidth - 10) {
+      left = window.innerWidth - menuWidth - 10;
+    }
+    if (top < 10) {
+      top = rect.bottom + 10; // 若上方空间不足，转显示在选区下方
     }
 
-    if (topPos < 10) {
-      topPos = rect.bottom + 8;
-    }
-
-    menu.style.left = `${leftPos}px`;
-    menu.style.top = `${topPos}px`;
+    menuEl.style.left = `${left}px`;
+    menuEl.style.top = `${top}px`;
   }
 
+  // 点击页面空白处隐藏菜单
   document.addEventListener('mousedown', (e) => {
-    if (!menu.contains(e.target) && !contentEl.contains(e.target)) {
-      menu.classList.add('hidden');
+    if (!menuEl.contains(e.target) && !contentEl.contains(e.target)) {
+      menuEl.classList.add('hidden');
     }
   });
 
-  function updateHighlightRegistry() {
-    if (isHighlightAPISupported) {
-      const userHighlight = new Highlight(...activeRanges);
-      CSS.highlights.set('user-highlight', userHighlight);
-    }
-    saveHighlights();
-  }
+  // ==========================================
+  // 5. 高亮与清除高亮（绝不吞字的核心 DOM 算法）
+  // ==========================================
 
-  function getNodePath(node) {
-    const path = [];
-    while (node && node !== contentEl) {
-      const parent = node.parentNode;
-      if (!parent) break;
-      const index = Array.prototype.indexOf.call(parent.childNodes, node);
-      path.unshift(index);
-      node = parent;
-    }
-    return path;
-  }
+  // A. 执行高亮
+  document.getElementById('btn-do-highlight').addEventListener('click', () => {
+    if (!savedRange || savedRange.collapsed) return;
 
-  function getNodeFromPath(path) {
-    let node = contentEl;
-    for (const index of path) {
-      if (node && node.childNodes[index]) {
-        node = node.childNodes[index];
-      } else {
-        return null;
-      }
-    }
-    return node;
-  }
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(savedRange);
 
-  function saveHighlights() {
-    if (!currentFilePath) return;
-    const serialized = activeRanges.map(range => ({
-      startPath: getNodePath(range.startContainer),
-      startOffset: range.startOffset,
-      endPath: getNodePath(range.endContainer),
-      endOffset: range.endOffset
-    }));
-    localStorage.setItem(`highlights_${currentFilePath}`, JSON.stringify(serialized));
-  }
-
-  function restoreHighlights() {
-    activeRanges = [];
-    if (!currentFilePath) return;
-
-    const data = localStorage.getItem(`highlights_${currentFilePath}`);
-    if (!data) {
-      updateHighlightRegistry();
-      return;
-    }
+    const markNode = document.createElement('mark');
+    markNode.className = 'highlight';
 
     try {
-      const serialized = JSON.parse(data);
-      serialized.forEach(item => {
-        const startNode = getNodeFromPath(item.startPath);
-        const endNode = getNodeFromPath(item.endPath);
-
-        if (startNode && endNode) {
-          const range = document.createRange();
-          range.setStart(startNode, item.startOffset);
-          range.setEnd(endNode, item.endOffset);
-          activeRanges.push(range);
-        }
-      });
-    } catch (e) {
-      console.error('恢复高亮失败:', e);
+      // 用 mark 节点包裹选区内容
+      markNode.appendChild(savedRange.extractContents());
+      savedRange.insertNode(markNode);
+    } catch (err) {
+      console.warn('高亮跨越了复杂的 DOM 结构，回退到降级处理', err);
     }
 
-    updateHighlightRegistry();
-  }
-
-  document.getElementById('btn-highlight').addEventListener('click', () => {
-    if (!currentRange) return;
-
-    if (isHighlightAPISupported) {
-      activeRanges.push(currentRange.cloneRange());
-      updateHighlightRegistry();
-    }
-
+    // 清理选择状态并隐藏菜单
     window.getSelection().removeAllRanges();
-    menu.classList.add('hidden');
+    menuEl.classList.add('hidden');
   });
 
-  document.getElementById('btn-clear').addEventListener('click', () => {
+  // B. 执行清除高亮（防吞字：还原原文字）
+  document.getElementById('btn-remove-highlight').addEventListener('click', () => {
+    if (!savedRange) return;
+
     const selection = window.getSelection();
-    if (!selection || selection.isCollapsed) return;
+    selection.removeAllRanges();
+    selection.addRange(savedRange);
 
-    const clearRange = selection.getRangeAt(0);
+    // 找出选区涉及到的所有高亮 mark 标签
+    const highlights = contentEl.querySelectorAll('mark.highlight');
 
-    if (isHighlightAPISupported) {
-      let newRanges = [];
-
-      activeRanges.forEach(existingRange => {
-        if (
-          clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
-          clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
-        ) {
-          newRanges.push(existingRange);
-        } else {
-          if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
-            const leftRange = existingRange.cloneRange();
-            leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
-            if (!leftRange.collapsed) newRanges.push(leftRange);
-          }
-          if (clearRange.compareBoundaryPoints(Range.END_TO_END, existingRange) < 0) {
-            const rightRange = existingRange.cloneRange();
-            rightRange.setStart(clearRange.endContainer, clearRange.endOffset);
-            if (!rightRange.collapsed) newRanges.push(rightRange);
-          }
+    highlights.forEach(mark => {
+      // 判断高亮标签是否与选区存在相交关系
+      if (selection.containsNode(mark, true)) {
+        const parent = mark.parentNode;
+        // 将高亮标签内的所有子节点（文本/标签）移动到外面
+        while (mark.firstChild) {
+          parent.insertBefore(mark.firstChild, mark);
         }
-      });
+        // 安全移除 mark 标签本身
+        parent.removeChild(mark);
+        // 合并相邻的纯文本节点，防止 DOM 碎裂
+        parent.normalize();
+      }
+    });
 
-      activeRanges = newRanges;
-      updateHighlightRegistry();
-    }
-
+    // 清理选择状态并隐藏菜单
     window.getSelection().removeAllRanges();
-    menu.classList.add('hidden');
+    menuEl.classList.add('hidden');
   });
+
 });
