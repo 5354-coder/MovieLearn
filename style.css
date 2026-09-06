@@ -1,203 +1,15 @@
-/* 全局复位 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #2c3e50;
-  background-color: #f7f9fb;
-  overflow: hidden;
-}
-
-/* 左侧三级菜单边栏 */
-.sidebar {
-  width: 270px;
-  background-color: #ffffff;
-  border-right: 1px solid #e2e8f0;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 12px;
-  overflow-y: auto;
-  flex-shrink: 0;
-}
-
-.sidebar-header {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  padding-left: 8px;
-  color: #1a202c;
-}
-
-.tree-root, .tree-children {
-  list-style: none;
-}
-
-.tree-children {
-  display: none;
-  padding-left: 14px;
-}
-
-/* 展开状态 */
-.tree-node.open > .tree-children {
-  display: block;
-}
-
-.node-title {
-  display: flex;
-  align-items: center;
-  padding: 8px 10px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #4a5568;
-  cursor: pointer;
-  border-radius: 6px;
-  user-select: none;
-  transition: background-color 0.15s ease;
-}
-
-.node-title:hover {
-  background-color: #edf2f7;
-  color: #2b6cb0;
-}
-
-.level-2 > .node-title {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.arrow {
-  display: inline-block;
-  font-size: 10px;
-  margin-right: 8px;
-  transition: transform 0.2s ease;
-}
-
-.tree-node.open > .node-title > .arrow {
-  transform: rotate(90deg);
-}
-
-.file-link {
-  display: block;
-  padding: 6px 12px;
-  margin: 2px 0;
-  font-size: 13.5px;
-  color: #4a5568;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: all 0.15s ease;
-}
-
-.file-link:hover {
-  background-color: #ebf8ff;
-  color: #3182ce;
-}
-
-.file-link.active {
-  background-color: #3182ce;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-/* 右侧主内容区域 */
-.main-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background-color: #f7f9fb;
-}
-
-/* 右上角悬浮式字号调解栏（不占行空间） */
-.floating-font-control {
-  position: absolute;
-  top: 20px;
-  right: 28px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 4px 8px;
-  border-radius: 20px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.ctrl-btn {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #cbd5e0;
-  background-color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  color: #4a5568;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.15s ease;
-}
-
-.ctrl-btn:hover {
-  background-color: #3182ce;
-  color: #ffffff;
-  border-color: #3182ce;
-}
-
-#font-size-indicator {
-  font-size: 12px;
-  font-weight: 600;
-  min-width: 32px;
-  text-align: center;
-  color: #4a5568;
-}
-
-/* 内容显示区 */
-.content-body {
-  flex: 1;
-  padding: 40px 60px;
-  overflow-y: auto;
-  line-height: 1.8;
-  color: #2d3748;
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-.content-body p {
-  margin-bottom: 1rem;
-}
-
-.welcome-tip {
-  color: #a0aec0;
-  text-align: center;
-  margin-top: 80px;
-  font-size: 16px;
-}
-
 /* 浮动选区高亮菜单 */
 .floating-menu {
   position: fixed;
   z-index: 9999;
   display: flex;
   align-items: center;
-  background: rgba(247, 249, 251, 0.75);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.9);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  padding: 4px 8px;
+  padding: 4px 6px;
   border-radius: 8px;
   transition: opacity 0.15s ease, transform 0.15s ease;
   pointer-events: auto;
@@ -212,39 +24,24 @@ body {
 .menu-action {
   border: none;
   background: transparent;
-  padding: 5px 12px;
+  padding: 5px 10px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #2d3748; /* 与正文保持一致的黑色 */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.15s ease;
 }
 
-.action-highlight {
-  color: #d69e2e;
-}
-
-.action-highlight:hover {
-  background-color: rgba(236, 201, 75, 0.25);
-}
-
-.action-clear {
-  color: #e53e3e;
-}
-
-.action-clear:hover {
-  background-color: rgba(245, 101, 101, 0.25);
+/* 移除原有的特别颜色，统一为通用悬停效果 */
+.menu-action:hover {
+  background-color: #edf2f7;
+  color: #1a202c;
 }
 
 .menu-divider {
   width: 1px;
   height: 14px;
-  background-color: #cbd5e0;
-  margin: 0 4px;
-}
-
-/* 原生 CSS Custom Highlight 样式定义 */
-::highlight(user-highlight) {
-  background-color: #ffff00; /* 亮黄色 */
-  color: #000000;
+  background-color: #e2e8f0;
+  margin: 0 2px;
 }
