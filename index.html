@@ -83,15 +83,12 @@
 
   <!-- 右侧主界面 -->
   <main class="main-container">
-    <!-- 右上角工具栏：仅控制内容字号 -->
-    <header class="top-bar">
-      <div class="font-control">
-        <span class="label">文章字号：</span>
-        <button id="btn-zoom-out" class="ctrl-btn" title="缩小字号">-</button>
-        <span id="font-size-indicator">16px</span>
-        <button id="btn-zoom-in" class="ctrl-btn" title="放大字号">+</button>
-      </div>
-    </header>
+    <!-- 右上角悬浮字号控制面板（不占用空间） -->
+    <div class="floating-font-control">
+      <button id="btn-zoom-out" class="ctrl-btn" title="缩小字号">-</button>
+      <span id="font-size-indicator">16px</span>
+      <button id="btn-zoom-in" class="ctrl-btn" title="放大字号">+</button>
+    </div>
 
     <!-- 字幕文件内容展示区 -->
     <article id="content" class="content-body">
@@ -99,7 +96,7 @@
     </article>
   </main>
 
-  <!-- 选中内容浮动高亮菜单（选区居中对齐 + 半透明高斯模糊背景） -->
+  <!-- 选中内容浮动高亮菜单 -->
   <div id="selection-menu" class="floating-menu hidden">
     <button id="btn-do-highlight" class="menu-action action-highlight">高亮</button>
     <div class="menu-divider"></div>
