@@ -8,15 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 加载 MD 文件
   const contentEl = document.getElementById('content');
-  const mainContent = document.querySelector('.main-content'); // 获取右侧滚动容器
-
   document.querySelectorAll('.file-link').forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
       const filePath = link.getAttribute('data-src');
       try {
         const res = await fetch(filePath);
-        if(!res.ok) throw new Error('字幕文件未找到');
+        if (!res.ok) throw new Error('字幕文件未找到');
         const text = await res.text();
         contentEl.innerHTML = marked.parse(text);
       } catch (err) {
@@ -29,63 +27,91 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentFontSize = 16;
   const fontValEl = document.getElementById('font-size-val');
   document.getElementById('btn-inc').addEventListener('click', () => {
-    if(currentFontSize < 32) {
+    if (currentFontSize < 32) {
       currentFontSize += 2;
       contentEl.style.fontSize = currentFontSize + 'px';
       fontValEl.textContent = currentFontSize + 'px';
     }
   });
   document.getElementById('btn-dec').addEventListener('click', () => {
-    if(currentFontSize > 12) {
+    if (currentFontSize > 12) {
       currentFontSize -= 2;
       contentEl.style.fontSize = currentFontSize + 'px';
       fontValEl.textContent = currentFontSize + 'px';
     }
   });
 
-  // 3. 选词定位与半透明菜单（精准居中修正版）
+  // 3. 选词精准定位与弹出菜单
   const menu = document.getElementById('highlight-menu');
   let currentRange = null;
 
-  document.addEventListener('selectionchange', handleSelection);
+  // 监听 mouseup 确保选词/双击动作完成后精准计算位置
+  document.addEventListener('mouseup', handleSelection);
+  document.addEventListener('keyup', handleSelection);
 
-  function handleSelection() {
+  function handleSelection(e) {
+    // 如果点击在菜单本身的按钮上，不触发隐藏逻辑
+    if (menu.contains(e.target)) return;
+
     const selection = window.getSelection();
     
-    // 如果没有选中文字，隐藏菜单
-    if (selection.isCollapsed || !selection.toString().trim()) {
+    // 如果没有选中文本或选区为空，隐藏菜单
+    if (!selection || selection.isCollapsed || !selection.toString().trim()) {
       menu.classList.add('hidden');
       return;
     }
 
-    const anchorNode = selection.anchorNode;
     // 限制只能在右侧字幕内容区触发选词
-    if (!contentEl.contains(anchorNode)) return;
+    if (!contentEl.contains(selection.anchorNode)) {
+      menu.classList.add('hidden');
+      return;
+    }
 
     currentRange = selection.getRangeAt(0);
-    const rangeRect = currentRange.getBoundingClientRect();
-    const containerRect = mainContent.getBoundingClientRect();
+    const rect = currentRange.getBoundingClientRect();
 
-    // 如果选中文本完全不在视口内，隐藏菜单
-    if (rangeRect.width === 0 && rangeRect.height === 0) return;
+    // 如果未获取到有效尺寸，隐藏菜单
+    if (rect.width === 0 || rect.height === 0) {
+      menu.classList.add('hidden');
+      return;
+    }
 
-    // 计算相对于右侧主容器（.main-content）的居中位置
-    // 水平居中：选中文本的中心点 - 容器左边距 - 菜单本身一半宽度
-    const menuWidth = menu.offsetWidth || 120; // 初始宽度容错
-    const menuHeight = menu.offsetHeight || 35;
-    
-    const textCenterX = rangeRect.left + (rangeRect.width / 2);
-    const leftPos = textCenterX - containerRect.left - (menuWidth / 2) + mainContent.scrollLeft;
+    // 计算选中文本顶部的水平中心位置 (Viewport 物理视口坐标)
+    const centerX = rect.left + (rect.width / 2);
+    const topY = rect.top;
 
-    // 垂直位置：放在选中文本上方 8px 处
-    const topPos = rangeRect.top - containerRect.top - menuHeight - 8 + mainContent.scrollTop;
+    // 先移除 hidden 以获取真实渲染宽高
+    menu.classList.remove('hidden');
+    const menuWidth = menu.offsetWidth;
+    const menuHeight = menu.offsetHeight;
+
+    // 计算菜单最终坐标（顶部居中，向上偏离 8px）
+    let leftPos = centerX - (menuWidth / 2);
+    let topPos = topY - menuHeight - 8;
+
+    // 防止弹出菜单超出屏幕左侧或右侧边界
+    if (leftPos < 10) leftPos = 10;
+    if (leftPos + menuWidth > window.innerWidth - 10) {
+      leftPos = window.innerWidth - menuWidth - 10;
+    }
+
+    // 如果选中文本靠顶部太近，将菜单放在文本下方
+    if (topPos < 10) {
+      topPos = rect.bottom + 8;
+    }
 
     menu.style.left = `${leftPos}px`;
     menu.style.top = `${topPos}px`;
-    menu.classList.remove('hidden');
   }
 
-  // 4. 高亮与清除高亮
+  // 点击页面其他无文字区域时隐藏菜单
+  document.addEventListener('mousedown', (e) => {
+    if (!menu.contains(e.target) && !contentEl.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+
+  // 4. 高亮与清除高亮操作
   document.getElementById('btn-highlight').addEventListener('click', () => {
     if (!currentRange) return;
     const mark = document.createElement('mark');
@@ -93,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       currentRange.surroundContents(mark);
     } catch (e) {
+      // 处理跨标签/跨节点选中
       const fragment = currentRange.extractContents();
       mark.appendChild(fragment);
       currentRange.insertNode(mark);
