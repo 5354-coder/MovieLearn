@@ -250,8 +250,8 @@ body {
   margin: 0 4px;
 }
 
-/* 原生 CSS Custom Highlight 样式定义（零修改 DOM，绝对安全） */
+/* 原生 CSS Custom Highlight 样式定义 */
 ::highlight(user-highlight) {
-  background-color: #fefcbf;
-  color: #744210;
+  background-color: #ffff00; /* 亮黄色 */
+  color: #000000;
 }
