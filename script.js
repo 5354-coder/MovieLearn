@@ -12,52 +12,95 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 2. 第三级目录跳转并加载字幕文件 (.md)
+  // 2. 第三级目录跳转、记忆与精准位置定位
   // ==========================================
   const contentEl = document.getElementById('content');
   let currentFileSrc = '';
 
-  document.querySelectorAll('.file-link').forEach(link => {
-    link.addEventListener('click', async (e) => {
-      e.preventDefault();
+  // 核心业务：加载指定的字幕文件
+  async function loadSubtitleFile(fileSrc, isInitialLoad = false) {
+    const link = document.querySelector(`.file-link[data-src="${fileSrc}"]`);
+    if (!link) return;
 
-      // 设置选中状态样式
-      document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
-      link.classList.add('active');
+    // 更新菜单激活态
+    document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
+    link.classList.add('active');
 
-      currentFileSrc = link.getAttribute('data-src');
+    // 确保所在季度的父级菜单被展开
+    let parentNode = link.closest('.tree-node');
+    while (parentNode) {
+      parentNode.classList.add('open');
+      parentNode = parentNode.parentElement.closest('.tree-node');
+    }
 
-      try {
-        const response = await fetch(currentFileSrc);
-        if (!response.ok) {
-          throw new Error(`无法加载文件: ${response.status}`);
-        }
-        const markdownText = await response.text();
-        
-        // 渲染 Markdown
-        contentEl.innerHTML = marked.parse(markdownText);
-        // 强制重新应用当前的字号
-        applyFontSize(currentFontSize);
+    currentFileSrc = fileSrc;
+    localStorage.setItem('last_opened_file', fileSrc); // 记住当前文件
 
-        // 尝试从 localStorage 还原高亮记录
-        loadHighlightsForCurrentFile();
+    try {
+      const response = await fetch(fileSrc);
+      if (!response.ok) throw new Error(`无法加载文件: ${response.status}`);
+      
+      const markdownText = await response.text();
+      contentEl.innerHTML = marked.parse(markdownText);
+      applyFontSize(currentFontSize);
 
-      } catch (err) {
-        contentEl.innerHTML = `<p style="color: #e53e3e; text-align: center;">⚠️ 加载字幕失败：${err.message}<br>请确保本地已有对应路径的文件。</p>`;
+      // 还原高亮记录
+      loadHighlightsForCurrentFile();
+
+      // 记忆跳转：恢复上次滚动阅读高度
+      const savedScrollTop = localStorage.getItem(`scroll_pos_${fileSrc}`);
+      if (savedScrollTop) {
+        // 稍作延迟确保 DOM 渲染计算完毕后精准滚动
+        setTimeout(() => {
+          contentEl.scrollTop = parseInt(savedScrollTop, 10);
+        }, 50);
+      } else {
+        contentEl.scrollTop = 0;
       }
+
+    } catch (err) {
+      contentEl.innerHTML = `<p style="color: #e53e3e; text-align: center;">⚠️ 加载字幕失败：${err.message}<br>请确保本地已有对应路径的文件。</p>`;
+    }
+  }
+
+  // 监听目录菜单点击
+  document.querySelectorAll('.file-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const fileSrc = link.getAttribute('data-src');
+      loadSubtitleFile(fileSrc);
     });
   });
 
+  // 监听右侧区域滚动，并防抖记忆当前的滚动位置
+  let scrollTimer = null;
+  contentEl.addEventListener('scroll', () => {
+    if (!currentFileSrc) return;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      localStorage.setItem(`scroll_pos_${currentFileSrc}`, contentEl.scrollTop);
+    }, 200);
+  });
+
+  // 自动还原：打开页面时加载上次关闭前看到的文件
+  const lastOpenedFile = localStorage.getItem('last_opened_file');
+  if (lastOpenedFile) {
+    loadSubtitleFile(lastOpenedFile, true);
+  }
+
   // ==========================================
-  // 3. 右上角文章字号独立调整功能
+  // 3. 右上角悬浮字号独立调整功能
   // ==========================================
-  let currentFontSize = 16; // 默认 16px
+  let currentFontSize = parseInt(localStorage.getItem('user_font_size') || '16', 10);
   const fontIndicator = document.getElementById('font-size-indicator');
 
   function applyFontSize(size) {
     contentEl.style.fontSize = `${size}px`;
     fontIndicator.textContent = `${size}px`;
+    localStorage.setItem('user_font_size', size);
   }
+
+  applyFontSize(currentFontSize);
 
   document.getElementById('btn-zoom-in').addEventListener('click', () => {
     if (currentFontSize < 32) {
@@ -131,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 5. 高亮与记忆存储算法（CSS Custom Highlight + localStorage）
+  // 5. 高亮与持久化（CSS Custom Highlight + localStorage）
   // ==========================================
   let activeRanges = [];
 
@@ -142,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Range 坐标序列化与反序列化（基于纯文本字符位置偏移） ---
   function getRangeOffset(range, root) {
     const preSelectionRange = range.cloneRange();
     preSelectionRange.selectNodeContents(root);
@@ -165,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let node, foundStart = false, foundEnd = false;
 
     while (!foundEnd && (node = nodeStack.pop())) {
-      if (node.nodeType === 3) { // 文本节点
+      if (node.nodeType === 3) {
         const nextCharCount = charCount + node.length;
         if (!foundStart && startOffset >= charCount && startOffset <= nextCharCount) {
           range.setStart(node, startOffset - charCount);
@@ -186,14 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return range;
   }
 
-  // --- 保存到 localStorage ---
   function saveHighlightsForCurrentFile() {
     if (!currentFileSrc) return;
     const serializedData = activeRanges.map(range => getRangeOffset(range, contentEl));
     localStorage.setItem(`subtitle_highlights_${currentFileSrc}`, JSON.stringify(serializedData));
   }
 
-  // --- 从 localStorage 恢复 ---
   function loadHighlightsForCurrentFile() {
     activeRanges = [];
     if (!currentFileSrc) {
@@ -216,19 +256,19 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCSSHighlight();
   }
 
-  // --- 点击“高亮” ---
+  // 点击“高亮”
   document.getElementById('btn-do-highlight').addEventListener('click', () => {
     if (!savedRange || savedRange.collapsed) return;
 
     activeRanges.push(savedRange.cloneRange());
     updateCSSHighlight();
-    saveHighlightsForCurrentFile(); // 写入存储
+    saveHighlightsForCurrentFile();
 
     window.getSelection().removeAllRanges();
     menuEl.classList.add('hidden');
   });
 
-  // --- 点击“清除高亮” ---
+  // 点击“清除高亮”
   document.getElementById('btn-remove-highlight').addEventListener('click', () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
@@ -237,14 +277,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let newRanges = [];
 
     activeRanges.forEach(existingRange => {
-      // 若无重叠则直接保留
       if (
         clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
         clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
       ) {
         newRanges.push(existingRange);
       } else {
-        // 拆分切除选区重叠部分
         if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
           const leftRange = existingRange.cloneRange();
           leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
@@ -260,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     activeRanges = newRanges;
     updateCSSHighlight();
-    saveHighlightsForCurrentFile(); // 写入存储
+    saveHighlightsForCurrentFile();
 
     window.getSelection().removeAllRanges();
     menuEl.classList.add('hidden');
