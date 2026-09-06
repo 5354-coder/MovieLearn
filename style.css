@@ -40,7 +40,7 @@ body {
 }
 
 .tree-children {
-  display: none; /* 默认隐藏子级 */
+  display: none;
   padding-left: 14px;
 }
 
@@ -116,40 +116,32 @@ body {
   background-color: #f7f9fb;
 }
 
-.top-bar {
-  height: 52px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
+/* 右上角悬浮式字号调解栏（不占行空间） */
+.floating-font-control {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0 24px;
-  flex-shrink: 0;
-}
-
-.font-control {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #f7fafc;
-  padding: 4px 10px;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 4px 8px;
   border-radius: 20px;
-  border: 1px solid #e2e8f0;
-}
-
-.font-control .label {
-  font-size: 13px;
-  color: #718096;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .ctrl-btn {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border: 1px solid #cbd5e0;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: #4a5568;
   display: flex;
@@ -165,20 +157,22 @@ body {
 }
 
 #font-size-indicator {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  min-width: 36px;
+  min-width: 32px;
   text-align: center;
+  color: #4a5568;
 }
 
 /* 内容显示区 */
 .content-body {
   flex: 1;
-  padding: 36px 48px;
+  padding: 40px 60px;
   overflow-y: auto;
   line-height: 1.8;
   color: #2d3748;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .content-body p {
@@ -198,7 +192,6 @@ body {
   z-index: 9999;
   display: flex;
   align-items: center;
-  /* 背景用页面背景色(#f7f9fb) + 半透明 + 高斯模糊融合 */
   background: rgba(247, 249, 251, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
