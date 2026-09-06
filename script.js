@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const markdownText = await response.text();
         
+        // 切换文章时，清空之前的高亮集合
+        activeRanges = [];
+        updateCSSHighlight();
+
         // 渲染 Markdown
         contentEl.innerHTML = marked.parse(markdownText);
         // 强制重新应用当前的字号
@@ -50,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const fontIndicator = document.getElementById('font-size-indicator');
 
   function applyFontSize(size) {
-    // 仅作用于右侧文章内容区
     contentEl.style.fontSize = `${size}px`;
     fontIndicator.textContent = `${size}px`;
   }
@@ -114,13 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let left = rect.left + (rect.width / 2) - (menuWidth / 2);
     let top = rect.top - menuHeight - 10; // 选区上方留出 10px 间距
 
-    // 边缘安全检查（防止菜单超出屏幕四周）
+    // 边缘安全检查
     if (left < 10) left = 10;
     if (left + menuWidth > window.innerWidth - 10) {
       left = window.innerWidth - menuWidth - 10;
     }
     if (top < 10) {
-      top = rect.bottom + 10; // 若上方空间不足，转显示在选区下方
+      top = rect.bottom + 10; // 上方空间不足转到下方
     }
 
     menuEl.style.left = `${left}px`;
@@ -135,60 +138,64 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 5. 高亮与清除高亮（绝不吞字的核心 DOM 算法）
+  // 5. 高亮与清除高亮（基于 CSS Custom Highlight API，零修改 DOM，绝对不吞字）
   // ==========================================
+  let activeRanges = [];
 
-  // A. 执行高亮
+  function updateCSSHighlight() {
+    if (typeof CSS !== 'undefined' && CSS.highlights) {
+      const userHighlight = new Highlight(...activeRanges);
+      CSS.highlights.set('user-highlight', userHighlight);
+    }
+  }
+
+  // 点击“高亮”
   document.getElementById('btn-do-highlight').addEventListener('click', () => {
     if (!savedRange || savedRange.collapsed) return;
 
-    const selection = window.getSelection();
-    selection.removeAllRanges();
-    selection.addRange(savedRange);
+    activeRanges.push(savedRange.cloneRange());
+    updateCSSHighlight();
 
-    const markNode = document.createElement('mark');
-    markNode.className = 'highlight';
-
-    try {
-      // 用 mark 节点包裹选区内容
-      markNode.appendChild(savedRange.extractContents());
-      savedRange.insertNode(markNode);
-    } catch (err) {
-      console.warn('高亮跨越了复杂的 DOM 结构，回退到降级处理', err);
-    }
-
-    // 清理选择状态并隐藏菜单
+    // 清除当前的鼠标蓝底选中状态，显示高亮
     window.getSelection().removeAllRanges();
     menuEl.classList.add('hidden');
   });
 
-  // B. 执行清除高亮（防吞字：还原原文字）
+  // 点击“清除高亮”
   document.getElementById('btn-remove-highlight').addEventListener('click', () => {
-    if (!savedRange) return;
-
     const selection = window.getSelection();
-    selection.removeAllRanges();
-    selection.addRange(savedRange);
+    if (!selection || selection.isCollapsed) return;
 
-    // 找出选区涉及到的所有高亮 mark 标签
-    const highlights = contentEl.querySelectorAll('mark.highlight');
+    const clearRange = selection.getRangeAt(0);
+    let newRanges = [];
 
-    highlights.forEach(mark => {
-      // 判断高亮标签是否与选区存在相交关系
-      if (selection.containsNode(mark, true)) {
-        const parent = mark.parentNode;
-        // 将高亮标签内的所有子节点（文本/标签）移动到外面
-        while (mark.firstChild) {
-          parent.insertBefore(mark.firstChild, mark);
+    // 对已有高亮选区进行物理裁切/拆分，移除覆盖区域
+    activeRanges.forEach(existingRange => {
+      // 如果完全不相交，直接保留
+      if (
+        clearRange.compareBoundaryPoints(Range.END_TO_START, existingRange) >= 0 ||
+        clearRange.compareBoundaryPoints(Range.START_TO_END, existingRange) <= 0
+      ) {
+        newRanges.push(existingRange);
+      } else {
+        // 如果左侧有重叠外的部分，保留左侧
+        if (clearRange.compareBoundaryPoints(Range.START_TO_START, existingRange) > 0) {
+          const leftRange = existingRange.cloneRange();
+          leftRange.setEnd(clearRange.startContainer, clearRange.startOffset);
+          if (!leftRange.collapsed) newRanges.push(leftRange);
         }
-        // 安全移除 mark 标签本身
-        parent.removeChild(mark);
-        // 合并相邻的纯文本节点，防止 DOM 碎裂
-        parent.normalize();
+        // 如果右侧有重叠外的部分，保留右侧
+        if (clearRange.compareBoundaryPoints(Range.END_TO_END, existingRange) < 0) {
+          const rightRange = existingRange.cloneRange();
+          rightRange.setStart(clearRange.endContainer, clearRange.endOffset);
+          if (!rightRange.collapsed) newRanges.push(rightRange);
+        }
       }
     });
 
-    // 清理选择状态并隐藏菜单
+    activeRanges = newRanges;
+    updateCSSHighlight();
+
     window.getSelection().removeAllRanges();
     menuEl.classList.add('hidden');
   });
