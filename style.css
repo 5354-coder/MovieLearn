@@ -58,3 +58,14 @@ mark.user-highlight { background-color: #ffeb3b; padding: 2px 0; border-radius: 
 }
 .highlight-menu button#btn-clear { background: #e53935; }
 .highlight-menu button:hover { opacity: 0.9; }
+/* 自定义高亮 API 伪元素 */
+::highlight(user-highlight) {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+/* 兼容降级 mark 样式 */
+mark.user-highlight {
+  background-color: #ffeb3b;
+  color: #000;
+}
