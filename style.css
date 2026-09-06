@@ -12,9 +12,9 @@ body {
   background-color: #f7f9fb;
 }
 
-/* 左侧边栏样式 */
+/* 左侧边栏 */
 .sidebar {
-  width: 280px;
+  width: 260px;
   background-color: #ffffff;
   border-right: 1px solid #e1e4e8;
   padding: 20px 10px;
@@ -67,11 +67,6 @@ body {
   transform: rotate(90deg);
 }
 
-.level-2 > .node-title {
-  font-weight: normal;
-  font-size: 14px;
-}
-
 .file-link {
   display: block;
   padding: 6px 10px;
@@ -81,8 +76,9 @@ body {
   border-radius: 4px;
 }
 
-.file-link:hover {
+.file-link:hover, .file-link.active {
   background-color: #e8f0fe;
+  font-weight: bold;
 }
 
 /* 右侧主区域 */
@@ -147,7 +143,7 @@ body {
   text-align: center;
 }
 
-/* 半透明划词悬浮菜单 */
+/* 划词悬浮菜单 */
 .highlight-menu {
   position: fixed;
   z-index: 1000;
@@ -158,7 +154,6 @@ body {
   padding: 6px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 .highlight-menu.hidden {
