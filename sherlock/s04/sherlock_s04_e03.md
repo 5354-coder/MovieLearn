@@ -1,0 +1,4717 @@
+# 《神探夏洛克》第四季 第3集 完整对白
+
+> Sherlock S04E03 The Final Problem Complete Transcript  
+
+> 中英对照 · 已去除时间轴 · 纠正拼写错误
+
+---
+
+**\h\h\h\h\h\h\h王小麦 PiPi卷 某羽 dzysteven \h\h\h\h侦探煮粥 彼岸的宁静 杏仁斯嘉丽 福尔沫斯 神探章鱼X 流水亦芳菲 木浅 西之 爵士年代蓬蓬裙 小酸奶!\h\h**  
+\h\h\h\h\h\h\h\h\h\h\h\h\h翻译
+
+**\h\h\h\h\h王小麦 PiPi卷 某羽 dzysteven \h\h侦探煮粥 彼岸的宁静 杏仁斯嘉丽 福尔沫斯 神探章鱼X 流水亦芳菲 木浅 西之 爵士年代蓬蓬裙 小酸奶!\h\h**  
+\h\h\h\h\h\h\h\h\h\h\h翻译
+
+**\haaaBao 念念 avis \h\h倩倩 苏菲小金鱼 西·查 \h\h\h压制 宝宝 特效 aaaBao 夏洛草**  
+时间轴
+
+**\haaaBao 念念 avis \h\h倩倩 苏菲小金鱼 西·查 \h\h\h压制 宝宝 特效 aaaBao 夏洛草**  
+时间轴
+
+我回来了
+
+我回来了
+
+**享年32岁**  
+尼莫·福尔摩斯
+
+**夏洛克**  
+安息吧
+
+**启动红色五级方案**  
+系统封锁
+
+**我来了**  
+告诉我妹妹
+
+保持一米距离
+
+保持一米距离
+
+大象玻璃 抗震
+
+大象玻璃 抗震
+
+圣诞节
+
+五年前
+
+内森
+
+阿列克斯
+
+阿列克斯
+
+霍华德
+
+霍华德
+
+我爱你
+
+我爱你
+
+夏洛克
+
+夏洛克
+
+夏洛克
+
+红胡子
+
+尼莫·福尔摩斯
+
+尼莫·福尔摩斯
+
+尼莫·福尔摩斯
+
+拉丁语:没人
+
+尼莫
+
+尼莫
+
+想你了
+
+想你了
+
+你知道去哪找我
+
+你知道去哪找我
+
+你知道去哪找我
+
+**Mummy?**  
+妈妈
+
+**Mummy! Wake up! Wake up!**  
+妈妈 醒醒 醒醒
+
+**Mummy!**  
+妈妈
+
+**Wake up!**  
+醒醒
+
+**Help me, please! I'm on a plane and everyone's asleep!**  
+帮帮我 我在飞机上 大家都睡着了
+
+**Help me!**  
+帮帮我
+
+**'Hello. My name's Jim Moriarty.**  
+你好 我叫吉姆·莫里亚蒂
+
+**- 'You know, I could arrest you. - What for?**  
+-你知道我可以逮捕你的 -为什么
+
+**- 'Wearing a dress like that. - Would you like me to take it off?**  
+-穿这么条裙子 -你要我把裙子脱了吗
+
+**- 'Then I'd really have to press charges. - Press away.**  
+-那我就真得起诉你了 -那就起诉吧
+
+**'Isn't that how they got started?**  
+他们不也是这么开始的吗
+
+**- 'Who? - Adam and Eve.**  
+-谁 -亚当和夏娃
+
+**- Oh, them. - And that turned out OK.**  
+-他们啊 -结果不也还行
+
+**'You think so?**  
+是吗
+
+**'I thought it was supposed to be the beginning of all human misery.**  
+我以为那是人类痛苦的起源呢
+
+**'Now, what was all that about arresting me?**  
+那你还要不要逮捕我了
+
+**- 'Well, maybe not arresting you. - No?**  
+-也许不逮捕你了 -是吗
+
+**'I could just keep you under close watch.**  
+我可以密切关注你
+
+**'Very close?**  
+非常密切
+
+**'Shame, I was looking forward to putting myself**  
+真遗憾 我还期待把自己
+
+**into the hands of the authorities.**  
+交到当局手上呢
+
+**'You were?**  
+是吗
+
+**'Finger-printing,**  
+录个指纹
+
+**being searched...thoroughly.'**  
+被彻底地搜身
+
+**Mycroft?**  
+麦考夫
+
+**Mycroft?**  
+麦考夫
+
+**Why don't you come out and show yourself?**  
+现身吧
+
+**I don't have time for this.**  
+我没时间陪你玩
+
+**We have time, brother dear.**  
+我们有时间 好哥哥
+
+**All the time in the world.**  
+有的是时间
+
+**Mycroft?**  
+麦考夫
+
+**Who are you?**  
+你是谁
+
+**You know.**  
+你知道的
+
+**Impossible.**  
+这不可能
+
+**Nothing's impossible.**  
+没什么是不可能的
+
+**You of all people know that.**  
+你最清楚了
+
+**It's coming to get you.**  
+它要来找你了
+
+**There's an east wind coming, Mycroft.**  
+东风要来了 麦考夫
+
+**Coming to get you.**  
+它要来找你了
+
+**You can't have got out! You can't!**  
+你不可能逃出来的 不可能
+
+**No use, Mycroft.**  
+没用的 麦考夫
+
+**There's no defence and nowhere to hide.**  
+无法抵御 也无处藏身
+
+**Sherlock?**  
+夏洛克
+
+**Help me!**  
+救我
+
+**Experiment complete. Conclusion,**  
+实验结束 结论
+
+**I have a sister.**  
+我有个妹妹
+
+**This was you? All of this was you?!**  
+这是你干的 都是你干的
+
+**Conclusion two, my sister, Eurus, apparently,**  
+结论二 我妹妹 欧罗斯
+
+**has been incarcerated from an early age**  
+从小就被关在一个
+
+**in a secure institution controlled by my brother.**  
+由我哥哥掌控的高警戒设施
+
+**Hey, Bro!**  
+你好 兄弟
+
+**Why would you do this, this pantomime? Why?!**  
+你为什么要这么做 搞这么一出 为什么
+
+**Conclusion three, you are terrified of her.**  
+结论三 你怕她怕得要死
+
+**You have no idea what you're dealing with. None at all!**  
+你根本不知道你在干什么 根本不知道
+
+**New information, she's out.**  
+最新资讯 她出来了
+
+**That's not possible.**  
+不可能
+
+**It's more than possible, she was John's therapist.**  
+怎么不可能 她是约翰的治疗师
+
+**- Shot me during a session. - Only with a tranquilliser.**  
+-还在问诊时开枪打了我 -麻醉枪而已
+
+**Still like ten minutes to go.**  
+还差十分钟的咨询时间呢
+
+**Well, we'll see about a refund.**  
+去问问能不能退诊金好了
+
+**Right, you two, Wiggins has got your money by the gate,**  
+你们俩 去门口找威金斯拿钱
+
+**don't spend it all in one crack den.**  
+别都花在一个毒窟
+
+**I hope we didn't spoil your enjoyment of the movie.**  
+希望没打扰你看电影
+
+**You're just leaving?!**  
+你就这么走了
+
+**Well, we're not staying here, Eurus is coming and, er...**  
+我们不能待在这儿 欧罗斯就要来了 并且
+
+**someone's disabled all your security.**  
+有人解除了你的安保系统
+
+**Sleep well!**  
+晚安
+
+**Dr Watson, why would he do that to me? That was insane!**  
+华生医生 他干吗这么做 这太疯狂了
+
+**Yes, well, someone convinced him**  
+对了 有人劝他说
+
+**that you wouldn't tell the truth**  
+如果不好好吓唬吓唬你
+
+**unless you were actually wetting yourself.**  
+你是不会说实话的
+
+**Someone?**  
+有人
+
+**Probably me.**  
+估计是我
+
+**So, that's it, is it? You're just going?**  
+就这么着了 你们这就走了
+
+**Well, don't worry, there's a place for people like you,**  
+别担心 有个地方可以为像你这样
+
+**the desperate, the terrified.**  
+绝望 惊恐
+
+**The ones with nowhere else to run.**  
+无路可走的人提供帮助
+
+**What place?**  
+哪里
+
+**221B Baker Street.**  
+贝克街221B
+
+**See you in the morning. If there's a queue, join it.**  
+明早见 如果有人排队你就多等会儿
+
+**For God's sake, this is not one of your idiot cases!**  
+上帝啊 这可不是你们的蠢案子
+
+**You might want to close that window.**  
+记得把那窗户关了
+
+**There is an east wind coming.**  
+东风要来了
+
+**You have to sit in the chair.**  
+你得坐在椅子上
+
+**They won't talk to you unless you sit in the chair,**  
+你坐到椅子上他们才会开口
+
+**it's the rules.**  
+这是规矩
+
+**- I'm not a client! - Then get out.**  
+-我可不是他们的客户 -那就出去
+
+**She's not going to stay there, is she?**  
+她不会也要待在这里吧
+
+**- Would you like a cup of tea? - Thank you.**  
+-要喝杯茶吗 -谢谢
+
+**The kettle's over there.**  
+壶在那儿
+
+**So, what happens now? Are you going to make deductions?**  
+然后呢 你要推理吗
+
+**You're going to tell the truth, Mycroft. Pure and simple.**  
+你要告诉我们真相 麦考夫 就这么纯粹简单
+
+**Who was it said, "The truth is rarely pure and never simple"?**  
+是谁说的"真相鲜有纯粹 也绝不简单"
+
+**I don't know and I don't care.**  
+不知道也不在乎
+
+**So, there were three of us, I know that now.**  
+我现在知道我们是兄妹三人
+
+**You, me and**  
+你 我
+
+**Eurus.**  
+和欧罗斯
+
+**A sister I can't remember.**  
+一个我想不起来的妹妹
+
+**Interesting name, Eurus. It's Greek, isn't it?**  
+有趣的名字 欧罗斯 是希腊语对吗
+
+**Yeah, literally, the God of the East Wind.**  
+没错 东风之神
+
+**Yes.**  
+没错
+
+**"The east wind is coming, Sherlock."**  
+"东风要来了 夏洛克"
+
+**- You used that to scare me. - No.**  
+-你以前经常这么吓唬我 -我没有
+
+**You turned my sister into a ghost story.**  
+你把我妹妹说成鬼故事
+
+**Of course I didn't. I monitored you.**  
+我没有 我是在监控你
+
+**You what?**  
+你什么
+
+**Memories can resurface.**  
+记忆会浮现
+
+**Wounds can reopen.**  
+伤口会揭开
+
+**The roads we walk have demons beneath.**  
+我们的脚下藏着恶魔
+
+**And yours have been waiting for a very long time.**  
+而你的恶魔等了许久
+
+**I never bullied you. I used, at discreet intervals,**  
+我没有欺负你 我只是间或
+
+**potential trigger words**  
+会用潜在触发词
+
+**to update myself as to your mental condition.**  
+来确认你的精神状态
+
+**I was looking after you.**  
+我是在照顾你
+
+**Why can't I remember her?**  
+我为什么不记得她
+
+**- This is a private matter. - John stays.**  
+-这是私事 -约翰要留下
+
+**This is family.**  
+这是家事
+
+**That's why he stays!**  
+所以他要留下
+
+**So there were three Holmes kids. What was the age gap?**  
+所以福尔摩斯家有三个小孩 年龄差多少
+
+**Seven years between myself and Sherlock,**  
+我比夏洛克大七岁
+
+**one year between Sherlock and Eurus.**  
+夏洛克比欧罗斯大一岁
+
+**Middle child. Explains a lot.**  
+排行老二 难怪
+
+**- So, did she have it, too? - Have what?**  
+-那她也有天赋吗 -什么天赋
+
+**The deduction thing.**  
+推理能力
+
+**The deduction thing?**  
+推理能力
+
+**- Yes. - More than you can know.**  
+-没错 -你无法想象
+
+**Enlighten me.**  
+说来听听
+
+**You realise I'm the smart one?**  
+你知道我比他聪明吧
+
+**As you never cease to announce.**  
+你时时刻刻都挂在嘴上
+
+**But Eurus, she was incandescent, even then.**  
+但是欧罗斯 即使在当时也非常耀眼
+
+**Our abilities were professionally assessed more than once.**  
+我们的能力被不止一次地专业评估过
+
+**I was remarkable,**  
+我的结果是卓越不群
+
+**but Eurus was described as an era-defining genius.**  
+但是欧罗斯被认定为是能改变时代的天才
+
+**Beyond Newton.**  
+超越牛顿
+
+**Then why don't I remember her?**  
+那我为什么不记得她
+
+**You do remember her, in a way.**  
+你记得 以某种方式
+
+**Every choice you ever made, every path you've ever taken,**  
+你做的每一个决定 走的每一条路
+
+**the man you are today...**  
+你会成为现在这样
+
+**..is your memory of Eurus.**  
+都是因为欧罗斯
+
+**She was different from the beginning.**  
+她从最开始就不一样
+
+**She knew things she should never have known.**  
+她知道根本不该知道的事
+
+**As if she was somehow aware of truths beyond the normal scope.**  
+就好像她洞悉俗世之外的真理
+
+**You look funny grown-up.**  
+你长大后的样子真好笑
+
+**- What's wrong? - Sorry.**  
+-怎么了 -抱歉
+
+**The memories are disturbing.**  
+回忆扰人
+
+**What do you mean? Examples.**  
+你什么意思 举例说明
+
+**They found her with a knife once.**  
+有一次她被发现手上拿着刀
+
+**She seemed to be cutting herself.**  
+看起来她自残了
+
+**Mother and Father were terrified.**  
+我们的父母吓坏了
+
+**They thought it was a suicide attempt.**  
+以为她是想自杀
+
+**But when I asked Eurus what she was doing, she said:**  
+但是当我问欧罗斯她在干什么的时候 她说
+
+**I wanted to see how my muscles worked.**  
+我想看看肌肉是如何运作的
+
+**Jesus!**  
+上帝啊
+
+**So I asked her if she felt pain, and she said:**  
+然后我问她她不觉得疼吗 她说
+
+**Which one's pain?**  
+疼是哪一块肌肉
+
+**Then what happened?**  
+然后呢
+
+**Musgrave.**  
+马斯格雷夫
+
+**The ancestral home, where there was always honey for tea.**  
+祖上的房子 我们经常去那里住
+
+**And Sherlock played among the funny gravestones.**  
+夏洛克喜欢在好笑的墓碑之间玩耍
+
+**Funny how?**  
+为什么好笑
+
+**Come on, you lot!**  
+走吧 你们几个
+
+**They weren't real. The dates were all wrong.**  
+都不是真的 日期都错了
+
+**An architectural joke which fascinated Sherlock.**  
+是个建筑笑话 夏洛克总觉得很有趣
+
+***Deep down below the old beech tree...***  
+*深埋在那老山毛榉之下*
+
+**- Help succour me now the... - East winds blow.**  
+-快救救我 因为 -东风已起
+
+***East winds blow...***  
+*东风已起*
+
+**16 by six.**  
+16乘6
+
+**And under we go.**  
+我们一起下去
+
+**- You're starting to remember. - Fragments.**  
+-你想起来了 -只是些碎片
+
+**Redbeard? Redbeard?**  
+红胡子 红胡子
+
+**- Redbeard? - He was my dog.**  
+-红胡子 -我的狗
+
+**Eurus took Redbeard and locked him up**  
+欧罗斯把红胡子抓走锁了起来
+
+**somewhere no-one could find him.**  
+谁都找不到他
+
+**Redbeard?**  
+红胡子
+
+**And she refused to say where he was.**  
+她不肯说出他在哪里
+
+**Redbeard?**  
+红胡子
+
+**She'd only repeat that song.**  
+只是一直唱那首歌
+
+**Her little ritual.**  
+那是她的仪式
+
+**- Redbeard? - We begged and begged her to tell us where he was.**  
+-红胡子 -我们求她告诉我们他在哪里
+
+**But she said:**  
+她说
+
+**The song is the answer.**  
+答案就在歌词中
+
+**But the song made no sense.**  
+但是歌词理不出头绪
+
+***..Brother, and under we go.***  
+*哥哥 我们一起下去*
+
+**- What happened to Redbeard? - We never found him.**  
+-那红胡子呢 -我们没找到他
+
+**But she started calling him Drowned Redbeard,**  
+但她开始称他为淹死的红胡子
+
+**so we made our assumptions.**  
+所以我们做出了推断
+
+**Sherlock was traumatised.**  
+夏洛克精神受到了冲击
+
+**Natural, I suppose.**  
+我想这也正常
+
+**He was, in the early days, an emotional child.**  
+很小的时候 他本是个情绪丰富的孩子
+
+**But after that, he was different. So changed.**  
+但那以后 他就不一样了 变了很多
+
+**Never spoke of it again.**  
+再也没说起这事
+
+**In time, he seemed to forget that Eurus had ever even existed.**  
+久而久之 他似乎忘了欧罗斯的存在
+
+**- How could he forget? She was living in the same house. - No.**  
+-他怎么会忘了 她就住在一个屋檐下 -不
+
+**They took her away.**  
+他们把她带走了
+
+**Why?**  
+为什么
+
+**You don't lock up a child because a dog goes missing.**  
+一条狗失踪了不至于就把孩子送走
+
+**Quite so.**  
+没错
+
+**It was what happened immediately afterwards.**  
+是因为后来紧接着发生的那件事
+
+**She knows where he is.**  
+她知道它在哪
+
+**We can't make her tell us.**  
+我们没法逼她告诉我们
+
+**We can't make her do anything!**  
+我们没法逼她做任何事
+
+**- After that, our sister had to be taken away. - Where?**  
+-之后 我们的妹妹就被带走了 -去了哪里
+
+**Some suitable place, or so everyone thought.**  
+一个适合她的地方 至少大家都这么以为
+
+**Not suitable enough, however.**  
+但是还不够适合她
+
+**- She died there. - How?**  
+-她死在了那里 -怎么回事
+
+**She started another fire. One which she did not survive.**  
+她又纵了一次火 这次她没有逃出来
+
+**This is a lie.**  
+这是谎话
+
+**Yes.**  
+是的
+
+**It is also a kindness.**  
+这也是仁慈
+
+**This is the story I told our parents to spare them further pain,**  
+我就这么告诉我们父母 好让他们不再痛苦
+
+**and to account for the absence of an identifiable body.**  
+也能解释一具特征明显的尸体为什么不见了
+
+**And no doubt to prevent their further interference.**  
+无疑也是为了防止他们再做干涉
+
+**Well, that, too, of course.**  
+当然也有这个原因
+
+**The depth of Eurus's psychosis and the extent of her abilities**  
+欧罗斯严重的精神疾病和她高超的能力
+
+**couldn't hope to be contained in any ordinary institution.**  
+让她不可能待在普通的病院里
+
+**Uncle Rudi took care of things.**  
+鲁迪叔叔解决了这一点
+
+**Where is she, Mycroft? Where's our sister?**  
+她在哪 麦考夫 我们的妹妹在哪里
+
+**There's a place called Sherrinford.**  
+一个叫做夏瑞福德的地方
+
+**An island.**  
+是一座岛屿
+
+**It's a secure and very secret installation**  
+那里很安全 也很隐秘
+
+**whose sole purpose is to contain what we call the uncontainables.**  
+唯一的用处就是关押我们认为无法关押住的人
+
+**The demons beneath the road? This is where we trap them.**  
+脚下的恶魔 我们就把他们困在那里
+
+**Sherrinford is more than a prison, or an asylum.**  
+夏瑞福德不止是座监狱或精神病院
+
+**It is a fortress,**  
+而是座堡垒
+
+**built to keep the rest of the world safe from what is inside it.**  
+为了保护世人不受关在里面的人侵害而建
+
+**Heaven may be a fantasy for the credulous and the afraid.**  
+天堂或许是轻信者和胆小之人的幻想
+
+**But I can give you a map reference for hell.**  
+但我可以指出地狱的具体地点
+
+**That's where our sister has been since early childhood.**  
+我们的妹妹从小时候就在那里了
+
+**She hasn't left, not for a single day.**  
+她从没离开过 一天也没有
+
+**Whoever you both met, it can't have been her.**  
+不论你们见到了谁 都不可能是她
+
+***I that am lost. Oh, who will find me***  
+*我已经迷失 谁能找到我*
+
+***Deep down below the old beech tree?***  
+*深埋在那老山毛榉之下*
+
+***Help succour me now the east winds blow***  
+*快来救救我 因为东风已起*
+
+***16 by six, brother and under we go...***  
+*16乘以6 哥哥我们一起下去*
+
+**- Keep back! Keep as still as you can! - What is it?**  
+-离远点 尽量不要动 -怎么了
+
+***My soul seek the shade of my willow's bloom...***  
+*我的灵魂寻找柳树开花的树荫*
+
+**- It's a drone. - Yeah, I can see that.**  
+-是架无人机 -我看出来了
+
+**What's it carrying?**  
+它上面载着什么
+
+**What's that silver thing on top of it, Mycroft?**  
+那上面银色的东西是什么 麦考夫
+
+**It's a DX-707.**  
+那是DX707
+
+**I've authorised the purchase of quite a number of these.**  
+我授权购买过一大批
+
+**Colloquially, it is known as the patience grenade.**  
+通俗点说 它叫耐心手雷
+
+**Patience?**  
+耐心
+
+**The motion sensor has activated.**  
+动作感应器已经启动
+
+**If any of us move,**  
+但凡有一个人动了
+
+**- the grenade will detonate. - How powerful?**  
+-手雷就会爆炸 -威力有多大
+
+**It'll certainly destroy this flat and kill anyone in it.**  
+肯定会摧毁这间公寓 杀死里面所有人
+
+**Assuming walls of reasonable strength,**  
+如果墙壁足够结实
+
+**your neighbours should be safe, but as it's landed on the floor,**  
+你的邻居们应该没事 但手雷现在在地上
+
+**I am moved to wonder if the cafe below is open.**  
+我不得不担心楼下的咖啡厅开门了没
+
+**It's Sunday morning,**  
+现在是周日早上
+
+**- so it's closed. - What about Mrs Hudson?**  
+-还没营业 -赫德森太太呢
+
+**Going by her usual routine,**  
+在做她日常的活动
+
+**I estimate she has another two minutes left.**  
+我推测她还要打扫两分钟
+
+**She keeps the vacuum cleaner at the back of the flat.**  
+她把吸尘器放在公寓的后面
+
+**- So? - So safer there, when she's putting it away.**  
+-所以呢 -她去把吸尘器放回去时要安全些
+
+**But we have to move eventually**  
+我们总得跑
+
+**and we should do it when she's safest.**  
+那最好在她最安全时再动
+
+**When the vacuum stops,**  
+吸尘器关闭后
+
+**we give her eight seconds to get to the back of the flat.**  
+她大约走8秒就会到公寓后面
+
+**She's fast when she's cleaning. Then we move.**  
+她打扫时走得快 然后我们行动
+
+**What's the trigger response time?**  
+手雷触发的反应时间有多久
+
+**Once we're mobile, how long before detonation?**  
+我们动了后 手雷要多久会引爆
+
+**We have a maximum of three seconds to vacate the blast radius.**  
+我们最多有三秒时间撤离爆炸范围
+
+**John and I will take the windows, you take the stairs.**  
+约翰和我走窗户 你走楼梯
+
+**- Help get Mrs Hudson out, too. - Me?**  
+-把赫德森太太也带出去 -我
+
+**- You're closer. - You're faster.**  
+-你近一些 -你快一些
+
+**Speed differential won't be as critical as the distance.**  
+速度差不如距离差重要
+
+**Yes, agreed.**  
+同意
+
+**She's further away. She's moving to the back.**  
+她走远了 她在往后面走
+
+**I estimate we have a minute left.**  
+我推测我们还有一分钟时间
+
+**- Is a phone call possible? - Phone call?**  
+-可以打个电话吗 -电话
+
+**John has a daughter, he may wish to say goodbye.**  
+约翰有个女儿 他可能想要道别
+
+**I'm sorry, Dr Watson, any movement will set off the grenade.**  
+抱歉 华生医生 一点动作都会引爆手雷
+
+**I hope you understand.**  
+希望你能理解
+
+**Oscar Wilde.**  
+奥斯卡·王尔德
+
+**- What? - He said,**  
+-什么 -是他说
+
+**"The truth is rarely pure and never simple".**  
+"真相鲜有纯粹 也绝不简单"
+
+**It's from The Importance Of Being Earnest. We did it at school.**  
+是《不可儿戏》里的 我们上学时演过
+
+**So did we, now I recall.**  
+我们也演过 我想起来了
+
+**I was Lady Bracknell.**  
+我演了布莱克纳尔夫人
+
+**Yeah. You were great.**  
+是啊 你演得可好了
+
+**- You really think so? - Yes, I really do.**  
+-你真这么想吗 -是啊
+
+**Well, that's good to know.**  
+能知道真好
+
+**I've always wondered.**  
+我一直想知道
+
+**Good luck, boys.**  
+好运 各位
+
+**Three, two, one, go!**  
+三 二 一 跑
+
+**'And now the shipping forecast, issued by the Met Office**  
+英国气象局代表英国海事与海岸警卫署
+
+**'on behalf of the Maritime Coastguard Agency at 05.05.**  
+于5时5分发布海上天气预报
+
+**'Thames, Dover...'**  
+泰晤士河 多佛港
+
+**Go on, son, get it up.**  
+好了 孩子 振作一点
+
+**Better out than in.**  
+吐出来总比憋着强
+
+**Is it always like this?**  
+总是这样的吗
+
+**- No. - Thank God!**  
+-不是 -谢天谢地
+
+**Usually, it's much worse.**  
+通常都糟得多
+
+**I might go and work in a bank!**  
+我还是去银行工作吧
+
+**Is that an helicopter?**  
+那是直升机吗
+
+**- No, not in this weather. - ..Shannon, Malin,**  
+-这种天气不可能 -香侬河 马林角
+
+**Sherrinford.**  
+夏瑞福德
+
+**Sherrinford.**  
+夏瑞福德
+
+**'Sherrinford.'**  
+夏瑞福德
+
+**- Do you hear that? - 'Sherrinford.'**  
+-你听见没 -夏瑞福德
+
+**I never heard that one before.**  
+这地方我可从来没说听过
+
+**Sherrinford?**  
+夏瑞福德
+
+**Forget you ever heard it.**  
+忘掉你听到过
+
+**What?**  
+什么
+
+**Sometimes when we're out in these waters, we get that message.**  
+航行到这片海域时 有时会听到那信息
+
+**Just forget about it.**  
+忘了吧
+
+**- Yeah, but we've never... - Just...!**  
+-但我们从来没 -就
+
+**- Who the hell are you?! - My name's Sherlock Holmes.**  
+-你是谁 -我叫夏洛克·福尔摩斯
+
+**The detective.**  
+那个侦探
+
+**The pirate.**  
+是海盗
+
+**Golf Whiskey X-ray, this is a restricted area.**  
+GWX 这里是禁区
+
+**Repeat, restricted area.**  
+重复 这里是禁区
+
+**You are off course. Are you receiving?**  
+你们已偏离航线 是否收到
+
+**Golf Whiskey X-ray, you are off course. Are you receiving?**  
+GWX 你们已偏离航线 是否收到
+
+**'We are receiving you. This is a distress call.**  
+收到 我们发出求救信号
+
+**'Repeat, distress call. We're in trouble here.'**  
+重复 求救信号 我们遇到麻烦了
+
+**Golf Whiskey X-ray, what is your situation?**  
+GWX 你们情况如何
+
+**Golf Whiskey X-ray, where are you now?**  
+GWX 你们现在在哪
+
+**'We're headed for the rocks, we're going to hit!'**  
+我们正朝礁石驶去 要撞船了
+
+**Governor to the control room!**  
+主管速来控制室
+
+**Lockdown in progress! Lockdown in progress!**  
+正在封锁 正在封锁
+
+**Please proceed to designated red stations.**  
+请速到指定红色岗位
+
+**Please proceed to designated red stations.**  
+请速到指定红色岗位
+
+**- Hold it! Wait, wait, wait! Wait! - Wait!**  
+-别开枪 等下 等下 -等下
+
+**In the sand!**  
+沙子
+
+**In the sand!**  
+看沙子
+
+**I need to speak to Mycroft.**  
+我要和麦考夫通话
+
+**He's in hospital, there was an explosion.**  
+他住院了 发生了爆炸
+
+**Put me through to the hospital.**  
+给我接医院
+
+**He's not conscious. He's severely injured.**  
+他还在昏迷 他伤得很重
+
+**No-one is even confident he's going to pull through.**  
+没人敢肯定他能挺过来
+
+**Where's his brother? Where's Sherlock Holmes?**  
+他弟弟呢 夏洛克·福尔摩斯呢
+
+**Missing.**  
+失踪了
+
+**No, he's not, he's here!**  
+不 他在这儿
+
+**Sir, we found two more from the boat.**  
+长官 又找到两个船上的人
+
+**'He stole our boat! Him and another fella, with guns!'**  
+他偷了我们的船 他和另一个同伙 拿着枪
+
+**- Where'd you find them? - 'North side of the island, sir.'**  
+-在哪找到的 -岛北面 长官
+
+**- Holding cell, now! - 'Right, sir.'**  
+-关进牢房 -是 长官
+
+**'Lockdown in progress.'**  
+正在封锁
+
+**This is a mistake!**  
+这是不对的
+
+**I'm the victim here, this man stole my boat! He's a pirate.**  
+我才是受害者 这人偷了我的船 他是个海盗
+
+**- Yeah, I really am. - Please, sit down.**  
+-是啊 我真是 -请坐
+
+**I don't even know who he is!**  
+我都不知道他是谁
+
+**He's Dr John Watson,**  
+他是约翰·华生医生
+
+**formerly of the Fifth Northumberland Fusiliers.**  
+曾在诺森伯兰第五燧发枪手团服役
+
+**- What are you doing here? - It's a hospital. Any work?**  
+-你在这儿干什么 -这是医院 有空职吗
+
+**It's not a hospital.**  
+这不是医院
+
+**I want eyes on Eurus Holmes.**  
+去检查欧罗斯·福尔摩斯
+
+**Go straight to the special unit,**  
+前往特殊监房
+
+**- deploy green and yellow shift, on my authority. - Sir.**  
+-依我的命令部署黄绿岗 -是 长官
+
+**I'm sparing your blushes**  
+我是在照顾你的脸面
+
+**because we're supposed to be on the same side.**  
+因为我们应该是一边的
+
+**And frankly, this is embarrassing.**  
+而坦白讲 这真的很丢人
+
+**Doing a cavity search?**  
+你指的是做体腔检查吗
+
+**The true art of disguise, according to your famous friend,**  
+你那位著名的朋友说 真正的伪装
+
+**is not being looked at.**  
+是没人看你
+
+**But I am looking at you, aren't I, Mr Holmes?**  
+但我现在正看着你呢 是吧 福尔摩斯先生
+
+**Yes, you are.**  
+是的
+
+**But that is sort of the point, isn't it?**  
+但这正是目的所在
+
+**You see, you should have been**  
+你应该看的是
+
+**looking at the guy you just gave your pass to.**  
+你刚把通行卡交给的那个人
+
+**That's the trouble with uniforms and name badges,**  
+制服和胸牌的问题就在这儿
+
+**people stop looking at faces.**  
+人们不再看脸了
+
+**We'd be better off with clown outfits.**  
+我们还不如穿小丑服
+
+**At least they'd be satirically relevant.**  
+至少它们有讽刺相关性
+
+**Oh, you'll find the real Landers on the north shore,**  
+真正的兰德斯在北岸
+
+**tied up with two others.**  
+跟另两个捆在一起
+
+**- Two others? - Well, it was trial and error.**  
+-另两个 -我们反复试验来着
+
+**We had to find the right waistband.**  
+得找到合适的裤腰尺寸
+
+**This is insane! This is unnecessary.**  
+简直疯了 没必要这样
+
+**No, your security is compromised and we don't know who to trust.**  
+不 你的安保有问题 我们不知道该信任谁
+
+**And that justifies dressing up?**  
+那就能变装闯入了吗
+
+**Yes, it does!**  
+当然
+
+**It justifies dressing up or any damn thing I say it does!**  
+不仅如此 我说能做什么就能做什么
+
+**Now, listen to me, for your own physical safety, do not speak.**  
+听好了 为了你自身的安全 请闭嘴
+
+**Do not indulge in any non-verbal signals suggestive**  
+也不要管不住自己 搞些什么小动作
+
+**of internal thought!**  
+表达内心情绪
+
+**If the safety of my sister is compromised,**  
+如果我妹妹的安全已经不能保障
+
+**if the security of my sister is compromised,**  
+如果对我妹妹的看管有疏漏
+
+**if the incarceration of my sister is compromised,**  
+如果我妹妹的监禁已经失效
+
+**in short, if I find any indication**  
+简言之 只要我看出
+
+**my sister has left this island at any time,**  
+一丁点迹象表明我妹妹曾经离岛
+
+**I swear to you, you will not!**  
+我发誓 你就别想离开了
+
+**- Say thank you to Dr Watson. - Why?**  
+-向华生医生致谢 -为什么
+
+**He talked me out of Lady Bracknell.**  
+他拦着我没扮成布莱克纳尔夫人
+
+**This could have been very different.**  
+否则情况会大不一样
+
+**Are you in?**  
+你进去了吗
+
+**Just arriving at the secure unit. Explain.**  
+刚刚到安保区 说
+
+**Door opening.**  
+门已开
+
+**Prison within a prison.**  
+牢中牢
+
+**Eurus must be allowed the strict minimum of human interaction.**  
+欧罗斯与他人的交流必须限制在最低程度
+
+**- Why? - Since you're determined to meet her,**  
+-为什么 -既然你铁了心要见她
+
+**you're about to find out.**  
+你很快就能知道了
+
+**Eyes on Eurus Holmes. Governor's orders.**  
+检查欧罗斯·福尔摩斯 主管有令
+
+**Answer yes or no.**  
+回答是或不是
+
+**Has there ever been, against my express instructions,**  
+你们是否曾违反我的明确指令
+
+**any attempt at a psychiatric evaluation of Eurus Holmes?**  
+尝试对欧罗斯·福尔摩斯进行过精神鉴定
+
+**- Yes. - I presume the tapes are in my office.**  
+-是 -我想录像应该在我办公室吧
+
+**Your office?**  
+你的办公室
+
+**Cast your mind back. It used to be yours.**  
+回想一下 那里原本是你的
+
+**You haven't been down here before, have you?**  
+你从来没下来过吧
+
+**Silence Of The Lambs, basically.**  
+基本上就像《沉默的羔羊》那样
+
+**- You what? - Keep your distance.**  
+-什么 -保持距离
+
+**Stay at least three feet away from the glass, and all that.**  
+站在至少一米开外什么的
+
+**Why the headphones?**  
+戴耳机做什么
+
+**She doesn't stop playing. Sometimes for weeks.**  
+她演奏起来就不停 有时候连着几星期
+
+**Beautiful.**  
+好极了
+
+**- Kills you in the end. - Aye, still beautiful, though.**  
+-到最后能折磨死你 -不过还是挺好听的
+
+**Door closing.**  
+关门
+
+**Why am I here?**  
+我为什么在这儿
+
+**Why do you think you're here?**  
+你觉得是为什么
+
+**No-one ever tells me.**  
+没人告诉过我
+
+**- Am I being punished? - You've been bad.**  
+-我是在受惩罚吗 -你做了坏事
+
+**There's no such thing as bad.**  
+根本没有"坏"这回事
+
+**- What about good? - Good and bad are fairytales.**  
+-那"好"呢 -好和坏都是骗小孩的
+
+**We have evolved to attach an emotional significance**  
+是进化让我们开始赋予
+
+**to what is nothing more than a survival strategy**  
+本质上不过是驮兽的生存策略
+
+**of the pack animal.**  
+一种情感意义
+
+**We are conditioned to invest divinity in utility.**  
+我们被调教为实用赋予神性
+
+**Good isn't really good, evil isn't really wrong,**  
+善并不是对的 恶也并不是错的
+
+**bottoms aren't really pretty.**  
+翘臀也没那么撩人
+
+**You are a prisoner of your own meat.**  
+你们只是自身皮囊的囚徒
+
+**Why aren't you?**  
+那你怎么不是
+
+**I'm too clever.**  
+我聪明得多
+
+**- Did you bring it? - Sorry?**  
+-带来了吗 -什么
+
+**My hairband. Did you bring it, like I asked?**  
+我的发带 按我说的带来了吗
+
+**I'm not one of the...**  
+我并不是...
+
+**I-I don't work here.**  
+我不在这儿工作
+
+**My special hairband.**  
+我那条发带
+
+**I'm not one of your doctors.**  
+我不是你的医生
+
+**The one I made you steal from Mummy.**  
+我让你从妈妈那里偷的那条
+
+**It was the last thing I said to you, remember?**  
+是我对你说的最后一件事 记得吗
+
+**The day they took me away.**  
+就是他们带走我的那天
+
+**No.**  
+不
+
+**- No? - We've spoken since then.**  
+-不吗 -那之后我们也说过话
+
+**You came round to my flat a few weeks back,**  
+你几周前到过我的公寓
+
+**you pretended to be a woman called Faith Smith. We had chips.**  
+你假扮成费斯·史密斯 我们一起吃了薯条
+
+**Does this mean you didn't bring my hairband?**  
+也就是说你没把发带给我带来
+
+**How did you manage to get out of this place? How did you do that?**  
+你是怎么逃出这里的 怎么做到的
+
+**Easy.**  
+简单
+
+**Look at me.**  
+看着我
+
+**I am looking at you.**  
+我在看着你
+
+**You can't see it, can you?**  
+你看不到 是不是
+
+**You try and try, but you just can't see, you can't look.**  
+你使劲看 却就是看不到 不能看
+
+**See what?**  
+看不到什么
+
+**- What do you think? - Beautiful.**  
+-你感觉如何 -很美
+
+**- You're not looking at it. - I meant your playing.**  
+-你没看它 -我是说你的演奏
+
+**Oh, the music!**  
+音乐啊
+
+**I never know if it's beautiful or not, only if it's right.**  
+我从没想过美不美 只是觉得合适
+
+**Often they're the same thing.**  
+两者常常是一回事
+
+**If they're not always the same thing,**  
+如果不常常是一回事
+
+**what's the point in beauty? Look at the violin.**  
+那美还有什么意义 看这把小提琴
+
+**I need to know how you escaped.**  
+我需要知道你怎么逃出来的
+
+**Look at the violin.**  
+看小提琴
+
+**- It's a Stradivarius. - It's a gift.**  
+-是一把斯特拉迪瓦里 -是个礼物
+
+**- Who from? - Me.**  
+-谁给的 -我
+
+**- Why? - You play, don't you?**  
+-为什么 -你不是会拉琴吗
+
+**How did you know?**  
+你怎么知道
+
+**How did I know?**  
+我怎么知道
+
+**I taught you. Don't you remember? How can you not remember that?**  
+我教你的 你忘了吗 你怎么能忘
+
+**Eurus, I don't remember you at all.**  
+欧罗斯 我完全不记得你
+
+**Interesting.**  
+有趣
+
+**Mycroft told me you'd rewritten your memories,**  
+麦考夫告诉我你重写了你的记忆
+
+**he didn't tell me you'd written me out completely.**  
+但他可没说你把我彻底删掉了
+
+**What do you mean, rewritten?**  
+什么叫重写
+
+**You still don't know about Redbeard, do you?**  
+你还是不知道红胡子的事 是不是
+
+**This is going to be such a good day.**  
+今天要好玩了
+
+**She smiles at you when you come home...**  
+你回家时 她向你微笑
+
+**Everyone we sent in there, it's hard to describe,**  
+我们送进去的人...很难形容
+
+**- it's...it's like she... - Recruited them.**  
+-好像她... -把他们收编了
+
+**Smiling is advertising.**  
+微笑是一种广告
+
+**Enslaved them.**  
+把他们奴役了
+
+**She's been capable of that since she was five.**  
+她五岁时就具备这样的能力了
+
+**She's an adult now.**  
+更何况她现在成年了
+
+**I warned you. I ordered you.**  
+我警告过你 命令过你
+
+**She's clinically unique. We had to try.**  
+她是临床上绝无仅有的案例 我们总得试试
+
+**At what cost?**  
+可代价呢
+
+**Happiness is a pop song. Sadness is a poem.**  
+快乐是流行歌曲 而悲伤是诗
+
+**What cost?**  
+代价呢
+
+**Tell me the worst thing that has happened.**  
+跟我说说发生的最严重的事
+
+**She kept suggesting to Dr Taylor that he should kill his family.**  
+她不断建议泰勒医生杀掉家人
+
+**- And? - He said it was like an earworm,**  
+-然后呢 -他说这建议像钻进了他的耳朵
+
+**couldn't get her out of his head.**  
+无法从脑海中磨灭
+
+**And?**  
+然后呢
+
+**He left.**  
+他离开了
+
+**And?**  
+然后呢
+
+**Killed himself.**  
+自杀了
+
+**And?**  
+然后呢
+
+**His family.**  
+还杀了全家
+
+**Are you going to cry?**  
+你要哭了吗
+
+**It's OK if you cry.**  
+没关系的
+
+**I don't want to cry.**  
+我不想哭
+
+**I can help you cry.'**  
+我能帮你哭出来
+
+**- Play for me. - I need to know how you got out of here.**  
+-为我演奏 -我要知道你是怎么逃出去的
+
+**You know already! Look at me. Look and play.**  
+你已经知道了 看着我 看我 拉琴
+
+**No, not Bach. You clearly don't understand it. Play you.**  
+别拉巴赫 你显然还不明白 拉你自己
+
+**- Me? - You.**  
+-我吗 -你
+
+**Have you had sex?**  
+你做过爱了吗
+
+**Why do you ask?**  
+为什么问这个
+
+**The music. I've had sex.**  
+这音乐 我做过
+
+**- How? - One of the nurses got careless.**  
+-怎么做的 -一个护士不小心
+
+**I liked it.**  
+我很喜欢
+
+**Messy, though. People are so breakable.**  
+不过弄得挺乱 人真是太脆弱了
+
+**I take it he didn't consent.**  
+他是被迫的吧
+
+**- He? - She?**  
+-男人吗 -女人吗
+
+**Afraid I didn't notice in the heat of the moment.**  
+一时激动 我并没有在意性别
+
+**And afterwards, well, you couldn't really tell.**  
+完事后 也分辨不出来了
+
+**Is that vibrato, or is your hand shaking?**  
+那是揉弦 还是你手抖了
+
+**I warned you explicitly,**  
+我非常明确地警告过你
+
+**no-one was to talk to her alone.**  
+不许人和她单独交谈
+
+**- You spoke to her. - I know what I'm doing!**  
+-你和她独处过 -我心里有数
+
+**You even brought her a visitor on Christmas Day.**  
+圣诞节的时候 你还让她见过客
+
+**I took a calculated risk.**  
+这其中的风险我计算过
+
+**You gave her a Christmas present.**  
+你送了她圣诞礼物
+
+**Remember her Christmas present?**  
+还记得她的圣诞礼物吗
+
+**I am aware of the dangers Eurus poses**  
+我知道欧罗斯的危险性
+
+**and equipped to deal with them.**  
+并准备好应对措施了
+
+**What dangers?**  
+什么危险
+
+**Eurus doesn't just talk to people,**  
+欧罗斯不单纯和人交谈
+
+**she...reprograms them.**  
+她会...给他们洗脑
+
+**Anyone who spends time with her is automatically compromised.**  
+任何和她独处过的人 都必然被侵蚀了
+
+**I'm only trying to help you. We can help each other.**  
+我只是想帮你 我们可以相互帮助的
+
+**Helping someone is the best way you can help yourself.**  
+帮助他人是自救的最佳办法
+
+**I don't trust you.'**  
+我不信任你
+
+**So, clearly you remember me?**  
+显然你记得我
+
+**I remember everything. Every single thing.**  
+我什么都记得 每一件事
+
+**You just need a big enough hard drive.**  
+脑容量足够大就行
+
+**Sherlock?**  
+夏洛克
+
+**Not now.**  
+现在不行
+
+**- Vatican Cameos. - In a minute.**  
+-梵蒂冈宝石 -等等
+
+**Let's continue.**  
+我们继续
+
+**Did they tell you to keep three feet from the glass?**  
+他们是不是让你离玻璃一米远
+
+**- Yes. - Be naughty, step closer.**  
+-是的 -别那么古板 走近点
+
+**- Why? - Do it. Step closer.**  
+-为什么 -快 走近点
+
+**Tell me what you remember.**  
+告诉我你记得什么
+
+**You, me and Mycroft.**  
+你 我 麦考夫
+
+**Mycroft was quite clever.**  
+麦考夫很聪明
+
+**He could understand things if you went a bit slow,**  
+稍慢一点 他就能理解过来
+
+**but you, you were my favourite.**  
+但你 你是我的最爱
+
+**Why was I your favourite?**  
+为什么我是你的最爱
+
+**Because I could make you laugh. I loved it when you laughed.**  
+因为我能逗你笑 我最喜欢你笑了
+
+**Once, I made you laugh all night,**  
+有一次 我让你笑了一整夜
+
+**I thought you were going to burst.**  
+我还以为你要爆炸了呢
+
+**I was so happy.**  
+我可高兴了
+
+**Then Mummy and Daddy had to stop me, of course.**  
+爸爸妈妈不得不阻止了我
+
+**- Why? - Well, turns out I'd got it wrong.**  
+-为什么 -因为其实我错了
+
+**Apparently, you were screaming.**  
+显然你是在尖叫
+
+**Why was I screaming?**  
+我为什么会尖叫
+
+**Redbeard.**  
+红胡子
+
+**- I remember Redbeard. - Do you now?**  
+-我记得红胡子 -记起来了吗
+
+**Tell me what I don't know.**  
+说说我不知道的
+
+**Touch the glass.**  
+碰碰玻璃
+
+**I put my trust in you, my implicit trust,**  
+我信任你 完全信任你
+
+**as governor of this institute!**  
+做这家机构的主管
+
+**It's obvious when it all started.**  
+一切开始后 就很明显了
+
+**Well, she was never the same after that Christmas.**  
+圣诞节后 她像变了个人
+
+**It's as if you woke her up.**  
+就好像你唤醒了她
+
+**That is entirely beside the point!**  
+这根本不是问题所在
+
+**You had your orders and failed to act on them.**  
+你明明有命令 却没有执行
+
+**Listen to the tape.**  
+听听录像带
+
+**- Sorry? - Do it now, listen.**  
+-什么 -快 听听
+
+**- My sister's methods of... - Just listen.**  
+-我妹妹就是这样... -听就是了
+
+**'You have no idea how I could help.**  
+你想象不到我能怎么帮你
+
+**'Bring me your wife. I want to meet her.**  
+把你妻子带来 我要见见她
+
+**'I don't need your help.'**  
+我不需要你的帮助
+
+**Redbeard was my dog.**  
+红胡子是我的狗
+
+**I know what happened to Redbeard.**  
+我知道红胡子后来怎么了
+
+**Sherlock, you know nothing.**  
+夏洛克 你什么都不知道
+
+**Touch the glass and I'll tell you the truth.**  
+碰碰玻璃 我就告诉你真相
+
+**I'll touch it, too, if you're scared.**  
+如果你害怕 我和你一起
+
+**'I can fix her for you and then I'll give you her straight back,**  
+我可以帮你治好她 然后就把她还给你
+
+**'good as new, I promise.**  
+像新的一样 我保证
+
+**'That's all.**  
+就这样
+
+**What you're proposing is not... It's not...right.'**  
+你的提议 是不对的
+
+**Everyone who went in there got affected.**  
+进去的每个人都受到了影响
+
+**- Enslaved, you said. - Yes.**  
+-被奴役 你说的 -是的
+
+**- One after the other? - Yes.**  
+-一个接一个吗 -是的
+
+**- Dr Watson, I think we've... - Shut up!**  
+-华生医生 我想我们... -闭嘴
+
+**'Do you trust your wife?'**  
+你信任你妻子吗
+
+**One question, that's your voice, isn't it?**  
+一个问题 那是你的声音 对吗
+
+**'Do you really? Do you trust her?**  
+你真信任她吗
+
+**'You've got to stop saying these things.'**  
+你不能再说这种话了
+
+**If Eurus has enslaved you,**  
+如果欧罗斯奴役了你
+
+**then who exactly is in charge of this prison?**  
+那么掌管这个监狱的是谁
+
+**'It's completely inappropriate.'**  
+这太不恰当了
+
+**I'm sorry.**  
+我很抱歉
+
+**- No! - Very, very sorry.**  
+-别 -非常非常抱歉
+
+**No!**  
+不要
+
+**You think it's a trick.**  
+你觉得这是个陷阱
+
+**You look so unsure.**  
+你看起来很不确定
+
+**You're not used to being unsure, are you?**  
+你不习惯不确定 对吧
+
+**It's more common than you'd think.**  
+比你想的要寻常
+
+**Look at you.**  
+看看你
+
+**The man who sees through everything**  
+看穿一切的男人
+
+**is exactly the man who doesn't notice...**  
+恰恰注意不到
+
+**... when there's nothing to see through.**  
+有时根本没什么可看穿
+
+**Do you see how it was done?**  
+明白是怎么做的了吗
+
+**I know you like explanations.**  
+我知道你喜欢解释
+
+**The signs, you suspended the signs!**  
+指示牌是你悬挂起来的
+
+**And my voice? Throat mic.**  
+还有我的声音 喉部麦克风
+
+**Puts me through the speakers.**  
+让我的声音通过扬声器放出
+
+**Don't you think it's clever?**  
+你不觉得很聪明吗
+
+**- Simple, but clever. - Transparent.**  
+-简单 但聪明 -显而易见
+
+**Well, you do keep asking me how I got out of here.**  
+你一直问我是怎么从这里出去的
+
+**Like this.**  
+就是这样
+
+**Get in here, all of you! Stop me killing him!**  
+都给我进来 阻止我杀他
+
+**No, no, stop me in a minute.**  
+不不 过会儿再阻止我
+
+**'Red alert! Red alert!**  
+红色警报 红色警报
+
+**'Big, red, bouncy, red alert!'**  
+巨大 红色 跳动的警报
+
+**- Dr Watson...! - 'Klingons attacking lower decks!**  
+-华生医生 -克林贡人进攻下层甲板了
+
+**'Also cowboys in black hats and Darth Vader.**  
+还有戴黑帽的牛仔和达斯·维德
+
+**'Don't be alarmed! I'm here now, I'm here now!**  
+别紧张 我来了 我来了
+
+**'Did you miss me? Did you miss me?**  
+想我了吗 想我了吗
+
+**'Miss me? Miss me?**  
+想我了吗 想我了吗
+
+**'Miss me? Miss me?**  
+想我了吗 想我了吗
+
+**'Miss me? Miss me? Miss me? Miss me?**  
+想我了吗 想我了吗 想我了吗 想我了吗
+
+**'Miss me? Miss me? Miss me? Miss me...?'**  
+想我了吗 想我了吗 想我了吗 想我了吗
+
+**- Mr Moriarty. - Big G.**  
+-莫里亚蒂先生 -大G
+
+**Big G means Governor. Street speak.**  
+大G就是主管 街头语言
+
+**I'm a bit down with the kids, you know.**  
+我在学小孩说话
+
+**I'm relatable that way.**  
+我就是这么平易近人
+
+**Do you like my boys?**  
+喜欢我的伙伴吗
+
+**This one's got more stamina,**  
+这一个精力更旺盛
+
+**but he's less caring in the afterglow.**  
+但事后就没那么温柔了
+
+**This way, please.**  
+请走这边
+
+**Smell all that insane criminality.**  
+闻闻这疯狂的犯罪气息
+
+**Do you have cannibals here?**  
+这里有食人的吗
+
+**- Yes. - How many?**  
+-有 -有多少
+
+**- Three. - That's good.**  
+-三个 -很好
+
+**People leave their bodies to science,**  
+人会把自己的尸体留给科学研究
+
+**I think cannibals would be so much more grateful.**  
+我觉得食人者会比他们更加感恩
+
+**Isn't that sweet?**  
+真是可爱
+
+**Won't you sit down?**  
+你不坐下吗
+
+**I wrote my own version of the Nativity when I was a child.**  
+我小时候自己写了一版《耶稣诞生记》
+
+**The Hungry Donkey.**  
+叫《饥饿的驴》
+
+**It was a bit gory,**  
+写得有些血腥
+
+**but if you're going to put a baby in a manger,**  
+但是 把婴儿放在马槽里
+
+**you're asking for trouble.**  
+本来就是自找麻烦
+
+**- You know what this place is, of course? - Of course.**  
+-你应该知道这是什么地方吧 -当然
+
+**So, am I under arrest again?**  
+那我是再次被捕了吗
+
+**You remain a person of interest,**  
+你仍然带有嫌疑
+
+**but until you commit a verifiable crime,**  
+但在你的罪行能被证实之前
+
+**you are, I regret, at liberty.**  
+很遗憾 你还是自由的
+
+**- Then why am I here? - You're a Christmas present.**  
+-那我来这里做什么 -你是一份圣诞礼物
+
+**How do you want me?**  
+你想把我怎么样
+
+**There is, in this facility,**  
+这间机构内
+
+**a prisoner whose intellectual abilities**  
+有一个犯人的智商
+
+**are of occasional use to the British government.**  
+偶尔对英国政府有用
+
+**What, for, like, really difficult sums,**  
+干什么 做难解的求和题
+
+**long division, that sort of thing?**  
+长除法 这一类的东西吗
+
+**She predicted the exact dates of the last three terrorist attacks**  
+她上了一小时的推特后 就准确预测出
+
+**on the British mainland after an hour on Twitter.**  
+针对英国本土的近三起恐怖袭击的日期
+
+**That sort of thing.**  
+这一类的事
+
+**In return, however, she requires treats.**  
+而作为回报 她想要礼物
+
+**Last year, it was a violin.**  
+去年是小提琴
+
+**This year?**  
+今年呢
+
+**Five minutes unsupervised conversation...**  
+五分钟无监视谈话
+
+**with you.**  
+和你谈话
+
+**Me?**  
+我
+
+**With me?**  
+和我
+
+**She has noted your interest**  
+她注意到了
+
+**in the activities of my little brother.**  
+你对我弟弟的兴趣
+
+**So, what has she got to do**  
+那她和夏洛克·福尔摩斯
+
+**with Sherlock Holmes?**  
+有什么关系
+
+**Whatever you're about to tell me...**  
+无论你接下来要告诉我什么
+
+**..I already know it's going to be...awesome!**  
+我已经知道 肯定很赞
+
+**I'm your Christmas present.**  
+我是你的圣诞礼物
+
+**So, what's mine?**  
+那我的礼物呢
+
+**Redbeard.**  
+红胡子
+
+**How are you?**  
+你怎么样
+
+**- Bit of a lump. - True, that, but you have your uses.**  
+-有点肿[蠢] -确实 不过你还有用
+
+**- Did you see your sister? - Yes.**  
+-见到你妹妹了吗 -见到了
+
+**How was that?**  
+怎么样
+
+**Family is always difficult.**  
+家家有本难念的经
+
+**Is this an occasion for banter?**  
+这场合适合开玩笑吗
+
+**Case in point.**  
+你就是个例子
+
+**- Are we phoning someone? - Apparently.**  
+-我们在给谁打电话吗 -看来是的
+
+**- What's he doing here? - As he is told.**  
+-他在这里干什么 -遵命行事
+
+**Eurus is in control.**  
+现在欧罗斯管事
+
+**Help me. Please, I'm on a plane and everyone's asleep!**  
+帮帮我 我在飞机上 大家都睡着了
+
+**Help me!**  
+帮帮我
+
+**'Hello. My name's Jim Moriarty.**  
+你好 我叫吉姆·莫里亚蒂
+
+**It's OK, he's dead.**  
+没事的 他已经死了
+
+**He doesn't sound dead.**  
+他听着可不像是死了
+
+**'This is a recorded announcement.**  
+这是一则录音公告
+
+**'Please say hello to some very old friends of mine.'**  
+请跟我的老朋友们问声好
+
+**Hello? I can hear you talking.**  
+喂 我听到你们说话了
+
+**'Please help me! I'm on a plane and it's going to crash!'**  
+求你帮帮我 我在飞机上 要坠毁了
+
+**What is this? We can't do this!**  
+这算什么 我们不能做这个
+
+**Do shut up, dear.**  
+闭嘴 亲爱的
+
+**- 'Is someone there?!' - Is this supposed to be a game?**  
+-有人在吗 -这是什么游戏吗
+
+**- Be quiet. - 'Please help me!'**  
+-安静 -求你救救我
+
+**Oh, hello.**  
+你好
+
+**Try...try to stay calm. Just...**  
+试着冷静下来
+
+**tell me...tell me what your name is.**  
+告诉我你叫什么
+
+**I'm not supposed to tell my name to strangers.**  
+我不能把名字告诉陌生人
+
+**Of course not, very good. But, um...I'll tell you mine.**  
+当然不能 真乖 不过我告诉你我叫什么
+
+**My name is...**  
+我叫...
+
+**Hello?**  
+喂
+
+**Oh, dear. We seem to have lost the connection.**  
+天啊 通话好像中断了呢
+
+**How have you done this? How is any of this possible?**  
+你怎么做到的 这怎么可能
+
+**You put me in here, Mycroft, you brought me my treats.**  
+你把我关了进来 麦考夫 你给我带了礼物
+
+**What treats?**  
+什么礼物
+
+**'Clever, Eurus! You go, girl!'**  
+真聪明 欧罗斯 真棒 姑娘
+
+**How can that be Moriarty?**  
+怎么会是莫里亚蒂
+
+**Oh, he recorded lots of little messages for me before he died.**  
+他死之前为我录下了很多条消息
+
+**Loved it. Did you know his brother was a stationmaster?**  
+爱死了 你知道他兄弟是火车站站长吗
+
+**I think he was always jealous.**  
+我觉得他一直很嫉妒
+
+**The girl, where is she?**  
+那个小女孩 她在哪
+
+**Can I talk to her again?**  
+我能再跟她说话吗
+
+**Poor little thing.**  
+小可怜
+
+**Alone in the sky in a great big plane with nowhere to land.**  
+一个人在大飞机里飞着没处降落
+
+**But where in the world is she?**  
+但是她到底在哪呢
+
+**It's a clever little puzzle.**  
+这是个精巧的谜
+
+**If you want to apply yourself to it, I can reconnect you,**  
+如果你想解谜 我可以重新接通电话
+
+**but first...**  
+但首先
+
+**That's my wife.**  
+那是我妻子
+
+**That's my wife!**  
+那是我妻子
+
+**Oh, God, that's my wife!**  
+天啊 那是我妻子
+
+**I'm going to shoot the governor's wife.**  
+我要开枪打死主管的妻子
+
+**Please! No!**  
+求你了 不要
+
+**Please! Help her!**  
+求你了 救救她
+
+**In about a minute...**  
+大约一分钟之后
+
+**Bang! Dead!**  
+嘭 死了
+
+**- Please don't do that. - Well, you can stop me.**  
+-求你别那么做 -你可以阻止我
+
+**- How? - There's a gun in the hatch. Take it.**  
+-怎么阻止 -小窗口里有把枪 拿起来
+
+**You want to save the governor's wife,**  
+你想救他妻子
+
+**choose either Dr Watson or Mycroft to kill the governor.**  
+选华生医生或者麦考夫去杀了主管
+
+**Oh! Oh, God!**  
+天啊
+
+**You can't do it, Sherlock. If you do it,**  
+不能你来 夏洛克 如果你做
+
+**it won't count. I'll kill her, anyway.**  
+就不算 我还是会杀了她
+
+**It has to be your brother or your friend.**  
+必须是你哥哥或者你的朋友
+
+**You have to do this.**  
+你必须这么做
+
+**Eurus will kill her!**  
+欧罗斯会杀了她的
+
+**It doesn't appear we have a choice.**  
+看起来我们别无选择
+
+**Right, then. Countdown's starting.**  
+那好 倒计时开始
+
+**How long?**  
+倒计时多久
+
+**No, no, no, the countdown is for me.**  
+不不不 倒计时是给我的
+
+**Withholding the precise deadline**  
+不给出准确的截止期限
+
+**will apply the emotional pressure more evenly.**  
+会让情感压力分布得更加均匀
+
+**Where possible,**  
+可以的话
+
+**please give me an explicit verbal indication of your anxiety levels,**  
+麻烦用语言详细表述一下你的紧张程度
+
+**I can't always read them from your behaviour.**  
+单凭你的行为有时很难判断
+
+**I can't do this.**  
+我做不到
+
+**I can't, it's murder.**  
+不行 这是谋杀
+
+**This is not murder, this is saving my wife.**  
+这不是谋杀 这是救我妻子的命
+
+**I'm particularly focused on internal conflicts,**  
+我比较在意的是内心矛盾
+
+**where strategising around a largely-intuitive moral code**  
+当凭直觉性道德准则制定战略时
+
+**appears to create a counterintuitive result.**  
+似乎会导致与直觉相悖的结果
+
+**I will not kill.**  
+我不杀人
+
+**I will not have blood on my hands!**  
+我不会让双手染上鲜血
+
+**Yes, very good. Thank you.**  
+很好 谢谢
+
+**Killing my wife is what you are doing.**  
+你这么做就是杀了我妻子
+
+**No!**  
+不
+
+**OK, fine.**  
+好吧
+
+**John?**  
+约翰
+
+**Dr Watson, are you married?**  
+华生医生 你结婚了吗
+
+**I was.**  
+结过
+
+**What happened?**  
+发生了什么
+
+**She died.**  
+她去世了
+
+**What would you give to get her back?**  
+如果她能回来你愿意付出什么代价
+
+**I mean, if you could, if it was possible,**  
+如果可以 如果这是可能的
+
+**what would you do to save her?**  
+你愿意付出什么代价救她
+
+**Eurus will kill me.**  
+欧罗斯反正会杀我
+
+**Please save my wife.**  
+求你救救我妻子
+
+**There will, I'm afraid, be regular prompts**  
+抱歉 会定时出现
+
+**to create an atmosphere of urgency.**  
+情况紧急的提示
+
+**'Tick-tock, tick-tock, tick-tock.**  
+滴答滴答
+
+**'Tick-tick-tick-tick, tick-tock, tick-tock, tick-tock.'**  
+滴答滴答 滴答滴答
+
+**What's your name?**  
+你叫什么名字
+
+**David.**  
+大卫
+
+**And you're sure about this, David?**  
+你确定要这么做吗 大卫
+
+**Of course I'm bloody sure!**  
+我当然确定
+
+**Nearly there.**  
+快好了
+
+**Right, do you want to pray or anything?**  
+好吧 你想祈祷一下什么的吗
+
+**With Eurus Holmes in the world, who the hell would I pray to?**  
+欧罗斯·福尔摩斯在世 神又如何
+
+**You are a good man and you are doing a good thing.**  
+你是个好人 你做的事很高尚
+
+**So are you.**  
+你也是
+
+**I'll spend the rest of my life telling myself that.**  
+下半辈子我都会努力这么告诉自己
+
+**Please!**  
+求你了
+
+**Oh, God!**  
+神啊
+
+**I know that you're scared, but you should also be very proud.**  
+我知道你害怕 但你应该为自己骄傲
+
+**Just do it! Be quick!**  
+动手吧 求你快点
+
+**'Tick-tick-tick-tick-tick-tick.'**  
+滴滴滴滴滴滴
+
+**This is very good, Dr Watson.**  
+很不错 华生医生
+
+**I should have fitted you with a cardiograph.**  
+我应该在你身上安心电图测绘仪的
+
+**Goodbye, David.**  
+再见 大卫
+
+**'Tock-tock-tock-tock-tock-tock-tock, tick-tick-tick.'**  
+答答答答答答 滴滴滴滴滴滴
+
+**Please!**  
+求你
+
+**I can't. I'm sorry, I can't do it.**  
+我做不到 抱歉 我做不到
+
+**I know, it's all right.**  
+我知道 没事的
+
+**Stop! No, no! Stop!**  
+住手 不要 住手
+
+**I'm sorry.**  
+对不起
+
+**- It's all right. - I'm so sorry!**  
+-没事的 -我很抱歉
+
+**Remember me.**  
+记住我
+
+**- No! - No!**  
+-不 -不
+
+**Are you all right?**  
+你没事吧
+
+**Interesting.**  
+有意思
+
+**All right, there you go, you got what you wanted,**  
+好了 你的目的达到了
+
+**and he's dead.**  
+他死了
+
+**Dead or alive,**  
+是死是活
+
+**he really wasn't very interesting.**  
+他都没什么意思
+
+**But you three, you three were wonderful.**  
+但是你们三个 你们三个真好玩
+
+**Thank you.**  
+谢谢
+
+**You see, what you did, Dr Watson,**  
+你看 你的行为 华生医生
+
+**specifically because of your moral code,**  
+完全是因为你的道德准则
+
+**because you don't want blood on your hands,**  
+因为你不愿意背负血债
+
+**two people are dead instead of one.**  
+本来只会死一个 现在要死两个
+
+**Two people?**  
+两个
+
+**Yes.**  
+是的
+
+**Sorry.**  
+抱歉
+
+**Hang on.**  
+稍等
+
+**What advantage did your moral code grant you?**  
+你的道德准则给了你什么优势
+
+**Is it not, in the end, selfish to keep one's hands clean**  
+说到底 牺牲别人的生命 换自己良心安宁
+
+**at the expense of another's life?**  
+不是自私的吗
+
+**You didn't have to kill her!**  
+你不必杀她的
+
+**The condition of her survival**  
+她活下来的条件
+
+**was that you or Mycroft had to kill her husband.**  
+是你或麦考夫亲手杀了她丈夫
+
+**This is an experiment.**  
+这是个实验
+
+**There will be rigour.**  
+必须精确
+
+**Sherlock, pick up the gun. It's your turn next.**  
+夏洛克 把枪捡起来 下次该你了
+
+**When I tell you to use it, and I will,**  
+我会提示你什么时候用 到时候
+
+**remember what happened this time.**  
+要记得这次的结果
+
+**What if I don't want a gun?**  
+要是我不想用呢
+
+**Oh, the gun is intended as a mercy.**  
+让你用枪是种仁慈
+
+**- For whom? - You.**  
+-对谁仁慈 -对你
+
+**- How so? - If someone else had to die,**  
+-为什么 -如果必须杀人
+
+**would you really want to do it with your bare hands?**  
+你难道宁愿徒手去做吗
+
+**It would waste valuable time.**  
+那会浪费时间
+
+**Probably just take it.**  
+还是拿着吧
+
+**There's only one bullet left.**  
+只有一发子弹了
+
+**You will only need one.**  
+你只需要一发
+
+**But you WILL need it.**  
+但你会需要的
+
+**Please, go through.**  
+请穿过那道门
+
+**There's a few tasks for you**  
+有几项任务给你
+
+**and a girl on a plane is getting very, very scared.**  
+还有个飞机上的女孩非常 非常害怕
+
+**Treats?**  
+礼物
+
+**Yes. You know,**  
+对
+
+**a violin.**  
+一把小提琴
+
+**In exchange for?**  
+换什么
+
+**She's very clever.**  
+她很聪明
+
+**I'm beginning to think you're not.**  
+我开始怀疑你不够聪明了
+
+**Come on now, all aboard!**  
+快点 全体上车
+
+**Someone's been redecorating.**  
+有人重新装修了这里
+
+**- Is that allowed? - She's literally taken over the asylum,**  
+-可以这样吗 -她完全控制了这间机构
+
+**we have more to worry about than her choice of colour scheme.**  
+我们要担心的比她选什么颜色严重多了
+
+**Barely dry. Recent.**  
+还没干 最近涂的
+
+**And it's for our benefit.**  
+而且是为我们涂的
+
+**As a motivator to your continued cooperation,**  
+为了激励你们继续配合
+
+**I'm now reconnecting you.**  
+我要再次为你连线了
+
+**'Fasten your seatbelts, it's going to be a bumpy night.'**  
+系好安全带 今夜旅途会很颠簸
+
+**'Are...are you still there?'**  
+你还在吗
+
+**Yes, hello?**  
+在 你好
+
+**Hello, we're still here, can you hear us?**  
+你好 我们还在 你能听到吗
+
+**- Yes. - 'Everything is going to be all right,**  
+-能 -一切都会没事的
+
+**'I-I just need you to tell me where you are.**  
+但我需要你告诉我你在哪
+
+**'Outside, is it day or night?'**  
+窗外 现在是白天还是晚上
+
+**- Night. - That certainly narrows it down to half the planet**  
+-晚上 -成功把范围缩小到了半个地球
+
+**- What kind of a plane are you on? - 'I don't know.'**  
+-你乘的是什么飞机 -我不知道
+
+**- Is it big or small? - 'Big.'**  
+-大的还是小的 -大的
+
+**Lots of people on it?**  
+飞机上人多吗
+
+**Lots and lots, but they're all asleep, I can't wake them up.**  
+很多很多 但都睡着了 我叫不醒他们
+
+**- Where did you take off from? - 'And the driver's asleep.'**  
+-你们从哪出发的 -开飞机的也睡着了
+
+**No, I understand, but where did you come from?**  
+我知道 但你们从哪出发的
+
+**'Where did the plane take off?'**  
+飞机从哪起飞的
+
+**- My nan's. - And where are you going?**  
+-我奶奶家 -你们要去哪
+
+**- 'Home.' - No, I mean what airport...**  
+-回家 -不 我是指机场
+
+**Enough for now. Time to play a new game.**  
+暂时到这里 该玩新游戏了
+
+**Look on the table in front of you. Open the envelope.**  
+看看你们面前的桌子 打开那个信封
+
+**If you want to speak to the girl again,**  
+如果你们想再跟小姑娘说话
+
+**earn yourself some phone time!**  
+就给自己争取点时间
+
+**This is inhuman, this is insane!**  
+这太没人性 太疯狂了
+
+**Mycroft, we know!**  
+麦考夫 我们知道
+
+**Six months ago, a man called Evans was murdered.**  
+六个月前 有个叫埃文斯的人被杀了
+
+**Unsolved, except by me.**  
+案件未结 但被我侦破了
+
+**He was shot from a distance of 300 metres with this rifle.**  
+他是在三百米外被这只来福枪射杀的
+
+**Now, if the police had any brains,**  
+如果警方能有点脑子
+
+**they'd realise there are three suspects, all brothers,**  
+他们会发现有三个嫌疑人 他们是兄弟
+
+**Nathan Garrideb, Alex Garrideb and Howard Garrideb.**  
+内森 阿列克斯 和霍华德·加利代布
+
+**All these photos are up to date,**  
+这些照片都是最新的
+
+**but which one pulled the trigger, Sherlock?**  
+但是谁开的枪 夏洛克
+
+**Which one?**  
+哪一个
+
+**What's this, we're supposed to solve this based on what?**  
+这算什么 我们要根据什么破案
+
+**This. This is all we get.**  
+就这个 我们只有这个
+
+**Please, make use of your friends, Sherlock.**  
+拜托 把你的朋友用起来 夏洛克
+
+**I want to see you interact with people that you're close to.**  
+我想看到你跟亲近的人互动
+
+**Also, you may have to choose which one to keep.**  
+另外 你可能还得选要留下谁
+
+**What do you make of it?**  
+你怎么看
+
+**Am I being asked to prove my usefulness?**  
+这是在要求我证明自己的用处吗
+
+**Yes, I should think you are.**  
+是的 我认为是的
+
+**I will not be manipulated like this.**  
+我不要被这样操纵
+
+**Fine. John?**  
+好 约翰
+
+**John!**  
+约翰
+
+**Yeah, I think I've seen one of these. It's a buffalo gun.**  
+我觉得我见过这种枪 水牛步枪
+
+**I'd say 1940s, old-fashioned sight. No crosshairs.**  
+20世纪40年代的 老式瞄准镜 没有准星
+
+**Glasses, glasses.**  
+眼镜 眼镜
+
+**Nathan wears glasses.**  
+内森戴眼镜
+
+**Evans was shot from 300 metres.**  
+埃文斯在三百米远处被射杀
+
+**The kickback from a gun with this calibre...**  
+这种口径枪的后坐力
+
+**...would be massive.**  
+会很强
+
+**No cuts, no scarring.**  
+没有伤口 没有伤疤
+
+**It's not Nathan, then. Who's next?**  
+不是内森 下一个是谁
+
+**Well done, Dr Watson. How useful you are.**  
+做得好 华生医生 你真是有用
+
+**Do you have a suspicion we're being made to compete?**  
+你不觉得我们是在被操纵相互竞争吗
+
+**We're not competing.**  
+我们不是在竞争
+
+**There's a plane in the air that's going to crash,**  
+现在天上有架飞机要坠毁
+
+**so what we're doing is trying to save a little girl.**  
+我们是在努力救那个女孩
+
+**Today, we have to be soldiers, Mycroft, soldiers.**  
+今天我们必须做士兵 麦考夫 士兵
+
+**And that means to hell with what happens to us!**  
+就是不管我们会怎么样
+
+**Your priorities do you credit.**  
+你的轻重缓急表明了你的人品
+
+**No, my priorities just got a woman killed.**  
+不 我的轻重缓急刚害死一个女人
+
+**Now, as I understand it, Sherlock,**  
+就我理解 夏洛克
+
+**you try to repress your emotions to refine your reasoning.**  
+你努力抑制感情 以提高推理能力
+
+**I'd like to see how that works. So, if you don't mind,**  
+我很想看看你如何做到 不介意的话
+
+**I'm going to apply some context to your deductions.**  
+我要给你的推理设置背景
+
+**Oh, dear God!**  
+天哪
+
+**Two of the Garridebs work here as orderlies,**  
+有两位加利代布先生在这儿做护工
+
+**so getting the third along really wasn't too difficult.**  
+所以把第三位找来真不算难
+
+**Once you bring in your verdict,**  
+等你作出判决
+
+**let me know and justice will be done.**  
+通知我一声 正义会得到伸张
+
+**- Justice? - What will you do with them?**  
+-正义 -你要对他们做什么
+
+**Early release.**  
+提前释放
+
+**You'll drop them into the sea.**  
+你要把他们扔进海里
+
+**Sink or swim.**  
+或沉或游
+
+**They're tied up!**  
+他们被绑住了
+
+**Exactly! Now there is context.**  
+没错 背景设置好了
+
+**Please continue with your deductions.**  
+继续推理吧
+
+**I'm now focusing on the difference to your mental capacity**  
+我现在关注的是 一旦明确结果
+
+**a specified consequence can make.**  
+对你的脑力会有何影响
+
+**Why should we bother?**  
+我们何必费事
+
+**What if we're disinclined to play your games, little sister?**  
+如果我们拒绝参加你的游戏呢 妹妹
+
+**I have, if you remember,**  
+如果你还记得 我已经
+
+**provided you with some motivation.**  
+给你们提供了一些动力
+
+**'We're going through the clouds, like cotton wool.'**  
+我们在穿过云层 就像棉絮
+
+**Oh, that's nice.**  
+真不错
+
+**Try to tell me more about the plane.**  
+再跟我说说飞机的事吧
+
+**Why won't my mummy wake up?**  
+我妈妈为什么不醒
+
+**So it's got to be one of the other two. Now, Howard...**  
+一定是另外俩人中的一个 霍华德
+
+**Howard's a lifelong drunk, pallor of his skin,**  
+霍华德终生酗酒 皮肤苍白
+
+**terminal gin blossoms on his red nose.**  
+红鼻子尖有酒糟鼻
+
+**And, terror notwithstanding, a bad case of the DTs.**  
+尽管吓人 但他患了酒毒性谵妄
+
+**There's no way he could have taken that shot from 300 metres way.**  
+他不可能在三百米外开那枪
+
+**So that leaves us with Alex.**  
+所以只剩阿列克斯了
+
+**Indentations on the temples suggest he habitually wears glasses.**  
+太阳穴的凹陷说明他通常戴眼镜
+
+**Frown lines suggest a lifetime of peering.**  
+眉间纹说明他一生都在用力看
+
+**He's short-sighted, or he was.**  
+他是近视眼 或者曾经是
+
+**His recent laser surgery has done the trick.**  
+最近做了激光手术治好了
+
+**- Laser surgery? - Look at his clothes, he's made an effort.**  
+-激光手术 -看他的衣服 打扮很用心
+
+**- That's very good. - Excellent.**  
+-很好 -非常棒
+
+**Suddenly he sees himself**  
+扔掉眼镜后
+
+**in quite a different light now that he's dumped the specs.**  
+他突然以全新目光审视自己了
+
+**He even has a spray tan.**  
+甚至去做了美黑
+
+**But he's clearly not used to his new personal grooming ritual.**  
+但显然他还没习惯新的梳妆打扮习惯
+
+**That can be told by the state of his fingernails**  
+从他指甲的状态可以看出来
+
+**and the fact that there's hair growing in his ears.**  
+还有他的耳毛
+
+**So it's a superficial job, then.**  
+所以只是表面功夫
+
+**But he got his eyes fixed, his hands were steady.**  
+但是他治好了眼睛 手很稳
+
+**He pulled the trigger. He killed Evans.**  
+是他开的枪 他杀了埃文斯
+
+**Are you ready to condemn the prisoner?**  
+你准备给犯人定罪了吗
+
+**Sherlock, we can't do this.**  
+夏洛克 不行
+
+**The plane, remember?**  
+还记得飞机吗
+
+**Sherlock, are you ready?**  
+夏洛克 准备好了吗
+
+**Alex.**  
+阿列克斯
+
+**Say it. Condemn him.**  
+说出来 给他定罪
+
+**Condemn him**  
+给他定罪
+
+**in the knowledge of what will happen to the man you name.**  
+你知道你指定的人会有怎样的结局
+
+**I condemn Alex Garrideb.**  
+我宣布阿列克斯·加利代布有罪
+
+**'Mind the gap.'**  
+注意站台空隙
+
+**Congratulations, you got the right one.**  
+恭喜你 回答正确
+
+**Now, go through the door.**  
+穿过门
+
+**You dropped the other two, why?**  
+你把另俩人扔海里了 为什么
+
+**- Interesting. - Why?!**  
+-有趣 -为什么
+
+**Does it really make a difference,**  
+有区别吗
+
+**killing the innocent instead of the guilty?**  
+杀死无辜的人 而非有罪的人
+
+**Let's see.**  
+试试看
+
+**'The train has left the station!'**  
+火车已离开站台
+
+**No. That felt pretty much the same.**  
+不 感觉基本一样
+
+**John?**  
+约翰
+
+**-Don't let her distract you. - Distract me?**  
+-别被她分心 -分心
+
+**Soldiers today.**  
+今天是士兵
+
+**One more minute on the phone.**  
+再给你一分钟通话时间
+
+**'I'm frightened! I'm really frightened!'**  
+我好怕 我真的很怕
+
+**It's OK, don't worry. I don't have very long with you,**  
+没事的 别担心 我时间不多
+
+**so I just need you tell me what you can see outside the plane.**  
+我只需要你告诉我飞机外有什么
+
+**Just the sea. I can see the sea.**  
+只有海 我能看到海
+
+**- Are there ships on it? - No ships.**  
+-上面有船吗 -没有
+
+**'I can see lights in the distance.'**  
+我能看到远处的灯光
+
+**- Is it a city? - 'I think so.'**  
+-是城市吗 -我觉得是
+
+**She's about to fly over a city in a pilotless plane.**  
+她要坐着没飞行员的飞机飞过一座城市
+
+**We'll have to talk her through it.**  
+我们得指导她
+
+**- Through what? - 'Hello? Are you still there?'**  
+-做什么 -喂 你还在吗
+
+**Still here. Just give us a minute.**  
+在 给我们点时间
+
+**Getting the plane away from any mainland, any populated areas.**  
+让飞机远离大陆 远离人口聚集区
+
+**It has to crash in the sea.**  
+必须落在海里
+
+**What about the girl?**  
+那个小女孩呢
+
+**Well, obviously, Dr Watson,**  
+显然 华生医生
+
+**she's the one who's going to crash it.**  
+她就是得驾飞机坠落的人
+
+**No. We could help her land it.**  
+不 我们能帮她降落
+
+**And if we fail and she crashes into a city?**  
+如果我们失败 坠毁在了城市里呢
+
+**How many will die then?**  
+会死多少人
+
+**How are we going to get her to do that?**  
+我们要怎么让她那么做
+
+**I'm afraid we're going to have to give her hope.**  
+恐怕我们得给她虚妄的希望
+
+**Is there really no-one there that can help you?**  
+真的没人能帮你了吗
+
+**Have you really, really checked?**  
+你确认过了吗
+
+**Everyone's asleep. Will you help me?**  
+所有人都睡着了 你能帮我吗
+
+**We're going to do everything that we can.**  
+我们会尽全力
+
+**I'm scared. I'm really scared!**  
+我好害怕 我真的好害怕
+
+**It's all right, I...**  
+没事的 我...
+
+**Now, back to the matter in hand. Coffin.**  
+回到正题 棺材
+
+**Problem, someone is about to die.**  
+问题 有人要死了
+
+**It will be, as I understand it, a tragedy.**  
+就我所知 这会是个悲剧
+
+**So many days not lived,**  
+还有那么久的人生
+
+**so many words unsaid,**  
+还有那么多未说出口的话
+
+**et cetera, et cetera, et cetera, et cetera...**  
+等等 等等 等等 等等
+
+**Yes, yes, yes, and this, I presume, will be their coffin.**  
+没错 我猜这将会是那人的棺材
+
+**Whose coffin, Sherlock?**  
+谁的棺材呢 夏洛克
+
+**Please, start your deductions.**  
+请开始你的推理
+
+**I will apply some context in a moment.**  
+我稍后就提供背景
+
+**Well, allowing for the entirely pointless courtesy of headroom,**  
+算上完全没用的礼节性头上空间
+
+**I'd say this coffin is**  
+这具棺材应该是
+
+**intended for someone of about five foot four.**  
+为1.64米左右的人准备的
+
+**- Makes it more likely to be a woman. - Not a child?**  
+-那就更可能是名女性 -不是孩童吗
+
+**A child's coffin would be more expensive.**  
+孩童的棺材会更贵
+
+**This is in the lower price range,**  
+这种价格较低
+
+**although still best available in that bracket.**  
+不过也是同档次中最好的
+
+**That was a lonely night on Google.**  
+谢谢你的科普
+
+**This is a practical and informed choice.**  
+这具棺材经济实用
+
+**The balance of probability**  
+权衡来讲
+
+**suggests that this is for an unmarried woman,**  
+这是为一名未婚与近亲疏远的
+
+**distant from her close relatives.**  
+女性准备的
+
+**That much is suggested by the economy of choice,**  
+经济的选择表明了这点
+
+**acquainted with the process of death,**  
+她熟悉死亡的过程
+
+**but unsentimental about the necessity of disposal.**  
+但是对于身后事并不在意
+
+**Also the lining of the coffin...**  
+棺材的衬里...
+
+**Yes, very good, Sherlock,**  
+没错 很好 夏洛克
+
+**or we could just look at the name on the lid.**  
+或者我们可以直接看棺材盖上的名字
+
+**Only it isn't a name.**  
+但这不是一个名字
+
+**So it's for somebody who loves somebody.**  
+所以这是为一个爱着别人的人准备的
+
+**It's for somebody who loves Sherlock.**  
+是为一个爱夏洛克的人准备的
+
+**This is all about you, everything here.**  
+这一切都和你有关
+
+**So, who loves you?**  
+谁爱你呢
+
+**I'm assuming it's not a long list.**  
+应该没几个人吧
+
+**- Irene Adler. - Don't be ridiculous. Look at the coffin.**  
+-艾琳·阿德勒 -别傻了 看看棺材
+
+**Unmarried, practical about death, alone.**  
+未婚 接受死亡 独居
+
+**- Molly. - Molly Hooper.**  
+-茉莉 -茉莉·霍普
+
+**She's perfectly safe, for the moment.**  
+她非常安全 暂时而已
+
+**Her flat is rigged to explode in approximately three minutes,**  
+她的公寓大概在三分钟后就会爆炸
+
+**unless I hear the release code from her lips.**  
+除非我听她亲口说出关键词
+
+**I'm calling her on your phone, Sherlock.**  
+我在用你的手机给她打电话 夏洛克
+
+**- Make her say it. - Say what?**  
+-让她说 -说什么
+
+**Obvious, surely.**  
+太明显了
+
+**- No. - Yes.**  
+-不 -很明显
+
+**Oh, one important restriction,**  
+有一条很重要的限制
+
+**you're not allowed to mention**  
+你不准向她提起
+
+**in any way at all that her life is in danger.**  
+她现在有危险
+
+**You may not, at any point,**  
+通话期间不得
+
+**suggest that there is any form of crisis.**  
+暗示现在有危机情况
+
+**If you do, I will end this session and her life.**  
+不然我就立马终止这一关和她的生命
+
+**Are we clear?**  
+明白了吗
+
+**Tick-tock, tick-tock, tick-tock,**  
+滴答 滴答 滴答
+
+**tick-tock, tick-tock, tick-tick...**  
+滴答 滴答 滴滴
+
+**- What's she doing? - She's making tea.**  
+-她在干什么 -她在泡茶
+
+**But why isn't she answering her phone?**  
+但她为什么不接电话
+
+**You never answer your phone.**  
+你就从来不接电话
+
+**Yes, but it's me calling.**  
+是啊 但这可是我的电话
+
+**Hi, this is Molly at the dead centre of town.**  
+你好 我是茉莉 在城市的死亡中心
+
+**Leave a message.**  
+请留言
+
+**OK, OK. Just one more time.**  
+好吧 好吧 再打一次
+
+**Come on, Molly, pick up. Just bloody pick up.**  
+拜托 茉莉 接电话 接电话啊
+
+**Hello, Sherlock. Is this urgent?**  
+喂 夏洛克 很急吗
+
+**Because I'm not having a good day.**  
+我今天过得不是很好
+
+**Molly, I just want you**  
+茉莉 我只想让你
+
+**to do something very easy for me and not ask why.**  
+为我做一件很简单的事 不要问为什么
+
+**Oh, God! Is this one of your stupid games?**  
+天啊 这又是你的破游戏吗
+
+**No, it's not a game. I need you to help me.**  
+不 这不是游戏 我需要你的帮助
+
+**- Look, I'm not at the lab. - It's not about that.**  
+-我不在实验室 -不是那方面的事
+
+**Well, quickly, then.**  
+那你快点
+
+**Sherlock!**  
+夏洛克
+
+**What is it, what do you want?**  
+什么事 你想干什么
+
+**Tick-tock, tick-tock, tick-tock...**  
+滴答 滴答 滴答
+
+**Molly, please, without asking why, just say these words.**  
+茉莉 拜托不要问什么 说这句话
+
+**What words?**  
+什么话
+
+**I love you.**  
+我爱你
+
+**Leave me alone.**  
+别烦我
+
+**Molly, no, please, no! Don't hang up! Do not hang up!**  
+茉莉 不 拜托 不要挂 不要挂
+
+**Calmly, Sherlock, or I will finish her right now.**  
+冷静点 夏洛克 否则我现在就杀了她
+
+**Why are you doing this to me?!**  
+你为什么要这么对我
+
+**Why are you making fun of me?!**  
+你为什么要捉弄我
+
+**Please, I swear, you just have to listen to me.**  
+我发誓 求你听我说
+
+**Softer, Sherlock.**  
+温柔点 夏洛克
+
+**Molly, this is for a case.**  
+茉莉 这是为了案子
+
+**It's...it's a sort of experiment.**  
+是个试验
+
+**I'm not an experiment, Sherlock.**  
+我不是你的试验对象 夏洛克
+
+**No, I know you're not an experiment, you're my friend.**  
+对 我知道你不是 你是我的朋友
+
+**We're friends, but,**  
+我们是朋友 但
+
+**please, just say those words for me.**  
+请你对我说这句话
+
+**Please don't do this. Just...just...don't do it.**  
+求你别这样 别这么做
+
+**It's very important.**  
+这很重要
+
+**I can't say why.**  
+我不能说明原因
+
+**But I promise you, it is.**  
+但我向你保证 真的很重要
+
+**I can't say that, I can't...**  
+我说不出 我不能
+
+**I can't say that to you.**  
+没法跟你说
+
+**Of course you can. Why can't you?**  
+你当然可以 为什么说不出
+
+**'You know why.'**  
+你知道为什么
+
+**No, I don't know why.**  
+不 我不知道
+
+**Of course you do.**  
+你当然知道
+
+**'Tick-tock, tick-tock, tick-tock, tick-tock,**  
+滴答 滴答 滴答 滴答
+
+**'tick-tick-tick-tick-tick.'**  
+滴滴滴滴滴
+
+**Please, just say it.**  
+求你了 说吧
+
+**'I can't.**  
+我不能
+
+**Not to you.'**  
+不能对你说
+
+**Why?**  
+为什么
+
+**Because...**  
+因为
+
+**because it's true.**  
+因为这不是玩笑话
+
+**Because...**  
+因为
+
+**it's true, Sherlock.**  
+这是事实 夏洛克
+
+**It's always been true.**  
+一直都是的
+
+**Well, if it's true, just say it anyway.**  
+如果是这样 那就说出来吧
+
+**You bastard!**  
+你个混蛋
+
+**'Say it anyway.'**  
+说吧
+
+**'You say it.**  
+你说
+
+**Go on. You say it first.'**  
+说啊 你先说
+
+**- What? - Say it.**  
+-什么 -说
+
+**Say it like you mean it.**  
+说得好像是你的真心话
+
+**Final 30 seconds.**  
+最后30秒
+
+**I...**  
+我
+
+**I love you.**  
+我爱你
+
+**I love you.**  
+我爱你
+
+**Molly?**  
+茉莉
+
+**Molly, please!**  
+茉莉 求你了
+
+**I love you.**  
+我爱你
+
+**Sherlock, however hard that was...**  
+夏洛克 无论这有多难
+
+**Eurus, I won. I won.**  
+欧罗斯 我赢了 我赢了
+
+**Come on, play fair. The girl on the plane, I need to talk to her.**  
+公平点 我要跟飞机上的女孩说话
+
+**I won! I saved Molly Hooper!**  
+我赢了 我救了茉莉·霍普
+
+**Saved her? From what?**  
+救她 救什么
+
+**Oh, do be sensible, there were no explosives in her little house.**  
+理智点 她家才没有炸药
+
+**Why would I be so clumsy?**  
+我怎会那么笨
+
+**You didn't win, you lost.**  
+你没赢 你输了
+
+**Look what you did to her. Look what you did to yourself.**  
+看看你对她 对你自己都做了什么
+
+**All those complicated little emotions, I lost count.**  
+这么多复杂的小情绪 我都数不过来
+
+**Emotional context, Sherlock, it destroys you every time.**  
+夏洛克 你每次都被感情背景摧毁
+
+**Now, please, pull yourself together.**  
+现在请你振作起来
+
+**I need you at peak efficiency.**  
+我需要你以巅峰状态应战
+
+**The next one isn't going to be so easy.**  
+下一回合可不会这么简单
+
+**In your own time.**  
+慢慢来
+
+**Sherlock?**  
+夏洛克
+
+**No. No!**  
+不 不
+
+**No! No! No! No!**  
+不 不 不 不
+
+**No!**  
+不
+
+**I know this is difficult, and I know you're being tortured,**  
+我知道这很难 我知道你饱受折磨
+
+**but you have got to keep it together.**  
+但是你必须打起精神来
+
+**This isn't torture, this is vivisection.**  
+这不是折磨 这是活体解剖
+
+**We're experiencing science from the perspective of lab rats.**  
+我们像小白鼠一样体验着科学
+
+**- Soldiers? - Soldiers.**  
+-士兵 -士兵
+
+**'Tick-tock! Tickets, please!'**  
+滴答 请验票
+
+**Hey, Sis, don't mean to complain, but this one's empty.**  
+妹妹 不是我抱怨 这间房是空的
+
+**What happened, did you run out of ideas?**  
+怎么 点子用光了
+
+**It's not empty, Sherlock. You've still got the gun, haven't you?**  
+不空啊 夏洛克 你还有枪 对吧
+
+**I told you you'd need it,**  
+我说过你需要它
+
+**because only two can play the next game.**  
+因为只有两人可以玩接下来的游戏
+
+**Just two of you go on from here.**  
+只有两人可以继续下去
+
+**Your choice, it's make-your-mind-up time.**  
+你来选 现在是抉择时间
+
+**Whose help do you need the most, John or Mycroft?**  
+你最需要谁的帮助 约翰还是麦考夫
+
+**It's an elimination round.**  
+这一关是淘汰环节
+
+**You choose one and kill the other.**  
+你选一个 杀另一个
+
+**You have to choose, family or friend.**  
+你必须在家人和朋友中间选择
+
+**Mycroft or John Watson?**  
+麦考夫或是约翰·华生
+
+**'Tick-tick-tick-tick-tick-tick...'**  
+滴滴滴滴滴滴
+
+**- Eurus, enough! - Not yet, I think, but nearly.**  
+-欧罗斯 够了 -还不够 不过快了
+
+**Remember, there's a plane in the sky and it's not going to land.**  
+记住 天上有架飞机无法着陆
+
+**- Well? - Well, what?**  
+-好吧 -好吧什么
+
+**We're not actually going to discuss this, are we?**  
+我们不会还真要讨论这个问题吧
+
+**I'm sorry, Dr Watson, you're a fine man in many respects.**  
+抱歉 华生医生 你从各方面来看都是个好人
+
+**Make your goodbyes and shoot him.**  
+道别 开枪吧
+
+**- Shoot him! - What?**  
+-开枪 -什么
+
+**Shoot Dr Watson.**  
+冲华生医生开枪
+
+**There's no question who has to continue from here.**  
+该谁来继续这毫无疑问
+
+**It's us. You and me.**  
+是我们 你和我
+
+**Whatever lies ahead requires brainpower, sherlock,**  
+后面无论有什么 考验的都是智力 夏洛克
+
+**not sentiment.**  
+不是情感
+
+**Don't prolong his agony, shoot him.**  
+不要延长他的痛苦 开枪
+
+**Do I get a say in this?**  
+我有发言权吗
+
+**Today, we are soldiers. Soldiers die for their country.**  
+今天我们是士兵 士兵为国捐躯
+
+**I regret, Dr Watson, that privilege is now yours.**  
+很遗憾 华生医生 这荣幸属于你了
+
+**Shit, he's right.**  
+见鬼 他说得对
+
+**He is, in fact, right.**  
+事实上 他说得对
+
+**Make it swift. No need to prolong his agony.**  
+快点 不要延长他的痛苦
+
+**Get it over with and we can get to work.**  
+快点了结 我们继续
+
+**Oh, God! I should have expected this.**  
+老天 我真该料到
+
+**Pathetic. You always were the slow one. The idiot.**  
+可悲 你一直是最笨的那个 小白痴
+
+**That's why I've always despised you.**  
+所以我总是看不起你
+
+**You shame us all. You shame the family name.**  
+你让我们所有人丢脸 你让家族蒙羞
+
+**Now, for once in your life, do the right thing.**  
+请你做这辈子唯一一件正确的事吧
+
+**Put this stupid little man out of all our misery.**  
+打死这个愚蠢的小人物 结束我们的痛苦
+
+**Shoot him!**  
+打死他
+
+**- Stop it. - Look at him. What is he?**  
+-住口 -看看他 他是什么
+
+**Nothing more than a distraction, a little scrap of ordinariness**  
+不过是你的消遣 一个寻常人
+
+**for you to impress, to dazzle with your cleverness.**  
+供你炫耀你的聪明才智
+
+**You'll find another.**  
+你还能找到别人的
+
+**- Please, for God's sake, just stop it. - Why?**  
+-拜托 老天 住口 -为什么
+
+**Because, on balance,**  
+因为 老实说
+
+**even your Lady Bracknell was more convincing.**  
+你演的布莱克纳尔夫人都比这更像样
+
+**Ignore everything he just said, he's being kind.**  
+别管他说的话 他只是好心
+
+**He's trying to make it easy for me to kill him.**  
+想让我更轻松地开枪杀他
+
+**Which is why this is going to be so much harder.**  
+所以这就让我更为难了
+
+**You said you liked my Lady Bracknell.**  
+你说你喜欢我演的布莱克纳尔夫人
+
+**Sherlock, don't.**  
+夏洛克 不要
+
+**It's not your decision, Dr. Watson.**  
+这不是你的决定 华生医生
+
+**Not in the face, though, please.**  
+但请你别打脸
+
+**I promised my brain to the Royal Society.**  
+我承诺把脑子给皇家学会了
+
+**Where would you suggest?**  
+那你觉得应该打哪
+
+**Well, I suppose there is a heart somewhere inside me.**  
+我体内应该有一颗心脏吧
+
+**I don't imagine it's much of a target, but**  
+可能比较小
+
+**why don't we try for that?**  
+但试试又何妨
+
+**I won't allow this.**  
+我不同意
+
+**This is my fault.**  
+这是我的错
+
+**Moriarty.**  
+莫里亚蒂
+
+**Moriarty?**  
+莫里亚蒂
+
+**Her Christmas treat.**  
+她的圣诞礼物
+
+**Five minutes' conversation with Jim Moriarty five years ago.**  
+五年前她和吉姆·莫里亚蒂交谈过五分钟
+
+**What did they discuss?**  
+他们谈了什么
+
+**Five minutes' conversation...**  
+五分钟的交谈...
+
+**..Unsupervised.**  
+无人监视
+
+**Goodbye, brother mine.**  
+再见 弟弟
+
+**No flowers.**  
+不要献花
+
+**My request.**  
+这是我的要求
+
+**Jim Moriarty thought you'd make this choice.**  
+吉姆·莫里亚蒂猜到你会这么选
+
+**He was so excited.**  
+他是那么兴奋
+
+**'And here we are, the end of the line.**  
+我们终于走到了尽头
+
+**'Holmes killing Holmes.'**  
+福尔摩斯自相残杀
+
+**'This is where I get off.'**  
+我就喜欢这个
+
+**Five minutes.**  
+五分钟
+
+**It took her just five minutes to do all of this to us.**  
+只有五分钟 她就能对我们做这一切
+
+**Well, not on my watch.**  
+我不会允许的
+
+**What are you doing?**  
+你要做什么
+
+**A moment ago, a brave man asked to be remembered.**  
+刚才一个勇敢的人请求被人铭记
+
+**I'm remembering the governor.**  
+我在缅怀那位主管
+
+**Ten...**  
+十...
+
+**No! No, Sherlock...**  
+不 不 夏洛克...
+
+**..Nine, eight...**  
+九 八...
+
+**You can't!**  
+你不能这么做
+
+**- ..Seven... - You don't know about Redbeard yet!**  
+-七... -你还不知道红胡子是怎么回事
+
+**- ..Six... - Sherlock!**  
+-六... -夏洛克
+
+**..Five...**  
+五...
+
+**Sherlock, stop that at once!**  
+夏洛克 住手
+
+**..Four...**  
+四...
+
+**..Three...**  
+三...
+
+**..Two...**  
+二...
+
+**'Hello?**  
+喂
+
+**'Hello? Are you still there?'**  
+喂 你还在吗
+
+**Yes, yeah, no, I'm...I'm still here. I'm here.**  
+对 我还在
+
+**You went away. You said you'd help me and you went away.**  
+你走开了 你说过你会帮我的 但你走了
+
+**Yes, I know. Well, I'm sorry about that.**  
+我知道 很抱歉
+
+**We...we...we must have got cut off. Um...**  
+肯定是电话断线了
+
+**How...how...how long was I away?**  
+我走开了多久
+
+**Hours. Hours and hours.**  
+几个小时 好几个小时
+
+**Why don't grown-ups tell the truth?**  
+为什么大人总爱说谎
+
+**No, I-I am telling the truth. You can trust me.**  
+不 我没说谎 你可以相信我
+
+**'Where did you go?'**  
+你去了哪
+
+**I'm not completely sure.**  
+我也不清楚
+
+**Um...now, I tell you what,**  
+你听好了
+
+**you...you've got to be really, really brave for me.**  
+我要你非常非常勇敢
+
+**Can you go to the front of the plane? Can you do that?**  
+你能不能到飞机前面去 你能做到吗
+
+**- 'The front?' - Yes, that's right, the front.**  
+-前面 -对 没错 前面
+
+**- 'You mean where the driver is?' - Yes, that's it.**  
+-你是说开飞机的人那里吗 -对了
+
+**OK. I'm going.**  
+好 我过去
+
+**- Are you there yet? - Yeah, I'm here.**  
+-你到了吗 -我在
+
+**- John? - Yeah?**  
+-约翰 -在
+
+**Where are you?**  
+你在哪
+
+**I don't know. I've just woken up. Where are you?**  
+不知道 刚醒过来 你在哪
+
+**I'm in another cell. I just spoke to the girl on the plane again.**  
+另一间牢房 我刚又和飞机上的小姑娘通了话
+
+**We've been out for hours.**  
+我们昏迷了好几个小时
+
+**What, she's still up there?**  
+什么 她还在飞吗
+
+**Yes. The plane will keep flying until it runs out of fuel.**  
+对 油烧完之前飞机会一直飞
+
+**- Is Mycroft with you? - I have no idea,**  
+-麦考夫和你在一起吗 -不清楚
+
+**I can hardly see anything.**  
+我看不清
+
+**Mycroft? Mycroft?**  
+麦考夫 麦考夫
+
+**- Are you OK? - Yeah.**  
+-你没事吧 -没事
+
+**Keep exploring. Tell me anything you can about where you are.**  
+继续摸索 告诉我周围都有什么
+
+**The walls are...rough. They're rock, I guess.**  
+墙很粗糙 应该是石头
+
+**What are you standing on?**  
+你站在什么上面
+
+**Er...stone, I think,**  
+我觉得是石头
+
+**but, listen, there's about two feet of water.**  
+但是 听着 这里有大概60厘米深的水
+
+**Chains.**  
+锁链
+
+**Yeah, my feet are chained up.**  
+我双脚被锁了起来
+
+**I can feel something.**  
+我能感觉到水里有什么东西
+
+**Bones, Sherlock.**  
+是骨头 夏洛克
+
+**There are bones in here.**  
+水里有骨头
+
+**What kind of bones?**  
+什么样的骨头
+
+**Er...I don't know. Small.**  
+我不知道 小的
+
+**- Redbeard. - 'Who's Redbeard?'**  
+-红胡子 -红胡子是谁
+
+**Oh, hello. Are you at the front of the plane now?**  
+你好 你现在到机舱前部了吗
+
+**Yeah. I still can't wake the driver up.**  
+是的 我还是叫不醒驾驶员
+
+**That's all right. What can you see now?**  
+没关系 你现在能看到什么
+
+**I can see a river.**  
+我能看到一条河
+
+**- There's...there's...there's a big wheel. - All right.**  
+-有一个巨大的轮子 -好的
+
+**Well, you and I are going to have to drive this plane together.**  
+你得和我一起驾驶这架飞机了
+
+**Just you and me.**  
+就你和我
+
+**- We are? - Yeah. There's nothing to it.**  
+-我们吗 -是的 没什么大不了的
+
+**We just need to get in touch with some people on the ground.**  
+我们只需要联系上地面上的人就行了
+
+**Now, um...can you see anything that looks like a radio?**  
+你能看到什么像无线电的东西吗
+
+**No.**  
+没有
+
+**That's all right, but keep looking, we've got plenty of time.**  
+没事 继续找 我们有的是时间
+
+**- What's wrong? - The whole plane's shaking.**  
+-怎么了 -整架飞机在颠簸
+
+**It's just turbulence, it's nothing to worry about.**  
+只是气流而已 没什么好担心的
+
+**My ears hurt.**  
+我的耳朵好疼
+
+**Does the river look like it's getting closer?**  
+那条河是不是看上去越来越近了
+
+**A little bit.**  
+有一点
+
+**All right, then, that means you're nearly home.**  
+好吧 那说明你快到家了
+
+**Sherlock?**  
+夏洛克
+
+**I'm in a well.**  
+我在一口井里
+
+**That's where I am. I'm in the bottom of a well.**  
+我在一口井的底部
+
+**Why would there be a well in Sherrinford?**  
+夏瑞福德为什么会有一口井
+
+**Why is there a draft?**  
+为什么有风
+
+**Walls don't contract after you've painted them.**  
+墙壁在粉刷完后是不会收缩的
+
+**Not real ones.**  
+真墙不会
+
+**I'm home. Musgrave Hall.**  
+我回家了 马斯格雷夫庄园
+
+**'Me and Jim Moriarty, we got on like a house on fire.**  
+我和吉姆·莫里亚蒂 我们一见如故
+
+**'Which reminded me of home.'**  
+这让我想起了我们家
+
+**Yeah, it's just an old building, I don't care.**  
+嗯 只不过是栋旧房子而已 我不在乎
+
+**The plane, tell me about the plane NOW!**  
+飞机 快跟我说说那架飞机
+
+**'Sweet Jim, he was never very interested in being alive,**  
+亲爱的吉姆 他从来就对活着不感兴趣
+
+**'especially if you could make more trouble being dead.'**  
+特别是如果他死了能制造更多麻烦的话
+
+**Yeah, still not interested. The plane!**  
+是啊 依然不感兴趣 快跟我说那架飞机
+
+**'You knew he'd take his revenge.**  
+你知道他会复仇的
+
+**'His revenge, apparently, is me.'**  
+而他的复仇 很显然 就是我
+
+**Eurus, let me speak to the little girl on the plane**  
+欧罗斯 让我跟飞机上那个小女孩通话
+
+**and I'll play any game you like.**  
+然后你想怎么玩我都陪你玩
+
+**'First, find Redbeard.'**  
+首先 找到红胡子
+
+**I'm letting the water in now.**  
+我现在开始放水了
+
+**You don't want me to drown another one of your pets, do you?**  
+你可不希望我再淹死一只你的宠物吧
+
+**At long last, Sherlock Holmes,**  
+终于 夏洛克·福尔摩斯
+
+**it's time to solve the Musgrave ritual.**  
+该破解马斯格雷夫的仪式了
+
+**Your very first case,**  
+你的第一个案子
+
+**Oh! Bye-bye.**  
+拜拜
+
+**Sherlock!**  
+夏洛克
+
+***I that am lost, oh, who will find me***  
+*我已经迷失 谁能找到我*
+
+**Sherlock!**  
+夏洛克
+
+***deep down below the old beech tree***  
+*深埋在那老山毛榉之下*
+
+***Help succour me now the east winds blow***  
+*快来救救我 因为东风已起*
+
+**John!**  
+约翰
+
+**John?**  
+约翰
+
+**John?**  
+约翰
+
+**Can you hear me?!**  
+你能听到我说话吗
+
+***16 by six, brother and under we go...***  
+*16乘以6 哥哥我们一起下去*
+
+**John?!**  
+约翰
+
+**Help me! Help me, please!**  
+救救我 求你了 快救救我
+
+**Sherlock!**  
+夏洛克
+
+***Be not afraid...***  
+*别害怕*
+
+**- John? - Yeah, it's flooding. The well is flooding!**  
+-约翰 -是我 在注水 井里在注水
+
+**Try as long as possible not to drown.**  
+尽量坚持别溺水
+
+**What?!**  
+什么
+
+**I'm going to find you! I am finding you!**  
+我会找到你的 我正在找你
+
+**Well, hurry up, please, because I don't have long!**  
+那麻烦你快一点 因为我没多少时间了
+
+**It's leaning over! The whole plane!**  
+整架飞机正在倾斜
+
+***Oh, who will find me***  
+*谁能找到我*
+
+***Deep down below the old beech tree?***  
+*深埋在那老山毛榉之下*
+
+**Eurus, you said the answer's in the song,**  
+欧罗斯 你说答案在这首歌里
+
+**but I went through the song, line by line**  
+但我多年前一行一行
+
+**all those years ago and I found nothing.**  
+仔细看过了歌词还是一无所获
+
+**I couldn't find anything!**  
+我找不到任何线索
+
+**There was a beech tree in the grounds and I dug.**  
+附近有一棵山毛榉树 我就开始挖
+
+**I dug, I dug and dug and dug.**  
+我不停地挖
+
+**16 feet by six.**  
+16英尺乘6
+
+**16 yards, 16 metres, and I found nothing!**  
+16码 16米 什么都没挖到
+
+**No-one!**  
+没有人
+
+**Sherlock?**  
+夏洛克
+
+**It was a clever little puzzle, wasn't it?**  
+的确是个聪明的小谜题 不是吗
+
+**So, why couldn't you work it out, Sherlock?**  
+那么 你为什么解不出来呢 夏洛克
+
+**Sherlock, there's something you need to know.**  
+夏洛克 有些事你得知道
+
+**Emotional context.**  
+感情背景
+
+**And here it comes.**  
+现在来了
+
+**Sherlock, the bones I found...**  
+夏洛克 我找到的骨头
+
+**Yes. They're dogs' bones, that's Redbeard.**  
+是的 是狗骨头 是红胡子的骨头
+
+**Mycroft's been lying to you, to both of us.**  
+麦考夫一直在欺骗你 欺骗我们俩
+
+**They're not dogs' bones.**  
+这不是狗骨头
+
+**Remember Daddy's allergy? What was he allergic to?**  
+还记得爸爸的过敏症吗 他对什么过敏
+
+**What would he never let you have,**  
+他偏偏不肯给你买的是什么
+
+**all those times you begged?**  
+不管你求他多少次
+
+**Well, he'd never let you have a dog.**  
+他就是不许你养狗
+
+**Come on, Redbeard.**  
+来啊 红胡子
+
+**Your funny little memory, Sherlock.**  
+你荒唐的记忆 夏洛克
+
+**You were upset,**  
+你难过
+
+**so you told yourself a better story.**  
+就给自己编了个更好的故事
+
+**But we never had a dog.**  
+我们没养过狗
+
+**Victor!**  
+维克多
+
+**Now it's coming.**  
+可算想起来了
+
+**Victor Trevor.**  
+维克多·特雷弗
+
+**We played pirates.**  
+我们一起玩海盗游戏
+
+**I was Yellowbeard and he was...**  
+我是黄胡子 他是...
+
+**..He was Redbeard!**  
+他是红胡子
+
+**You were inseparable, but I wanted to play, too.**  
+你们俩难分难舍 但我也想一起玩
+
+**Oh, God!**  
+天呐
+
+**What...what did you do?**  
+你做了什么
+
+***I that am lost***  
+*我已经迷失*
+
+***Oh, who will find me***  
+*谁能找到我*
+
+***Deep down below the old beech tree...***  
+*深埋在那老山毛榉之下*
+
+**Please let me out! Please, someone help me! Please!**  
+放我出去 谁来救救我
+
+**'Come on, Redbeard.'**  
+来啊 红胡子
+
+**Victor!**  
+维克多
+
+**Deep water, Sherlock,**  
+深水 夏洛克
+
+**all your life, in all your dreams.**  
+你这辈子 你所有的梦中
+
+**Deep waters.**  
+深水
+
+**You killed him!**  
+你杀了他
+
+**You killed my best friend.**  
+你杀了我最好的朋友
+
+**I never had a best friend.**  
+我都没有过最好的朋友
+
+**I had no-one.**  
+我没有任何人
+
+**Play with me, Sherlock. Play with me.**  
+跟我玩 夏洛克 跟我玩
+
+**No-one.**  
+没有任何人
+
+**No-one.**  
+没有任何人
+
+**OK. OK, let's play.**  
+好啊 我们玩吧
+
+**'Hello? Are you there?'**  
+喂 你在吗
+
+**I need your help. I'm trying to solve a puzzle.**  
+我需要你的帮助 我在解一个谜
+
+**- 'But what about the plane?!' - The puzzle will save the plane.**  
+-那飞机呢 -这个谜能解救飞机
+
+**The wrong dates. She used the wrong dates on the gravestones**  
+错误的日期 她把墓碑上错误的日期
+
+**as the key to the cipher, and the cipher was the song.**  
+作为密钥 密文就是那首歌
+
+**Is this strictly relevant?!**  
+这真的相关吗
+
+**Yes, it is. I'll be with you in a minute.**  
+是的 我马上就到
+
+**The lights are getting closer!**  
+灯光越来越近了
+
+**Hush now, working.**  
+别说话 想呢
+
+**Let's number the words of the song.**  
+给歌曲的字标数
+
+**Then rearrange the numbered words**  
+然后调整标了数的字的顺序
+
+**to match the sequence on the gravestones.**  
+与墓碑的序列相同
+
+**I am lost.**  
+我迷失了
+
+**Help me brother.**  
+帮助我 哥哥
+
+**Save my life**  
+救我
+
+**before my doom.**  
+我末日将近
+
+**I am lost**  
+我迷失了
+
+**without your love.**  
+因为没有你的爱
+
+**Save my soul, seek my room.**  
+拯救我的灵魂 搜我的房间
+
+**Oh, God!**  
+天呐
+
+**We're going to crash! I'm going to die!**  
+我们要坠机了 我要死了
+
+**I think it's time you told me your real name.**  
+我觉得你该告诉我你的真名了
+
+**I'm not allowed to tell my name to strangers.**  
+我不能把名字告诉陌生人
+
+**But I'm not a stranger, am I?**  
+但我不是陌生人 是吧
+
+**I'm your brother.**  
+我是你哥哥
+
+**I'm here, Eurus.**  
+我来了 欧罗斯
+
+**You're playing with me, Sherlock.**  
+你在跟我玩了 夏洛克
+
+**We're playing the game.**  
+我们在玩游戏
+
+**The game, yes, I get it now.**  
+游戏 我现在懂了
+
+**The song was never a set of directions.**  
+歌不是在指路
+
+**I'm in the plane. I'm going to crash.**  
+我在飞机里 我们要坠机了
+
+**And you're going to save me.**  
+你要救我
+
+**Look how brilliant you are.**  
+看你多聪明
+
+**Your mind has created the perfect metaphor.**  
+你的头脑创造了一个完美的隐喻
+
+**You're high above us, all alone in the sky,**  
+你远离我们 高高在天上
+
+**and you understand everything except how to land.**  
+你什么都理解 就是不知如何降落
+
+**Now, I'm just an idiot, but I'm on the ground.**  
+我只是个白痴 但我在地面上
+
+**I can bring you home.**  
+我可以带你回家
+
+**No.**  
+不
+
+**No, no. It's too late now.**  
+不 已经太迟了
+
+**No, it's not, it's not too late.**  
+不 还不迟
+
+**Every time I close my eyes, I'm on the plane.**  
+每次我闭上眼睛 我就在那架飞机上
+
+**I'm lost, lost in the sky**  
+我在空中迷失
+
+**and...no-one can hear me.**  
+没人能听到我
+
+**Open your eyes.**  
+睁开眼睛
+
+**I'm here.**  
+我在呢
+
+**You're not lost anymore.**  
+你不再迷失了
+
+**Now, you...you just, you**  
+你只是...
+
+**just went the wrong way last time, that's all.**  
+你只是上次走错了路
+
+**This time, get it right.**  
+这次走对就行
+
+**Tell me how to save my friend.**  
+告诉我怎么救我的朋友
+
+**Eurus,**  
+欧罗斯
+
+**help me save John Watson.**  
+帮我救约翰·华生
+
+**I just spoke to your brother.**  
+我刚跟你哥哥谈过
+
+**- How is he? - He's a bit shaken up, that's all.**  
+-他怎么样 -有点受惊吓而已
+
+**She didn't hurt him, she just locked him in her old cell.**  
+她没伤害他 只是把他关回了她以前的牢房
+
+**- What goes around comes around. - Give me a moment, boys.**  
+-出来混迟早要还的 -失陪一下
+
+**Mycroft, make sure he's looked after.**  
+麦考夫 一定照顾好他
+
+**He's not as strong as he thinks he is.**  
+他没有他想的那么坚强
+
+**- Yeah, I'll take care of it. - Thanks, Greg.**  
+-我会确保的 -谢谢 格雷格
+
+**The helicopter ready?**  
+直升机准备好了吗
+
+**Let's move her, then.**  
+带她走吧
+
+**Is that him, sir, Sherlock Holmes?**  
+那是他吗 长官 夏洛克·福尔摩斯
+
+**Fan, are you?**  
+是粉丝吗
+
+**Well, he's a great man, sir.**  
+他是个了不起的人 长官
+
+**No, he's better than that.**  
+不 比那更好
+
+**He's a good one.**  
+他是个好人
+
+**- You OK? - I said I'd bring her home.**  
+-你没事吧 -我说过会带她回家
+
+**I can't, can I?**  
+但我做不到 是吧
+
+**Well, you gave her what she was looking for -**  
+你给了她她想要的
+
+**context.**  
+背景
+
+**Is that good?**  
+这是好事吗
+
+**It's not good, it's not bad, it's...**  
+不好 不坏
+
+**It is what it is.**  
+事情就是这样
+
+**Alive for all these years?!**  
+这么多年来一直活着
+
+**How is that even possible?!**  
+这怎么可能
+
+**What Uncle Rudi began, I thought it best to continue.**  
+鲁迪叔叔做的事 我觉得该延续下去
+
+**I'm not asking how you did it, idiot boy,**  
+我不是问你怎么做到的 傻小子
+
+**I'm asking how could you?!**  
+我是问你怎么可以
+
+**- I was trying to be kind. - Kind?!**  
+-我是出于仁慈 -仁慈
+
+**Kind?!**  
+仁慈
+
+**You told us that our daughter was dead!**  
+你骗我们说我们的女儿死了
+
+**Better that than tell you what she had become.**  
+总比让你知道她变成了什么样好
+
+**I'm sorry.**  
+对不起
+
+**Whatever she became,**  
+不管她变成了什么
+
+**whatever she is now, Mycroft,**  
+不管她现在什么样 麦考夫
+
+**she remains our daughter.**  
+她总是我们的女儿
+
+**And my sister.**  
+也是我妹妹
+
+**Then you should have done better.**  
+那你就该做得更好
+
+**He did his best.**  
+他尽力了
+
+**Then he's very limited.**  
+那他就很不足
+
+**Where is she?**  
+她在哪
+
+**Back in Sherrinford. Secure this time.**  
+回夏瑞福德了 这次会被看守好
+
+**People have died.**  
+有人因她而死
+
+**Without doubt, she will kill again if she has the opportunity.**  
+毫无疑问 如果有机会 她还会再杀人
+
+**There's no possibility she'll ever be able to leave.**  
+她不可能再离开那里
+
+**When can we see her?**  
+我们什么时候能见她
+
+**There's no point.**  
+没用的
+
+**How dare you say that?!**  
+你怎么能那么说
+
+**She won't talk.**  
+她不肯开口
+
+**She won't communicate with anyone in any way.**  
+她不肯跟任何人以任何方式交流
+
+**She has passed beyond our view.**  
+她已经去了我们看不到的地方
+
+**There are no words that can reach her now.**  
+语言已经无法触及她了
+
+**Sherlock?**  
+夏洛克
+
+**Well? You were always the grown-up.**  
+怎么样 你一直是成熟的那个
+
+**What do we do now?**  
+我们怎么办
+
+**Yeah, I-I think you'd better get round here.**  
+嗯 你最好来一趟
+
+**PS, I know you two.**  
+又及 我了解你俩
+
+**And if I'm gone, I know what you could become.**  
+如果我死了 我知道你们会变成什么样
+
+**Because I know who you really are.**  
+因为我知道你们究竟是什么人
+
+**A junky who solves crimes to get high.**  
+一个为过瘾破案的瘾君子
+
+**And the doctor who never came home from the war.**  
+一个根本没从战场回来的医生
+
+**Will you listen to me? Who you really are, it doesn't matter.**  
+听我说 真实的你们不重要
+
+**It's all about the legend.**  
+重要的是传奇
+
+**The stories, the adventures.**  
+故事 冒险
+
+**There is a last refuge for the desperate,**  
+有个最后的庇护所属于绝望之人
+
+**the unloved, the persecuted.**  
+无人关爱 受迫害之人
+
+**There is a final court of appeal for everyone.**  
+对每个人开放的上诉法庭
+
+**When life gets too strange,**  
+如果生活变得太怪异
+
+**too impossible,**  
+太不可思议
+
+**too frightening,**  
+太可怕
+
+**there is always one last hope.**  
+总还有最后一线希望
+
+**When all else fails,**  
+如果一切尽失
+
+**there are two men sitting arguing in a scruffy flat**  
+总还有两个男人 坐在一间脏乱的公寓里争执
+
+**like they've always been there, and they always will.**  
+过去如此 今后也会如此
+
+**THE best and wisest men I have ever known.**  
+他们是我认识最好最有智慧的人
+
+**My Baker Street boys.**  
+我的贝克街好伙伴
+
+**Sherlock Holmes and Dr Watson.**  
+夏洛克·福尔摩斯和华生医生
